@@ -1,0 +1,248 @@
+---
+import Base from '../layouts/Base.astro';
+import { sorted, stats, splitForDisplay } from '../lib/antinet.ts';
+
+const rows = sorted();
+---
+
+<Base
+  title="The numbered outline"
+  description="All 2,576 Antinet addresses of the worked example, searchable — the numbering scheme applied to a full outline of academic disciplines."
+  derived
+>
+  <section class="hero">
+    <p class="eyebrow">The worked example, in full</p>
+    <h1>The numbered outline</h1>
+    <p class="lede">
+      Every one of the {stats.total.toLocaleString('en')} addresses, in drawer order. This exists
+      to show the scheme at a scale large enough to break a system that does not work — 130
+      siblings in one place, seven levels deep in another, and not a single collision.
+    </p>
+  </section>
+
+  <div class="bar">
+    <label class="vh" for="q">Filter by discipline or address</label>
+    <input
+      type="search"
+      id="q"
+      placeholder="Filter by discipline or address…"
+      autocomplete="off"
+      spellcheck="false"
+    />
+    <span class="count" id="cnt" aria-live="polite"></span>
+  </div>
+
+  <div class="list" id="list">
+    {
+      rows.map((e) => {
+        const [div, br] = splitForDisplay(e.num);
+        return (
+          <div
+            class={`r ${e.k === 'h' ? 'h' : 'b'} d${e.depth}`}
+            data-s={`${e.t.toLowerCase()} ${e.num}`}
+            data-d={e.depth}
+          >
+            <span class="ad">
+              {div}
+              {br && <span class="br">{br}</span>}
+            </span>
+            <span class="t">
+              {e.t}
+              {e.note && <em class="note">{e.note}</em>}
+            </span>
+          </div>
+        );
+      })
+    }
+  </div>
+
+  <p class="empty" id="empty" hidden>No entry matches that.</p>
+</Base>
+
+<script>
+  const rows = Array.from(document.querySelectorAll<HTMLElement>('#list .r'));
+  const box = document.querySelector<HTMLInputElement>('#q')!;
+  const cnt = document.querySelector<HTMLElement>('#cnt')!;
+  const empty = document.querySelector<HTMLElement>('#empty')!;
+
+  const total = `${rows.length.toLocaleString('en')} entries`;
+
+  function filter(): void {
+    const q = box.value.trim().toLowerCase();
+    if (!q) {
+      for (const r of rows) r.hidden = false;
+      cnt.textContent = total;
+      empty.hidden = true;
+      return;
+    }
+    const keep = new Set<number>();
+    let hits = 0;
+    rows.forEach((r, i) => {
+      if (!r.dataset.s?.includes(q)) return;
+      keep.add(i);
+      hits++;
+      // Keep ancestors visible so a match never floats without its context.
+      let depth = Number(r.dataset.d);
+      for (let j = i - 1; j >= 0 && depth > 0; j--) {
+        const d = Number(rows[j]!.dataset.d);
+        if (d < depth) {
+          keep.add(j);
+          depth = d;
+        }
+      }
+    });
+    rows.forEach((r, i) => {
+      r.hidden = !keep.has(i);
+    });
+    cnt.textContent = `${hits.toLocaleString('en')} match${hits === 1 ? '' : 'es'}`;
+    empty.hidden = hits > 0;
+  }
+
+  box.addEventListener('input', filter);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && document.activeElement !== box) {
+      e.preventDefault();
+      box.focus();
+    }
+    if (e.key === 'Escape' && document.activeElement === box) {
+      box.value = '';
+      filter();
+      box.blur();
+    }
+  });
+  cnt.textContent = total;
+</script>
+
+<style>
+  .hero {
+    padding: 3.5rem 0 0;
+  }
+  .hero h1 {
+    margin: 0.5rem 0 1rem;
+  }
+  .vh {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .bar {
+    position: sticky;
+    top: 3.4rem;
+    z-index: 4;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    background: var(--ground);
+    padding: 1rem 0 0.75rem;
+    border-bottom: 1px solid var(--rule);
+    margin-top: 2rem;
+  }
+  input[type='search'] {
+    flex: 1;
+    min-width: 0;
+    font: 400 0.95rem var(--sans);
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 0.6rem 0.8rem;
+  }
+  .count {
+    font: 500 0.78rem var(--mono);
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .list {
+    margin-top: 0.25rem;
+  }
+  .r {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    padding: 0.16rem 0;
+  }
+  .r:hover {
+    background: var(--tint);
+  }
+  .r[hidden] {
+    display: none;
+  }
+  .r .ad {
+    font-size: 0.79rem;
+    flex: 0 0 7rem;
+    color: var(--ink);
+  }
+  .r.h .ad {
+    color: var(--brass);
+    font-weight: 600;
+  }
+  .r .t {
+    flex: 1;
+    min-width: 0;
+  }
+  .d0 {
+    margin-top: 2.5rem;
+    padding-top: 0.6rem;
+    border-top: 2px solid var(--brass);
+  }
+  .d0 .t {
+    font: 600 1.25rem var(--serif);
+  }
+  .d1 {
+    margin-top: 1.4rem;
+  }
+  .d1 .t {
+    font: 600 1rem var(--serif);
+  }
+  .d2 .t {
+    font: 600 0.92rem var(--serif);
+    padding-left: 1rem;
+  }
+  .d3 .t {
+    font: 600 0.88rem var(--serif);
+    padding-left: 2rem;
+    color: var(--muted);
+  }
+  .d5,
+  .d6,
+  .d7 {
+    color: var(--muted);
+  }
+  .d5 .t,
+  .d6 .t,
+  .d7 .t {
+    border-left: 1px solid var(--rule);
+    padding-left: 1rem;
+  }
+  .d5 .t {
+    margin-left: 0.35rem;
+  }
+  .d6 .t {
+    margin-left: 1.5rem;
+  }
+  .d7 .t {
+    margin-left: 2.65rem;
+  }
+  .note {
+    display: block;
+    font: italic 0.78rem var(--serif);
+    color: var(--muted);
+  }
+  .empty {
+    padding: 2rem 0;
+    color: var(--muted);
+    font-style: italic;
+  }
+  @media (max-width: 640px) {
+    .r {
+      flex-wrap: wrap;
+      gap: 0.1rem 1rem;
+    }
+    .r .ad {
+      flex-basis: 100%;
+    }
+  }
+</style>

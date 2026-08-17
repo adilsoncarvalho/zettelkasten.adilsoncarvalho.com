@@ -1,0 +1,236 @@
+/*
+  Design system — a library card drawer.
+  Cool and institutional rather than warm: card stock under fluorescent light,
+  slate-navy ink, one oxidised-brass accent standing in for the drawer pull.
+  Full rationale in context/05-design-system.md.
+
+  Theme has THREE states. An explicit choice stamps data-theme on <html>; the
+  default "system" setting stamps nothing. Every colour is defined on bare
+  :root and only redefined as tokens, never inside a media or [data-theme]
+  block — a colour declared only there never applies in the unstamped state.
+*/
+
+:root {
+  --ground: #f2f3f1;
+  --surface: #ffffff;
+  --ink: #1b2430;
+  --muted: #6b7580;
+  --rule: #d8dbd6;
+  --brass: #8a6a2f;
+  --brass-dim: #a98b4e;
+  --tint: #e7e9e5;
+  --warn: #8c4a2f;
+
+  --serif: ui-serif, Georgia, 'Times New Roman', serif;
+  --sans: ui-sans-serif, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  --measure: 66ch;
+  --page: 58rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --ground: #151a1f;
+    --surface: #1d242b;
+    --ink: #e3e6e2;
+    --muted: #8d97a1;
+    --rule: #2c353d;
+    --brass: #c9a227;
+    --brass-dim: #9c8330;
+    --tint: #222a31;
+    --warn: #d08a5e;
+  }
+}
+
+:root[data-theme='dark'] {
+  --ground: #151a1f;
+  --surface: #1d242b;
+  --ink: #e3e6e2;
+  --muted: #8d97a1;
+  --rule: #2c353d;
+  --brass: #c9a227;
+  --brass-dim: #9c8330;
+  --tint: #222a31;
+  --warn: #d08a5e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 16px/1.6 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: var(--page);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--serif);
+  font-weight: 400;
+  text-wrap: balance;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 2.7rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin: 3rem 0 0.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--rule);
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 1.9rem 0 0.5rem;
+}
+
+p,
+li {
+  max-width: var(--measure);
+}
+
+a {
+  color: var(--brass);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.88em;
+  font-variant-numeric: tabular-nums;
+  color: var(--brass);
+}
+
+.lede {
+  color: var(--muted);
+  font-size: 1.02rem;
+  max-width: var(--measure);
+}
+
+.eyebrow {
+  font: 500 0.7rem/1 var(--sans);
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Addresses are the point of the whole system: monospace, tabular, brass. */
+.ad {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--brass);
+  white-space: nowrap;
+}
+
+.ad .br {
+  color: var(--muted);
+}
+
+.tbl {
+  overflow-x: auto;
+  margin: 1.2rem 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.92rem;
+}
+
+th {
+  text-align: left;
+  font: 500 0.68rem/1 var(--sans);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--rule);
+  white-space: nowrap;
+}
+
+td {
+  padding: 0.5rem 0.7rem;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+  max-width: none;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 1.4rem;
+}
+
+.callout {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--brass);
+  border-radius: 2px;
+  padding: 1.1rem 1.3rem;
+  margin: 1.4rem 0;
+}
+
+.callout > :first-child {
+  margin-top: 0;
+}
+
+.callout > :last-child {
+  margin-bottom: 0;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,725 @@
+{
+  "themes": [
+    {
+      "name": "Persuasion",
+      "hub": "1040/9d1",
+      "anchor": "1040/9d",
+      "anchorTitle": "Rhetoric",
+      "why": "Rhetoric is the spine; everything else in this theme is an application of it. Note that Rhetoric is one of the 37 duplicates — it also sits at 2060/24 under Linguistics. Make 1040/9d the live branch and cross-reference the other.",
+      "groups": [
+        {
+          "name": "Craft",
+          "items": [
+            {
+              "address": "1040/9",
+              "title": "Literary theory"
+            },
+            {
+              "address": "1040/9c",
+              "title": "Poetics"
+            },
+            {
+              "address": "1040/4",
+              "title": "Creative writing"
+            },
+            {
+              "address": "1040/4f",
+              "title": "Literary journalism"
+            },
+            {
+              "address": "5080/3",
+              "title": "Narratology"
+            },
+            {
+              "address": "1010/6d",
+              "title": "Storytelling"
+            }
+          ]
+        },
+        {
+          "name": "Channel",
+          "items": [
+            {
+              "address": "5080",
+              "title": "Journalism, media studies & communication"
+            },
+            {
+              "address": "5080/4",
+              "title": "Communication studies"
+            },
+            {
+              "address": "5080/4r",
+              "title": "Speech communication"
+            },
+            {
+              "address": "5080/4m",
+              "title": "Nonverbal communication"
+            },
+            {
+              "address": "5080/4s",
+              "title": "Technical writing"
+            },
+            {
+              "address": "5080/4c",
+              "title": "Communication design"
+            }
+          ]
+        },
+        {
+          "name": "Influence",
+          "items": [
+            {
+              "address": "5080/4a",
+              "title": "Advertising"
+            },
+            {
+              "address": "5080/4p",
+              "title": "Propaganda"
+            },
+            {
+              "address": "5080/4q",
+              "title": "Public relations"
+            },
+            {
+              "address": "2020/15",
+              "title": "Marketing"
+            },
+            {
+              "address": "5080/4k",
+              "title": "Marketing (dup)"
+            },
+            {
+              "address": "5080/4o",
+              "title": "Popular culture studies"
+            }
+          ]
+        },
+        {
+          "name": "Mechanism",
+          "items": [
+            {
+              "address": "2060/4",
+              "title": "Discourse analysis"
+            },
+            {
+              "address": "2060/22",
+              "title": "Pragmatics"
+            },
+            {
+              "address": "2060/26",
+              "title": "Semiotics"
+            },
+            {
+              "address": "2060/24",
+              "title": "Rhetoric (dup)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Organisations",
+      "hub": "2103/11",
+      "anchor": "2103",
+      "anchorTitle": "Organizational studies",
+      "why": "You get lucky here — Organizational studies is its own division, so the hub sits directly behind the guide card. Management and HR are each doubled across 2020 and 2103; pick 2103 as the live branch since it is the dedicated division.",
+      "groups": [
+        {
+          "name": "Core",
+          "items": [
+            {
+              "address": "2103/6",
+              "title": "Management"
+            },
+            {
+              "address": "2103/7",
+              "title": "Organizational behavior"
+            },
+            {
+              "address": "2103/8",
+              "title": "Organization theory"
+            },
+            {
+              "address": "2103/9",
+              "title": "Project management"
+            },
+            {
+              "address": "2103/4",
+              "title": "Human resources management"
+            },
+            {
+              "address": "2103/10",
+              "title": "Quality control"
+            }
+          ]
+        },
+        {
+          "name": "Business-side",
+          "items": [
+            {
+              "address": "2020/14",
+              "title": "Management (dup)"
+            },
+            {
+              "address": "2020/11b",
+              "title": "Human resources (dup)"
+            },
+            {
+              "address": "2020/11",
+              "title": "Industrial & labor relations"
+            },
+            {
+              "address": "2020/11a",
+              "title": "Collective bargaining"
+            },
+            {
+              "address": "2020/6",
+              "title": "Corporate governance"
+            },
+            {
+              "address": "2020/16",
+              "title": "Operations management"
+            },
+            {
+              "address": "2020/9",
+              "title": "Decision science"
+            }
+          ]
+        },
+        {
+          "name": "Behaviour & theory",
+          "items": [
+            {
+              "address": "2080/39",
+              "title": "Organizational psychology"
+            },
+            {
+              "address": "2090/44",
+              "title": "Organizational theory"
+            },
+            {
+              "address": "2090/13",
+              "title": "Critical management studies"
+            },
+            {
+              "address": "5080/4n",
+              "title": "Organizational communication"
+            }
+          ]
+        },
+        {
+          "name": "Systems & leadership",
+          "items": [
+            {
+              "address": "5047/11",
+              "title": "Systems engineering"
+            },
+            {
+              "address": "5047/5c",
+              "title": "Management cybernetics"
+            },
+            {
+              "address": "5110/10",
+              "title": "Leadership"
+            },
+            {
+              "address": "5030/4",
+              "title": "Educational leadership"
+            },
+            {
+              "address": "5110/11b",
+              "title": "Supply chain management"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ventures",
+      "hub": "2020/8a",
+      "anchor": "2020/8",
+      "anchorTitle": "Entrepreneurship",
+      "why": "Entrepreneurship is a single bullet in the outline with no children — which tells you the academy treats it thinly. Expect this branch to be almost entirely your own cards.",
+      "groups": [
+        {
+          "name": "Venture core",
+          "items": [
+            {
+              "address": "2020",
+              "title": "Business (division)"
+            },
+            {
+              "address": "2020/2",
+              "title": "Business administration"
+            },
+            {
+              "address": "2020/3",
+              "title": "Business analysis"
+            },
+            {
+              "address": "2020/7",
+              "title": "E-Business"
+            },
+            {
+              "address": "2020/19",
+              "title": "Strategy / Strategic Management"
+            },
+            {
+              "address": "2030/22",
+              "title": "Entrepreneurial economics"
+            }
+          ]
+        },
+        {
+          "name": "Product",
+          "items": [
+            {
+              "address": "5020/9",
+              "title": "Industrial design (product design)"
+            },
+            {
+              "address": "5020/10",
+              "title": "User experience design"
+            },
+            {
+              "address": "5020/10a",
+              "title": "Interaction design"
+            },
+            {
+              "address": "5020/10b",
+              "title": "Information architecture"
+            }
+          ]
+        },
+        {
+          "name": "Money",
+          "items": [
+            {
+              "address": "2020/10",
+              "title": "Finance"
+            },
+            {
+              "address": "2020/18",
+              "title": "Risk management & insurance"
+            },
+            {
+              "address": "4010/13c",
+              "title": "Computational finance"
+            },
+            {
+              "address": "2090/81",
+              "title": "Sociology of finance"
+            },
+            {
+              "address": "2030/55",
+              "title": "Public finance"
+            }
+          ]
+        },
+        {
+          "name": "Market forces",
+          "items": [
+            {
+              "address": "2030/48",
+              "title": "Microeconomics"
+            },
+            {
+              "address": "2030/33",
+              "title": "Industrial organization"
+            },
+            {
+              "address": "2103/5",
+              "title": "Industrial organization (dup)"
+            },
+            {
+              "address": "2030/9",
+              "title": "Consumer economics"
+            },
+            {
+              "address": "2030/4",
+              "title": "Behavioural economics"
+            },
+            {
+              "address": "2020/13",
+              "title": "International trade"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mind",
+      "hub": "2080/62",
+      "anchor": "2080",
+      "anchorTitle": "Psychology",
+      "why": "Psychology is the largest single branch in the index — 61 children. Your hub goes at the end of that run. Decision-making is genuinely split across four drawers, so the hub card earns its keep here more than anywhere else.",
+      "groups": [
+        {
+          "name": "Psychology proper",
+          "items": [
+            {
+              "address": "2080/6",
+              "title": "Cognitive psychology"
+            },
+            {
+              "address": "2080/46",
+              "title": "Positive psychology"
+            },
+            {
+              "address": "2080/47",
+              "title": "Problem solving"
+            },
+            {
+              "address": "2080/43",
+              "title": "Personality psychology"
+            },
+            {
+              "address": "2080/19",
+              "title": "Evolutionary psychology"
+            },
+            {
+              "address": "2080/57",
+              "title": "Social psychology"
+            },
+            {
+              "address": "2080/51",
+              "title": "Psychometrics"
+            }
+          ]
+        },
+        {
+          "name": "Substrate",
+          "items": [
+            {
+              "address": "3021/34",
+              "title": "Neuroscience"
+            },
+            {
+              "address": "3021/34a",
+              "title": "Behavioral neuroscience"
+            },
+            {
+              "address": "4010/4a",
+              "title": "Cognitive science"
+            },
+            {
+              "address": "2080/36",
+              "title": "Neuropsychology"
+            }
+          ]
+        },
+        {
+          "name": "Decision-making",
+          "items": [
+            {
+              "address": "2020/9",
+              "title": "Decision science"
+            },
+            {
+              "address": "4032/9b",
+              "title": "Decision analysis"
+            },
+            {
+              "address": "4033/9a",
+              "title": "Decision theory"
+            },
+            {
+              "address": "2030/4",
+              "title": "Behavioural economics"
+            }
+          ]
+        },
+        {
+          "name": "Learning & knowing",
+          "items": [
+            {
+              "address": "5030/6",
+              "title": "Educational psychology"
+            },
+            {
+              "address": "5030/3f",
+              "title": "Mastery learning"
+            },
+            {
+              "address": "5030/3g",
+              "title": "Cooperative learning"
+            },
+            {
+              "address": "1060/3",
+              "title": "Epistemology"
+            },
+            {
+              "address": "1060/7d",
+              "title": "Philosophy of mind"
+            },
+            {
+              "address": "1060/7d3",
+              "title": "Philosophy of perception"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Metabolism",
+      "hub": "5100/21a",
+      "anchor": "5100/21",
+      "anchorTitle": "Nutrition and dietetics",
+      "why": "Two candidate homes: 5100/21 (clinical practice) and 3021/39 Physiology (mechanism). Practice wins for the hub because keto and carnivore are protocols, not physiology — but link the hub to 3021/39 so the mechanism is one hop away.",
+      "groups": [
+        {
+          "name": "Clinical",
+          "items": [
+            {
+              "address": "5100",
+              "title": "Medicine and health (division)"
+            },
+            {
+              "address": "5100/17",
+              "title": "Internal medicine"
+            },
+            {
+              "address": "5100/17b",
+              "title": "Endocrinology"
+            },
+            {
+              "address": "5100/17c",
+              "title": "Gastroenterology"
+            },
+            {
+              "address": "5100/3a",
+              "title": "Clinical biochemistry"
+            },
+            {
+              "address": "5100/44",
+              "title": "Public health"
+            }
+          ]
+        },
+        {
+          "name": "Mechanism",
+          "items": [
+            {
+              "address": "3021/39",
+              "title": "Physiology"
+            },
+            {
+              "address": "3021/39a",
+              "title": "Human physiology"
+            },
+            {
+              "address": "3021/16",
+              "title": "Endocrinology (dup)"
+            },
+            {
+              "address": "3021/3",
+              "title": "Biochemistry"
+            },
+            {
+              "address": "3014/5",
+              "title": "Biochemistry (chem side)"
+            }
+          ]
+        },
+        {
+          "name": "Performance",
+          "items": [
+            {
+              "address": "3021/39a1",
+              "title": "Exercise physiology"
+            },
+            {
+              "address": "5070/7",
+              "title": "Exercise physiology (dup)"
+            },
+            {
+              "address": "5070/8",
+              "title": "Kinesiology / Performance science"
+            },
+            {
+              "address": "5100/51",
+              "title": "Sports medicine"
+            }
+          ]
+        },
+        {
+          "name": "Food as system",
+          "items": [
+            {
+              "address": "3021/35",
+              "title": "Nutrition"
+            },
+            {
+              "address": "5060/4",
+              "title": "Nutrition (dup)"
+            },
+            {
+              "address": "5010/13",
+              "title": "Food science"
+            },
+            {
+              "address": "2010/5i",
+              "title": "Nutritional anthropology"
+            },
+            {
+              "address": "2090/82",
+              "title": "Sociology of food"
+            },
+            {
+              "address": "5130/10",
+              "title": "Food policy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Formation",
+      "hub": "1090/3c1",
+      "anchor": "1090/3c",
+      "anchorTitle": "Catholic theology",
+      "why": "The widest-spanning theme — it touches all four Humanities divisions plus History. Catholic theology is the centre of gravity for formation specifically; ethics and philosophy hang off it as satellites rather than the reverse.",
+      "groups": [
+        {
+          "name": "Theology",
+          "items": [
+            {
+              "address": "1090/3",
+              "title": "Christian theology"
+            },
+            {
+              "address": "1080",
+              "title": "Divinity (division)"
+            },
+            {
+              "address": "1080/6g",
+              "title": "Moral theology"
+            },
+            {
+              "address": "1080/6e",
+              "title": "Christian ethics"
+            },
+            {
+              "address": "1080/6d",
+              "title": "Systematic theology"
+            },
+            {
+              "address": "1080/6a",
+              "title": "Dogmatic theology"
+            }
+          ]
+        },
+        {
+          "name": "Sources & practice",
+          "items": [
+            {
+              "address": "1080/4",
+              "title": "Hermeneutics"
+            },
+            {
+              "address": "1080/5c",
+              "title": "Biblical studies / Sacred Scripture"
+            },
+            {
+              "address": "1080/3e",
+              "title": "Liturgy"
+            },
+            {
+              "address": "1050/3",
+              "title": "Canon law"
+            },
+            {
+              "address": "1030/13",
+              "title": "Ecclesiastical history of the Catholic Church"
+            }
+          ]
+        },
+        {
+          "name": "Ethics & philosophy",
+          "items": [
+            {
+              "address": "1060",
+              "title": "Philosophy (division)"
+            },
+            {
+              "address": "1060/4",
+              "title": "Ethics"
+            },
+            {
+              "address": "1060/4d",
+              "title": "Normative ethics"
+            },
+            {
+              "address": "1060/4d1",
+              "title": "Virtue ethics"
+            },
+            {
+              "address": "1060/4a",
+              "title": "Applied ethics"
+            },
+            {
+              "address": "1060/9b",
+              "title": "Medieval philosophy"
+            },
+            {
+              "address": "1060/2j",
+              "title": "Philosophy of religion"
+            }
+          ]
+        },
+        {
+          "name": "Letters & memory",
+          "items": [
+            {
+              "address": "1040/2",
+              "title": "Classics"
+            },
+            {
+              "address": "1040/7",
+              "title": "History of literature"
+            },
+            {
+              "address": "1040/3",
+              "title": "Comparative literature"
+            },
+            {
+              "address": "1030",
+              "title": "History (division)"
+            },
+            {
+              "address": "1030/16",
+              "title": "Intellectual history"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "theme": "Persuasion",
+      "absent": "sales, selling, copywriting, negotiation, branding, pricing",
+      "fileBehind": "2020/15 Marketing · 1040/9d Rhetoric"
+    },
+    {
+      "theme": "Organisations",
+      "absent": "incentives, business process, people management",
+      "fileBehind": "2103/7 Organizational behavior · 2103/6 Management"
+    },
+    {
+      "theme": "Ventures",
+      "absent": "startups, venture capital",
+      "fileBehind": "2020/8 Entrepreneurship"
+    },
+    {
+      "theme": "Mind",
+      "absent": "productivity, attention, focus, habit, note-taking",
+      "fileBehind": "2080/6 Cognitive psychology"
+    },
+    {
+      "theme": "Metabolism",
+      "absent": "keto, carnivore, fasting, metabolism",
+      "fileBehind": "5100/21 Nutrition and dietetics"
+    }
+  ]
+}

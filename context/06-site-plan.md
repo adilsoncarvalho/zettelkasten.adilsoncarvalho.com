@@ -1,86 +1,99 @@
 # Site Plan — Astro on GitHub Pages
 
-Not started. This is the plan and the open questions, not a decided spec.
+## What this site is
 
-## Proposed structure
+**A living Antinet Zettelkasten implementation manual.** Public, for the owner and for anyone
+seeking answers to the same questions.
+
+It exists because the practical questions of running an Antinet either have no clear answers or
+have answers scattered across many sources. The site's job is to answer them in one place, from
+a worked implementation.
+
+**It is not a place to publish the owner's own cards.** The reference material is the product;
+the owner's card content stays private. Any future feature must be checked against this — a
+design that assumes personal notes will be rendered is out of scope.
+
+## Decided
+
+| Question | Answer |
+|---|---|
+| Domain | `zettelkasten.adilsoncarvalho.com` — Route 53 record pending, owner will add |
+| `base` | `/` — apex custom domain, so no path prefix |
+| Repo visibility | **Private for now**, public at first publish |
+| Audience | Public. Written for a stranger with the same problem, not just the owner |
+| Root page | A **quick usage guide** to the site's contents — *not* the index listing |
+| Divisions | Its own path, separate from the outline |
+| Blog | `/blog` likely, later. Leave room; do not build yet |
+
+## Routes
 
 ```
-/                      Landing — what an Antinet is, what this reference is for
-/rules                 Filing rules (source: 02-filing-rules.md)
-/divisions             The 65 divisions (source: content/division-map.md)
-/index                 Full searchable outline — 2,576 addresses
-/index/[address]       Optional: a page per division, or per drawer
-/hubs                  Hub placements (source: 03-hub-placements.md)
-/colophon              Sources, CC BY-SA attribution, how it was generated
+/             Quick usage guide — what's here, where to start, how to use it
+/rules        Filing rules — child vs sibling, worked example, hub cards
+/divisions    The 65 four-digit divisions
+/outline      Full numbered outline, 2,576 addresses, searchable
+/hubs         Hub card placements (worked example of applying the scheme)
+/colophon     Sources, CC BY-SA attribution, how the numbering was generated
+/blog         Future — not built
 ```
+
+**`/outline`, not `/index`.** In Astro, `src/pages/index.astro` *is* the root route, so a page
+at `/index` needs `src/pages/index/index.astro` and reads as a collision. `/outline` also
+describes the content better.
 
 ## Data pipeline
 
-`data/numbered.json` is canonical. Astro can import it directly — it is 2,576 objects with
-`{num, k, lvl, t, ln, note, depth}`. `data/addresses.csv` is the same data flat, if a loader
-prefers it.
+`context/data/numbered.json` is canonical — 2,576 objects with
+`{num, k, lvl, t, ln, note, depth}`. Astro imports it directly.
 
-Do **not** re-derive addresses in the site. If the source outline changes, re-run
-`scripts/01-number.py` and commit the regenerated JSON, so that generation stays in one place
-and the collision assertion keeps running.
+**Do not re-derive addresses in the site.** If the source outline changes, re-run
+`context/scripts/01-number.py` and commit the regenerated JSON, so generation stays in one
+place and the collision assertion keeps running.
 
-### Sorting
+### Sorting — the one real trap
 
-The site must sort with the reference key in `01-numbering-scheme.md` — numeric segments
-compare numerically. A naive string sort puts `2090/10` before `2090/9` and silently
-scrambles every large branch. Port it and unit-test it against these cases:
+Sort with the reference key in `01-numbering-scheme.md`. Numeric segments compare
+**numerically**. A naive string sort scrambles every large branch. Unit-test these:
 
-| Input order | Correct output |
-|---|---|
-| `2090/10`, `2090/9` | `2090/9`, `2090/10` |
-| `1040/9d2`, `1040/9d1a` | `1040/9d1a`, `1040/9d2` |
-| `3021/50aa`, `3021/50b` | `3021/50b`, `3021/50aa` |
+| Input | Correct output | Why |
+|---|---|---|
+| `2090/10`, `2090/9` | `2090/9`, `2090/10` | numeric, not lexical |
+| `1040/9d2`, `1040/9d1a` | `1040/9d1a`, `1040/9d2` | child precedes parent's next sibling |
+| `3021/50aa`, `3021/50b` | `3021/50b`, `3021/50aa` | `aa` sorts *after* `z` — length first, then lexical |
 
-The third case matters: `aa` sorts *after* `z`, not before `b`. Segment comparison is
-(length, then lexical) for letters — not plain lexical.
+## Search
 
-## The search problem
+2,576 rows is the main UX question. The published artifact renders all rows statically and
+filters with JS — proven, but ~400KB of HTML.
 
-2,576 rows is the site's main UX question. The index artifact renders all rows statically and
-filters with JS, which works but ships ~400KB of HTML.
+1. **Static rows + client filter** — simplest, proven. Start here.
+2. **Pagefind** — built for Astro static sites, handles this scale. Move here if weight bites.
+3. **Paginate by division** — lightest, but kills cross-drawer search, which is the whole point
+   of a hub. Wrong on its own.
 
-Options for the site, roughly in order of effort:
+## Deployment
 
-1. **Same approach** — static rows + client filter. Simplest, proven, heavy.
-2. **Client-side index** (Pagefind, Fuse.js) — Pagefind is built for Astro static sites and
-   handles this scale comfortably.
-3. **Paginate by division** — 65 pages of ~40 entries. Lightest, but loses cross-drawer search,
-   which is exactly what a hub card exists to provide. Probably wrong on its own.
+- GitHub Actions → `withastro/action` + `actions/deploy-pages`.
+- `site: 'https://zettelkasten.adilsoncarvalho.com'`, `base: '/'`.
+- `public/CNAME` containing the bare domain.
+- Repo settings → Pages → Source: **GitHub Actions**.
+- **Pages must be enabled and the repo made public before the site serves.** Private repos need
+  a paid plan for Pages. Deploys will run green and serve nothing until then — expect that.
 
-Recommendation: start with (1) since the artifact already proves it, and move to Pagefind if
-the page weight becomes a problem.
+## Constraints
 
-## GitHub Pages deployment
-
-- Astro's official `withastro/action` + `actions/deploy-pages`, or a plain build-and-deploy job.
-- Set `site` and `base` in `astro.config.mjs`. For a custom domain at the apex of
-  `zettelkasten.adilsoncarvalho.com`, `base` stays `/`.
-- Custom domain needs a `public/CNAME` file containing the domain, plus DNS. **Confirm the
-  domain is actually intended and the DNS exists** — it is inferred from the repo name only.
-- Enable Pages → Source: GitHub Actions, in repo settings.
-
-## Open questions for the owner
-
-1. **Domain** — is `zettelkasten.adilsoncarvalho.com` real and DNS-ready, or is this
-   `adilsoncarvalho.github.io/zettelkasten...` for now?
-2. **Audience** — personal reference, or a public resource? Changes how much explanation the
-   landing page carries.
-3. **Scope** — does the site publish only the reference material, or eventually the owner's
-   actual card content too? The second is a much larger design problem and should not be
-   assumed.
-4. **The malformed entry** `1030/9c4` — fix, or render verbatim with a note? (See `04`.)
-5. **Duplicates** — surface the 37 within-division duplicates as cross-links, or leave them?
-
-## Constraints carried from the brief
-
-- **pnpm only.** Never npm/yarn/bun.
-- Branch + PR; never commit to `main` directly.
+- **pnpm only.** Never npm/yarn/bun. `.gitignore` blocks the competing lockfiles.
+- Node pinned to `24.1.0` via `.tool-versions` (LTS line; 25.x is a Current release and past
+  EOL as of 2026-08). CI matches this.
+- Branch + PR; `master` is the default branch.
 - Conventional Commits.
-- Local git identity `Adilson Carvalho <lc.adilson@gmail.com>` — must be set per-repo, since
-  the machine default is a work address.
-- CC BY-SA 4.0 attribution must appear on every page rendering outline content.
+- Local git identity `Adilson Carvalho <lc.adilson@gmail.com>` — set per-repo, since the
+  machine default is a work address.
+- **CC BY-SA 4.0 attribution on every page rendering outline content.** Share-alike, so
+  derivative content inherits the obligation. Footer, not just a README.
+
+## Still open
+
+1. The malformed entry `1030/9c4` — fix, or render verbatim with a note? (See `04-findings.md`.)
+2. The 37 within-division duplicates — surface as cross-links, or leave?
+3. Root page content — agreed to be a usage guide; the actual copy is undefined.

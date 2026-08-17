@@ -1,0 +1,152 @@
+---
+import Base from '../layouts/Base.astro';
+import { divisions, entries, drawerOf, sorted } from '../lib/antinet.ts';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Group the 65 divisions under their drawer, and count what hangs off each.
+const counts = new Map<string, number>();
+for (const e of entries) {
+  const d = drawerOf(e.num);
+  counts.set(d, (counts.get(d) ?? 0) + 1);
+}
+
+const byDrawer = sorted(divisions).reduce<Map<string, typeof divisions>>((acc, d) => {
+  const key = drawerOf(d.num);
+  const list = acc.get(key);
+  if (list) list.push(d);
+  else acc.set(key, [d]);
+  return acc;
+}, new Map());
+---
+
+<Base
+  title="The 65 divisions"
+  description="The four-digit division numbers of the Antinet worked example — the guide cards, and the only place taxonomy lives."
+  derived
+>
+  <section class="hero">
+    <p class="eyebrow">Guide cards</p>
+    <h1>The 65 divisions</h1>
+    <p class="lede">
+      These are the four-digit numbers, and the only place taxonomy lives in the whole system.
+      Cut a tab for each; everything else files behind one of them at an address that means
+      nothing but <em>position</em>.
+    </p>
+  </section>
+
+  <div class="callout">
+    <p>
+      Read a division as <span class="ad">drawer</span> + <span class="ad">discipline</span> +
+      <span class="ad">sub-discipline</span> — one digit, then two, then one. Two digits for the
+      discipline is not decoration: the widest drawer holds 15 of them, so one digit would not
+      reach.
+    </p>
+  </div>
+
+  {
+    [...byDrawer].map(([drawer, list]) => {
+      const head = list[0]!;
+      const rest = list.slice(1);
+      return (
+        <section class="drawer">
+          <h2>
+            <span class="ad">{head.num}</span> {head.t}
+          </h2>
+          <p class="meta">
+            {counts.get(drawer)?.toLocaleString('en')} addresses ·{' '}
+            {rest.filter((d) => d.depth === 1).length} disciplines
+          </p>
+          <ul class="divs">
+            {rest.map((d) => (
+              <li class={`lv${d.depth}`}>
+                <span class="ad">{d.num}</span>
+                <span class="t">
+                  {d.t}
+                  {d.note && <em class="note">{d.note}</em>}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      );
+    })
+  }
+
+  <h2>Why the numbers stop here</h2>
+  <p>
+    A positional scheme — one digit per level, all the way down — would need about eleven
+    digits, because one list level in the worked example fans out to 130 siblings. A
+    Dewey-style block allocation fares no better: it offers nine slots per level and fails at
+    the second one immediately.
+  </p>
+  <p>
+    So the digits stop at the division, and depth is carried by an unbounded suffix instead.
+    That is the trade the scheme makes, and everything else follows from it — including the
+    fact that you will never renumber.
+    <a href={`${base}/rules`}>How an address is computed →</a>
+  </p>
+</Base>
+
+<style>
+  .hero {
+    padding: 3.5rem 0 0;
+  }
+  .hero h1 {
+    margin: 0.5rem 0 1rem;
+  }
+  .drawer h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+  }
+  .drawer h2 .ad {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.82rem;
+    margin: 0 0 0.9rem;
+  }
+  .divs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .divs li {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    background: var(--surface);
+    padding: 0.45rem 0.9rem;
+    max-width: none;
+  }
+  .divs .ad {
+    font-size: 0.84rem;
+    font-weight: 600;
+    flex: 0 0 3.2rem;
+  }
+  .divs .t {
+    flex: 1;
+    min-width: 0;
+  }
+  .lv2 .t {
+    padding-left: 1.1rem;
+  }
+  .lv3 .t {
+    padding-left: 2.2rem;
+    color: var(--muted);
+  }
+  .note {
+    display: block;
+    font: italic 0.78rem var(--serif);
+    color: var(--muted);
+  }
+</style>
