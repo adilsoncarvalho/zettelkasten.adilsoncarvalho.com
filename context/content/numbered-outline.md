@@ -1,0 +1,2720 @@
+# Numbered Outline
+
+All 2,576 addresses, in drawer order. Generated from `data/numbered.json`.
+
+Indentation reflects the source outline's nesting. Addresses are permanent.
+
+
+## `1000` Humanities
+
+
+### `1010` Performing arts
+
+- `1010/1` Music
+  - `1010/1a` Accompanying
+  - `1010/1b` Chamber music
+  - `1010/1c` Church music
+  - `1010/1d` Conducting
+    - `1010/1d1` Choral conducting
+    - `1010/1d2` Orchestral conducting
+    - `1010/1d3` Wind ensemble conducting
+  - `1010/1e` Early music
+  - `1010/1f` Jazz studies
+  - `1010/1g` Musical composition
+  - `1010/1h` Music education
+  - `1010/1i` Music genre
+    - `1010/1i1` List of music genres and styles
+  - `1010/1j` Musicology
+    - `1010/1j1` Historical musicology
+    - `1010/1j2` Systematic musicology
+    - `1010/1j3` Ethnomusicology
+  - `1010/1k` Music theory
+  - `1010/1l` Orchestral studies
+  - `1010/1m` Organology
+    - `1010/1m1` Organ and historical keyboards
+    - `1010/1m2` Piano
+    - `1010/1m3` Strings, harp, oud, and guitar
+    - `1010/1m4` Singing
+    - `1010/1m5` Woodwinds, brass, and percussion
+  - `1010/1n` Recording
+- `1010/2` Dance
+  - `1010/2a` Choreography
+  - `1010/2b` Dance notation
+  - `1010/2c` Ethnochoreology
+  - `1010/2d` History of dance
+- `1010/3` Television
+  - `1010/3a` Television studies
+- `1010/4` Theatre
+  - `1010/4a` Acting
+  - `1010/4b` Directing
+  - `1010/4c` Dramaturgy
+  - `1010/4d` History of theatre
+  - `1010/4e` Musical theatre
+  - `1010/4f` Playwrighting
+  - `1010/4g` Puppetry
+  - `1010/4h` Scenography
+  - `1010/4i` Stage design
+  - `1010/4j` Ventriloquism
+- `1010/5` Film
+  - `1010/5a` Animation
+  - `1010/5b` Film criticism
+  - `1010/5c` Filmmaking
+  - `1010/5d` Film theory
+  - `1010/5e` Film studies
+  - `1010/5f` Live action
+- `1010/6` Oral literature
+  - `1010/6a` Public speaking
+  - `1010/6b` Performance poetry
+  - `1010/6c` Spoken word
+  - `1010/6d` Storytelling
+- `1010/7` Electronic game
+  - `1010/7a` Arcade game
+  - `1010/7b` Audio game
+  - `1010/7c` Outline of video games
+
+### `1020` Visual arts
+
+- `1020/1` Applied arts
+  - `1020/1a` Craft
+    - `1020/1a1` Calligraphy
+    - `1020/1a2` Decorative arts
+    - `1020/1a3` Fashion
+    - `1020/1a4` Paper craft
+    - `1020/1a5` Textile arts
+    - `1020/1a6` Woodwork
+    - `1020/1a7` Metalwork
+    - `1020/1a8` Pottery
+    - `1020/1a9` Graphic design
+  - `1020/1b` Architecture (Outline of architecture)
+    - `1020/1b1` Interior architecture
+    - `1020/1b2` Landscape architecture
+      - `1020/1b2a` Landscape design
+      - `1020/1b2b` Landscape planning
+    - `1020/1b3` Architectural analytics
+    - `1020/1b4` Historic preservation
+    - `1020/1b5` Interior design (interior architecture)
+    - `1020/1b6` Technical drawing
+- `1020/2` Art director
+- `1020/3` Fine arts
+  - `1020/3a` Graphic arts
+    - `1020/3a1` Drawing
+    - `1020/3a2` Painting
+    - `1020/3a3` Photography
+    - `1020/3a4` Printmaking
+  - `1020/3b` Sculpture
+- `1020/4` Digital art
+  - `1020/4a` 3D Modeling
+  - `1020/4b` Animation
+  - `1020/4c` Digital painting
+- `1020/5` Mixed media
+- `1020/6` Studio art
+- `1020/7` Culinary Arts
+  - `1020/7a` Food photography
+  - `1020/7b` Food presentation
+  - `1020/7c` Gourmet
+
+### `1030` History
+_Also regarded as a Social science_
+
+- `1030/1` Prehistory
+- `1030/2` Ancient history
+  - `1030/2a` Ancient Egypt
+  - `1030/2b` Carthage
+  - `1030/2c` Ancient Greek history
+  - `1030/2d` Ancient Roman history
+    - `1030/2d1` History of the Roman Republic
+    - `1030/2d2` History of the Roman Empire
+  - `1030/2e` Ancient Chinese history
+  - `1030/2f` Ancient Middle Eastern history
+  - `1030/2g` Assyrian Civilization
+  - `1030/2h` Bronze Age Civilizations
+  - `1030/2i` Biblical history
+  - `1030/2j` History of the Indus Valley Civilization
+  - `1030/2k` Preclassic Maya
+  - `1030/2l` History of Mesopotamia
+  - `1030/2m` The Stone Age
+  - `1030/2n` History of the Yangtze civilization
+  - `1030/2o` History of the Yellow River civilization
+- `1030/3` Modern history
+- `1030/4` Asian history
+  - `1030/4a` Chinese history
+  - `1030/4b` Japanese history
+  - `1030/4c` Korean history
+  - `1030/4d` Mongolian history
+  - `1030/4e` Indian history
+  - `1030/4f` Indonesian history
+  - `1030/4g` Turkish history
+  - `1030/4h` Iranian history
+  - `1030/4i` Vietnamese history
+  - `1030/4j` Philippine history
+- `1030/5` Australian history
+- `1030/6` European history
+  - `1030/6a` British history
+  - `1030/6b` French history
+  - `1030/6c` German history
+  - `1030/6d` Dutch history
+  - `1030/6e` Italian history
+  - `1030/6f` Spanish history
+  - `1030/6g` Portuguese history
+  - `1030/6h` Polish history
+  - `1030/6i` Balkan history
+  - `1030/6j` Scandinavian history
+    - `1030/6j1` Swedish history
+    - `1030/6j2` Norwegian history
+    - `1030/6j3` Danish history
+    - `1030/6j4` Finnish history
+    - `1030/6j5` Icelandic history
+  - `1030/6k` Russian history
+- `1030/7` African history
+  - `1030/7a` South African history
+  - `1030/7b` Egyptian history
+  - `1030/7c` East and Central African history
+  - `1030/7d` Nigerian history
+- `1030/8` Pre-Columbian era history
+- `1030/9` Pan-American history
+  - `1030/9a` North American history
+    - `1030/9a1` American history
+    - `1030/9a2` Canadian history
+    - `1030/9a3` Mexican history
+    - `1030/9a4` Cuban history
+  - `1030/9b` South American history
+    - `1030/9b1` Latin American history
+    - `1030/9b2` Brazilian history
+    - `1030/9b3` Colombian history
+    - `1030/9b4` Venezuelan history
+    - `1030/9b5` Peruvian history
+    - `1030/9b6` Argentine history
+  - `1030/9c` Pre-Columbian era
+    - `1030/9c1` Mayan history
+    - `1030/9c2` Aztec history
+    - `1030/9c3` Inca history
+    - `1030/9c4` Mississippian culture* Art History
+- `1030/10` Latin American history
+- `1030/11` Jewish history
+- `1030/12` Cultural history
+- `1030/13` Ecclesiastical history of the Catholic Church
+- `1030/14` Economic history
+- `1030/15` Environmental history
+- `1030/16` Intellectual history
+- `1030/17` Philosophical history
+  - `1030/17a` Ancient philosophy
+  - `1030/17b` Contemporary philosophy
+  - `1030/17c` Medieval philosophy
+    - `1030/17c1` Humanism
+    - `1030/17c2` Scholasticism
+  - `1030/17d` Modern philosophy
+- `1030/18` Political history
+  - `1030/18a` History of political thought
+- `1030/19` Public history
+- `1030/20` Scientific history
+- `1030/21` Technological history
+- `1030/22` World history
+
+### `1040` Languages and literature
+_Linguistics listed in Social science_
+
+- `1040/1` Comics studies
+- `1040/2` Classics
+- `1040/3` Comparative literature
+- `1040/4` Creative writing
+  - `1040/4a` Poetry
+  - `1040/4b` Prose
+  - `1040/4c` Non-fiction
+  - `1040/4d` Fiction
+  - `1040/4e` Creative nonfiction
+  - `1040/4f` Literary journalism
+  - `1040/4g` Screenwriting
+  - `1040/4h` Playwrighting
+- `1040/5` English studies
+- `1040/6` English literature
+- `1040/7` History of literature
+  - `1040/7a` Ancient literature
+  - `1040/7b` Medieval literature
+  - `1040/7c` Post-colonial literature
+  - `1040/7d` Post-modern literature
+- `1040/8` Literary genre
+- `1040/9` Literary theory
+  - `1040/9a` Critical theory
+  - `1040/9b` Literary criticism
+  - `1040/9c` Poetics
+  - `1040/9d` Rhetoric
+- `1040/10` Languages
+  - `1040/10a` Business English
+  - `1040/10b` Classical language
+  - `1040/10c` Modern language
+  - `1040/10d` Standard English
+  - `1040/10e` World Englishes
+- `1040/11` World literature
+  - `1040/11a` American literature
+    - `1040/11a1` African-American literature
+    - `1040/11a2` Southern literature
+  - `1040/11b` British literature
+  - `1040/11c` Canadian literature
+  - `1040/11d` Indian English literature
+  - `1040/11e` Irish literature
+  - `1040/11f` New Zealand literature
+  - `1040/11g` Scottish literature
+  - `1040/11h` South African literature
+  - `1040/11i` Welsh literature
+
+### `1050` Law
+_Also regarded as a Social science_
+
+- `1050/1` Legal management (academic discipline)
+  - `1050/1a` Corporate law
+  - `1050/1b` Mercantile law
+  - `1050/1c` Business law
+- `1050/2` Administrative law
+- `1050/3` Canon law
+- `1050/4` Comparative law
+- `1050/5` Constitutional law
+- `1050/6` Competition law
+- `1050/7` Criminal law
+  - `1050/7a` Criminal procedure
+  - `1050/7b` Criminal justice
+    - `1050/7b1` Police science
+    - `1050/7b2` Forensic science
+- `1050/8` Islamic law
+- `1050/9` Jewish law
+- `1050/10` Jurisprudence (Philosophy of Law)
+- `1050/11` Civil law
+  - `1050/11a` Admiralty law
+  - `1050/11b` Animal law/Animal rights
+  - `1050/11c` Common law
+  - `1050/11d` Corporations
+  - `1050/11e` Civil procedure
+  - `1050/11f` Contract law
+  - `1050/11g` Environmental law
+  - `1050/11h` Family law
+  - `1050/11i` Federal law
+  - `1050/11j` International law
+    - `1050/11j1` Public international law
+    - `1050/11j2` Supranational law
+  - `1050/11k` Labor law
+  - `1050/11l` Paralegal studies
+  - `1050/11m` Property law
+  - `1050/11n` Tax law
+  - `1050/11o` Tort law
+- `1050/12` Law enforcement
+- `1050/13` Procedural law
+- `1050/14` Substantive law
+
+### `1060` Philosophy
+_Also regarded as the separate, an entry at the highest level of the hierarchy_
+
+- `1060/1` Aesthetics / Philosophy of art
+- `1060/2` Applied philosophy
+  - `1060/2a` Philosophy of economics
+  - `1060/2b` Philosophy of education
+  - `1060/2c` Philosophy of engineering
+  - `1060/2d` Philosophy of history
+  - `1060/2e` Philosophy of language
+  - `1060/2f` Philosophy of law
+  - `1060/2g` Philosophy of mathematics
+  - `1060/2h` Philosophy of music
+  - `1060/2i` Philosophy of psychology
+  - `1060/2j` Philosophy of religion
+  - `1060/2k` Philosophy of physical sciences
+    - `1060/2k1` Philosophy of biology
+    - `1060/2k2` Philosophy of chemistry
+    - `1060/2k3` Philosophy of physics
+  - `1060/2l` Philosophy of social science
+  - `1060/2m` Philosophy of technology
+  - `1060/2n` Systems philosophy
+  - `1060/2o` Political philosophy and Social philosophy
+    - `1060/2o1` Anarchism
+    - `1060/2o2` Feminist philosophy
+    - `1060/2o3` Manosphere Schools of Gender Dynamics
+    - `1060/2o4` Libertarianism
+    - `1060/2o5` Marxism
+- `1060/3` Epistemology
+  - `1060/3a` Justification
+  - `1060/3b` Reasoning errors
+- `1060/4` Ethics
+  - `1060/4a` Applied ethics
+    - `1060/4a1` Animal rights
+    - `1060/4a2` Bioethics
+    - `1060/4a3` Environmental ethics
+  - `1060/4b` Meta-ethics
+  - `1060/4c` Moral psychology, Descriptive ethics, Value theory
+  - `1060/4d` Normative ethics
+    - `1060/4d1` Virtue ethics
+- `1060/5` Logic
+  - `1060/5a` Mathematical logic
+  - `1060/5b` Philosophical logic
+- `1060/6` Meta-philosophy
+- `1060/7` Metaphysics
+  - `1060/7a` Philosophy of Action
+  - `1060/7b` Determinism and Free will
+  - `1060/7c` Ontology
+  - `1060/7d` Philosophy of mind
+    - `1060/7d1` Philosophy of pain
+    - `1060/7d2` Philosophy of artificial intelligence
+    - `1060/7d3` Philosophy of perception
+    - `1060/7d4` Neurophilosophy
+  - `1060/7e` Philosophy of space and time
+  - `1060/7f` Teleology
+  - `1060/7g` Theism and Atheism
+- `1060/8` Philosophical traditions and schools
+  - `1060/8a` African philosophy
+  - `1060/8b` Analytic philosophy
+  - `1060/8c` Aristotelianism
+  - `1060/8d` Continental philosophy
+  - `1060/8e` Eastern philosophy
+  - `1060/8f` Feminist philosophy
+  - `1060/8g` Islamic philosophy
+  - `1060/8h` Platonism
+- `1060/9` History of philosophy
+  - `1060/9a` Ancient philosophy
+  - `1060/9b` Medieval philosophy
+    - `1060/9b1` Scholasticism
+    - `1060/9b2` Humanism
+  - `1060/9c` Modern philosophy
+  - `1060/9d` Contemporary philosophy
+
+### `1070` Religious studies
+_Also regarded as a social science_
+
+- `1070/1` History of Religion
+- `1070/2` Anthropology of Religion
+- `1070/3` Sociology of Religion
+- `1070/4` Psychology of Religion
+- `1070/5` Phenomenology of Religion
+- `1070/6` Philosophy of Religion
+- `1070/7` Comparative religion
+- `1070/8` Mythology and Folklore
+- `1070/9` Theism
+- `1070/10` Irreligion
+
+### `1080` Divinity
+
+- `1080/1` Canon law
+- `1080/2` Church history
+- `1080/3` Field ministry
+  - `1080/3a` Pastoral counseling
+  - `1080/3b` Pastoral theology
+  - `1080/3c` Religious education techniques
+  - `1080/3d` Homiletics
+  - `1080/3e` Liturgy
+  - `1080/3f` Sacred music
+  - `1080/3g` Missiology
+- `1080/4` Hermeneutics
+- `1080/5` Scriptural study and languages
+  - `1080/5a` Avestan
+  - `1080/5b` Biblical Hebrew
+  - `1080/5c` Biblical studies/Sacred Scripture
+  - `1080/5d` Classical Arabic
+  - `1080/5e` Classical Armenian
+  - `1080/5f` Coptic
+  - `1080/5g` Ge'ez
+  - `1080/5h` Koine Greek
+  - `1080/5i` Latin
+  - `1080/5j` Old Church Slavonic
+  - `1080/5k` Old Georgian
+  - `1080/5l` Pali
+  - `1080/5m` Syriac
+  - `1080/5n` Vedic Sanskrit (Vedas)
+- `1080/6` Theology
+  - `1080/6a` Dogmatic theology
+  - `1080/6b` Ecclesiology
+  - `1080/6c` Sacramental theology
+  - `1080/6d` Systematic theology
+  - `1080/6e` Christian ethics
+  - `1080/6f` Hindu ethics
+  - `1080/6g` Moral theology
+  - `1080/6h` Historical theology
+
+### `1090` Theology
+
+- `1090/1` Biblical studies
+  - `1090/1a` Biblical Hebrew, Koine Greek, Aramaic
+- `1090/2` Buddhist theology
+  - `1090/2a` Pali Studies
+- `1090/3` Christian theology
+  - `1090/3a` Anglican theology
+  - `1090/3b` Baptist theology
+  - `1090/3c` Catholic theology
+  - `1090/3d` Eastern Orthodox theology
+  - `1090/3e` Protestant theology
+- `1090/4` Hindu theology
+  - `1090/4a` Sanskrit Studies
+  - `1090/4b` Dravidian Studies
+- `1090/5` Jewish theology
+- `1090/6` Muslim theology
+  - `1090/6a` Arabic Studies
+- `1090/7` Buddhist studies
+
+### `1100` Religion
+
+- `1100/1` Abrahamic religions
+  - `1100/1a` Christianity
+    - `1100/1a1` Christian theology
+  - `1100/1b` Islam/ Islamic studies
+  - `1100/1c` Judaism/ Jewish studies
+- `1100/2` Apologetics
+- `1100/3` Indian religions
+  - `1100/3a` Buddhism/ Buddhist studies
+  - `1100/3b` Hinduism
+  - `1100/3c` Jainism
+  - `1100/3d` Sikhism
+- `1100/4` East Asian religions
+  - `1100/4a` Chinese folk religion
+  - `1100/4b` Confucianism
+  - `1100/4c` Shinto
+  - `1100/4d` Daoism
+  - `1100/4e` I-Kuan Tao
+  - `1100/4f` Caodaism
+  - `1100/4g` Chondogyo
+  - `1100/4h` Tenrikyo
+  - `1100/4i` Oomoto
+- `1100/5` Other religions
+  - `1100/5a` African religions
+  - `1100/5b` Ancient Egyptian religion
+  - `1100/5c` Native American religions
+  - `1100/5d` Gnosticism
+  - `1100/5e` Occult
+  - `1100/5f` Esotericism
+  - `1100/5g` Mysticism
+  - `1100/5h` Spirituality
+  - `1100/5i` New religious movements
+  - `1100/5j` Sumerian religion
+  - `1100/5k` Zoroastrianism
+- `1100/6` Comparative religion
+- `1100/7` Mythology and Folklore
+- `1100/8` Theism
+- `1100/9` Irreligion
+  - `1100/9a` Agnosticism
+  - `1100/9b` Atheism and religious humanism
+  - `1100/9c` Nontheism
+
+## `2000` Social science
+
+
+### `2010` Anthropology
+
+- `2010/1` Archaeology
+  - `2010/1a` Biocultural anthropology
+  - `2010/1b` Feminist archaeology
+  - `2010/1c` Maritime archaeology
+- `2010/2` Anthropological criminology
+- `2010/3` Anthropological linguistics
+  - `2010/3a` Synchronic linguistics (or Descriptive linguistics)
+  - `2010/3b` Diachronic linguistics (or Historical linguistics)
+  - `2010/3c` Ethnolinguistics
+  - `2010/3d` Semiotic anthropology
+  - `2010/3e` Sociolinguistics
+- `2010/4` Anthrozoology
+- `2010/5` Biological anthropology
+  - `2010/5a` Gene-culture coevolution
+  - `2010/5b` Evolutionary anthropology
+  - `2010/5c` Forensic anthropology
+  - `2010/5d` Human behavioral ecology
+  - `2010/5e` Human evolution
+  - `2010/5f` Medical anthropology
+  - `2010/5g` Molecular anthropology
+  - `2010/5h` Neuroanthropology
+  - `2010/5i` Nutritional anthropology
+  - `2010/5j` Paleoanthropology
+  - `2010/5k` Population genetics
+  - `2010/5l` Primatology
+- `2010/6` Biocultural anthropology
+- `2010/7` Cultural anthropology
+  - `2010/7a` Anthropology of development
+  - `2010/7b` Anthropology of religion
+  - `2010/7c` Applied anthropology
+  - `2010/7d` Cognitive anthropology
+  - `2010/7e` Cyborg anthropology
+  - `2010/7f` Digital anthropology
+  - `2010/7g` Digital culture
+  - `2010/7h` Ecological anthropology
+  - `2010/7i` Economic anthropology
+  - `2010/7j` Environmental anthropology
+  - `2010/7k` Ethnobiology
+  - `2010/7l` Ethnobotany
+  - `2010/7m` Ethnography
+  - `2010/7n` Ethnohistory
+  - `2010/7o` Ethnology
+  - `2010/7p` Ethnomuseology
+  - `2010/7q` Ethnomusicology
+  - `2010/7r` Feminist anthropology
+  - `2010/7s` Folklore
+  - `2010/7t` Kinship
+  - `2010/7u` Legal anthropology
+  - `2010/7v` Mythology
+  - `2010/7w` Missiology
+  - `2010/7x` Political anthropology
+  - `2010/7y` Political economic anthropology
+  - `2010/7z` Psychological anthropology
+  - `2010/7aa` Public anthropology
+  - `2010/7ab` Symbolic anthropology
+  - `2010/7ac` Transpersonal anthropology
+  - `2010/7ad` Urban anthropology
+- `2010/8` Linguistic anthropology
+- `2010/9` Social anthropology
+  - `2010/9a` Anthropology of art
+  - `2010/9b` Anthropology of institutions
+  - `2010/9c` Anthropology of media
+  - `2010/9d` Visual anthropology
+- `2010/10` Sociocultural anthropology
+
+#### `2011` Archaeology
+
+- `2011/1` Aerial archaeology
+- `2011/2` Aviation archaeology
+- `2011/3` Anthracology
+- `2011/4` Archaeo-optics
+- `2011/5` Archaeoacoustics
+- `2011/6` Archaeoastronomy
+- `2011/7` Archaeogeography
+- `2011/8` Archaeological culture
+- `2011/9` Archaeological theory
+  - `2011/9a` Great ages archaeology
+  - `2011/9b` Functionalism
+  - `2011/9c` Processualism
+  - `2011/9d` Post-processualism
+  - `2011/9e` Cognitive archaeology
+  - `2011/9f` Gender archaeology
+  - `2011/9g` Feminist archaeology
+- `2011/10` Archaeometry
+  - `2011/10a` Archaeogenetics
+  - `2011/10b` Bioarchaeology
+  - `2011/10c` Computational archaeology
+  - `2011/10d` Dendrochronology
+  - `2011/10e` Geoarchaeology
+  - `2011/10f` Isotope analysis
+  - `2011/10g` Palynology
+  - `2011/10h` Radiocarbon dating
+  - `2011/10i` Zooarchaeology
+- `2011/11` Archaeology of religion and ritual
+- `2011/12` Archaeology of trade
+- `2011/13` Archaeomythology
+- `2011/14` Architectural analytics
+- `2011/15` Battlefield archaeology
+- `2011/16` Calceology
+- `2011/17` Conflict archaeology
+- `2011/18` Data archaeology
+- `2011/19` Digital archaeology
+- `2011/20` Experimental archaeology
+- `2011/21` Environmental archaeology
+- `2011/22` Ethnoarchaeology
+- `2011/23` Forensic archaeology
+- `2011/24` Glyptology
+- `2011/25` History of archaeology
+- `2011/26` Household archaeology
+- `2011/27` Landscape archaeology and Landscape history
+- `2011/28` Manuscriptology
+- `2011/29` Maritime archaeology
+- `2011/30` Media archaeology
+- `2011/31` Modern archaeology
+  - `2011/31a` Settlement archaeology
+- `2011/32` Music archaeology
+- `2011/33` Osteology
+- `2011/34` Palaeoarchaeology
+- `2011/35` Paleoanthropology
+- `2011/36` Paleoethnobotany
+- `2011/37` Paleopathology
+- `2011/38` Paleoradiology
+- `2011/39` Taphonomy
+- `2011/40` Urban archaeology
+- `2011/41` Historical archaeology
+  - `2011/41a` Prehistoric archaeology
+  - `2011/41b` protohistoric archaeology
+  - `2011/41c` Biblical archaeology
+  - `2011/41d` Classical archaeology
+  - `2011/41e` Egyptology
+  - `2011/41f` Assyriology
+  - `2011/41g` Etruscology
+  - `2011/41h` Near Eastern archaeology
+  - `2011/41i` Medieval archaeology
+  - `2011/41j` Post-medieval archaeology
+  - `2011/41k` Industrial archaeology
+  - `2011/41l` Contemporary archaeology
+
+### `2020` Business
+
+- `2020/1` Accounting
+  - `2020/1a` Accounting research
+  - `2020/1b` Accounting scholarship
+- `2020/2` Business administration
+- `2020/3` Business analysis
+- `2020/4` Business ethics
+- `2020/5` Business law
+- `2020/6` Corporate governance
+- `2020/7` E-Business
+- `2020/8` Entrepreneurship
+- `2020/9` Decision science
+- `2020/10` Finance
+- `2020/11` Industrial and labor relations
+  - `2020/11a` Collective bargaining
+  - `2020/11b` Human resources
+  - `2020/11c` Organizational studies
+  - `2020/11d` Labor economics
+  - `2020/11e` Labor history
+- `2020/12` Information technology
+  - `2020/12a` Information systems (Business informatics)
+  - `2020/12b` Management information systems
+  - `2020/12c` Health informatics
+- `2020/13` International trade
+- `2020/14` Management
+- `2020/15` Marketing
+- `2020/16` Operations management
+- `2020/17` Purchasing
+- `2020/18` Risk management and insurance
+- `2020/19` Strategy or Strategic Management
+- `2020/20` Systems science
+
+### `2030` Economics
+
+- `2030/1` Agricultural economics
+- `2030/2` Anarchist economics
+- `2030/3` Applied economics
+- `2030/4` Behavioural economics
+- `2030/5` Bioeconomics
+- `2030/6` Business
+- `2030/7` Complexity economics
+- `2030/8` Computational economics
+- `2030/9` Consumer economics
+- `2030/10` Development economics
+- `2030/11` Digital economy
+- `2030/12` Ecological economics
+- `2030/13` Econometrics
+- `2030/14` Economic geography
+- `2030/15` Economic history
+- `2030/16` Economic sector
+- `2030/17` Economic sociology
+- `2030/18` Economic systems
+- `2030/19` Economic value
+- `2030/20` Education economics
+- `2030/21` Energy economics
+- `2030/22` Entrepreneurial economics
+- `2030/23` Environmental economics
+- `2030/24` Evolutionary economics
+- `2030/25` Experimental economics
+- `2030/26` Feminist economics
+- `2030/27` Family economics
+- `2030/28` Financial economics
+- `2030/29` Financial econometrics
+- `2030/30` Green economics
+- `2030/31` Growth economics
+- `2030/32` Human development theory
+- `2030/33` Industrial organization
+- `2030/34` Information economics
+- `2030/35` Institutional economics
+- `2030/36` International economics
+- `2030/37` Islamic economics
+- `2030/38` JEL classification codes in searching for articles by fields in economics journals
+- `2030/39` Knowledge economy
+- `2030/40` Labor economics
+- `2030/41` Health economics
+- `2030/42` Law and economics
+- `2030/43` Macroeconomics
+- `2030/44` Managerial economics
+- `2030/45` Market economy
+- `2030/46` Marxian economics
+- `2030/47` Mathematical economics
+- `2030/48` Microeconomics
+- `2030/49` Monetary economics
+- `2030/50` Neuroeconomics
+- `2030/51` Participatory economics
+- `2030/52` Political economy
+- `2030/53` Public economics
+- `2030/54` Public choice
+- `2030/55` Public finance
+- `2030/56` Real estate economics
+- `2030/57` Resource economics
+- `2030/58` Social choice theory
+- `2030/59` Socialist economics
+- `2030/60` Socioeconomics
+- `2030/61` Transport economics
+- `2030/62` Welfare economics
+
+### `2040` Futurology
+_(also known as future studies or prospective studies)_
+
+- `2040/1` Cashless society
+- `2040/2` Climate
+
+### `2050` Geography
+
+- `2050/1` Physical geography (is also listed in Earth Science)
+  - `2050/1a` Atmology
+  - `2050/1b` Biogeography
+  - `2050/1c` Climatology
+    - `2050/1c1` Palaeoclimatology
+  - `2050/1d` Coastal geography
+  - `2050/1e` Emergency management
+  - `2050/1f` Environmental geography
+  - `2050/1g` Geobiology
+  - `2050/1h` Geochemistry
+  - `2050/1i` Geographic information systems
+  - `2050/1j` Geology
+  - `2050/1k` Geomatics
+  - `2050/1l` Geomorphology
+  - `2050/1m` Geodesy
+  - `2050/1n` Geophysics
+  - `2050/1o` Glaciology
+  - `2050/1p` Hydrology/Hydrography
+    - `2050/1p1` Glaciology
+    - `2050/1p2` Limnology
+    - `2050/1p3` Biogeochemistry
+    - `2050/1p4` Oceanography
+  - `2050/1q` Landscape ecology
+  - `2050/1r` Lithology
+  - `2050/1s` Meteorology
+  - `2050/1t` Mineralogy
+  - `2050/1u` Oceanography
+  - `2050/1v` Palaeogeography
+  - `2050/1w` Palaeontology
+  - `2050/1x` Petrology
+  - `2050/1y` Quaternary science
+  - `2050/1z` Soil geography
+- `2050/2` Human geography
+  - `2050/2a` Behavioural geography
+  - `2050/2b` Cognitive geography
+  - `2050/2c` Cultural geography
+    - `2050/2c1` Feminist geography
+  - `2050/2d` Development geography
+  - `2050/2e` Economic geography
+  - `2050/2f` Health geography
+  - `2050/2g` Historical geography
+  - `2050/2h` Language geography
+  - `2050/2i` Mathematical geography
+  - `2050/2j` Marketing geography
+  - `2050/2k` Military geography
+  - `2050/2l` Political geography and Geopolitics
+  - `2050/2m` Population geography
+  - `2050/2n` Religion geography
+  - `2050/2o` Social geography
+  - `2050/2p` Children's geographies
+  - `2050/2q` Strategic geography
+  - `2050/2r` Time geography
+  - `2050/2s` Tourism geography
+  - `2050/2t` Transport geography
+  - `2050/2u` Urban geography
+- `2050/3` Integrated geography
+- `2050/4` Cartography
+  - `2050/4a` Celestial cartography
+  - `2050/4b` Planetary cartography
+  - `2050/4c` Topography
+- `2050/5` Navigation
+- `2050/6` Regional geography
+- `2050/7` Remote sensing
+
+### `2060` Linguistics
+_Also regarded as a formal science_
+
+- `2060/1` Applied linguistics
+- `2060/2` Composition studies
+- `2060/3` Computational linguistics
+- `2060/4` Discourse analysis
+- `2060/5` English studies
+- `2060/6` Etymology
+- `2060/7` Grammar
+- `2060/8` Grammatology
+- `2060/9` Historical linguistics
+- `2060/10` History of linguistics
+- `2060/11` Interlinguistics
+- `2060/12` Lexicology
+- `2060/13` Linguistic typology
+- `2060/14` Morphology
+- `2060/15` Natural language processing
+- `2060/16` Philosophy of language
+- `2060/17` Philosophy of linguistics
+- `2060/18` Linguistic philosophy
+- `2060/19` Philology
+- `2060/20` Phonetics
+- `2060/21` Phonology
+- `2060/22` Pragmatics
+- `2060/23` Psycholinguistics
+- `2060/24` Rhetoric
+- `2060/25` Semantics
+- `2060/26` Semiotics
+- `2060/27` Sociolinguistics
+- `2060/28` Syntax
+- `2060/29` Terminology science
+- `2060/30` Usage
+- `2060/31` Word usage
+
+### `2070` Political science
+
+- `2070/1` American politics
+- `2070/2` Canadian politics
+- `2070/3` Civics
+- `2070/4` Health politics
+- `2070/5` Biopolitics
+- `2070/6` Comparative politics
+- `2070/7` European studies
+- `2070/8` Geopolitics (Political geography)
+- `2070/9` Indian politics
+- `2070/10` International relations
+- `2070/11` International organizations
+- `2070/12` Nationalism studies
+- `2070/13` Peace and conflict studies
+- `2070/14` Policy studies
+- `2070/15` Political behavior
+- `2070/16` Political culture
+- `2070/17` Political economy
+- `2070/18` Political history
+- `2070/19` Political philosophy
+- `2070/20` Public administration
+  - `2070/20a` Nonprofit administration
+  - `2070/20b` Non-governmental organization (NGO) administration
+- `2070/21` Public law
+- `2070/22` Public policy
+- `2070/23` Psephology
+- `2070/24` Social choice theory
+- `2070/25` Singapore politics
+
+### `2080` Psychology
+
+- `2080/1` Abnormal psychology
+- `2080/2` Applied psychology
+- `2080/3` Biological psychology
+- `2080/4` Clinical neuropsychology
+- `2080/5` Clinical psychology
+- `2080/6` Cognitive psychology
+- `2080/7` Community psychology
+- `2080/8` Comparative psychology
+- `2080/9` Conservation psychology
+- `2080/10` Consumer psychology
+- `2080/11` Counseling psychology
+- `2080/12` Criminal psychology
+- `2080/13` Cultural psychology
+  - `2080/13a` Asian psychology
+  - `2080/13b` Black psychology
+- `2080/14` Developmental psychology
+- `2080/15` Differential psychology
+- `2080/16` Ecological psychology
+- `2080/17` Educational psychology
+- `2080/18` Environmental psychology
+- `2080/19` Evolutionary psychology
+- `2080/20` Experimental psychology
+- `2080/21` Group psychology
+- `2080/22` Family psychology
+- `2080/23` Feminine psychology
+- `2080/24` Forensic developmental psychology
+- `2080/25` Forensic psychology
+- `2080/26` Health psychology
+- `2080/27` Humanistic psychology
+- `2080/28` Indigenous psychology
+- `2080/29` Legal psychology
+- `2080/30` Mathematical psychology
+- `2080/31` Media psychology
+- `2080/32` Medical psychology
+- `2080/33` Military psychology
+- `2080/34` Moral psychology and Descriptive ethics
+- `2080/35` Music psychology
+- `2080/36` Neuropsychology
+- `2080/37` Occupational health psychology
+- `2080/38` Occupational psychology
+- `2080/39` Organizational psychology (a.k.a., Industrial Psychology)
+- `2080/40` Parapsychology
+- `2080/41` Pediatric psychology
+- `2080/42` Pedology (children study)
+- `2080/43` Personality psychology
+- `2080/44` Phenomenology
+- `2080/45` Political psychology
+- `2080/46` Positive psychology
+- `2080/47` Problem solving
+- `2080/48` Psychoanalysis
+- `2080/49` Psychobiology
+- `2080/50` Psychology of religion
+- `2080/51` Psychometrics
+- `2080/52` Psychopathology
+  - `2080/52a` Child psychopathology
+- `2080/53` Psychophysics
+- `2080/54` Quantitative psychology
+- `2080/55` Rehabilitation psychology
+- `2080/56` School psychology
+- `2080/57` Social psychology
+- `2080/58` Sport psychology
+- `2080/59` Traffic psychology
+- `2080/60` Transpersonal psychology
+- `2080/61` Travel psychology
+
+### `2090` Sociology
+
+- `2090/1` Analytical sociology
+- `2090/2` Applied sociology
+  - `2090/2a` Leisure studies
+  - `2090/2b` Political sociology
+  - `2090/2c` Public sociology
+  - `2090/2d` Social engineering
+- `2090/3` Architectural sociology
+- `2090/4` Area studies
+  - `2090/4a` African studies
+  - `2090/4b` American studies
+    - `2090/4b1` Appalachian studies
+    - `2090/4b2` Canadian studies
+    - `2090/4b3` Latin American studies
+  - `2090/4c` Asian studies
+    - `2090/4c1` Central Asian studies
+    - `2090/4c2` East Asian studies
+    - `2090/4c3` Filipinology
+    - `2090/4c4` Iranian studies
+    - `2090/4c5` Japanese studies
+    - `2090/4c6` Korean studies
+    - `2090/4c7` Sinology
+    - `2090/4c8` Indology (South Asian studies)
+      - `2090/4c8a` Bengal studies
+      - `2090/4c8b` Dravidian studies (Dravidology)
+      - `2090/4c8c` Tamilology
+      - `2090/4c8d` Pakistan studies
+      - `2090/4c8e` Sindhology
+    - `2090/4c9` Southeast Asian studies
+    - `2090/4c10` Thai studies
+  - `2090/4d` Australian studies
+  - `2090/4e` European studies
+    - `2090/4e1` Celtic studies
+    - `2090/4e2` German studies
+    - `2090/4e3` Sociology in Poland
+    - `2090/4e4` Scandinavian studies
+    - `2090/4e5` Slavic studies
+  - `2090/4f` Middle Eastern studies
+    - `2090/4f1` Arab studies
+    - `2090/4f2` Assyriology
+    - `2090/4f3` Egyptology
+    - `2090/4f4` Jewish studies
+- `2090/5` Behavioral sociology
+- `2090/6` Chinese sociology
+- `2090/7` Collective behavior
+  - `2090/7a` Social movements
+  - `2090/7b` Activism
+- `2090/8` Social phenomenon
+- `2090/9` Community informatics
+  - `2090/9a` Social network analysis
+- `2090/10` Comparative sociology
+- `2090/11` Conflict theory
+- `2090/12` Criminology/Criminal justice
+- `2090/13` Critical management studies
+- `2090/14` Critical sociology
+- `2090/15` Cultural sociology
+- `2090/16` Cultural studies/ethnic studies
+  - `2090/16a` Africana studies
+  - `2090/16b` Cross-cultural studies
+  - `2090/16c` Culturology
+  - `2090/16d` Deaf studies
+  - `2090/16e` Ethnology
+  - `2090/16f` Utopian studies
+  - `2090/16g` Whiteness studies
+- `2090/17` Demography/Population
+- `2090/18` Digital sociology
+- `2090/19` Dramaturgical sociology
+- `2090/20` Economic sociology
+- `2090/21` Educational sociology
+- `2090/22` Empirical sociology
+- `2090/23` Environmental sociology
+- `2090/24` Evolutionary sociology
+- `2090/25` Feminist sociology
+- `2090/26` Figurational sociology
+- `2090/27` Futures studies
+- `2090/28` Gender studies
+  - `2090/28a` Men's studies
+  - `2090/28b` Women's studies
+  - `2090/28c` Queer studies
+- `2090/29` Historical sociology
+- `2090/30` Human ecology
+- `2090/31` Humanistic sociology
+- `2090/32` Industrial sociology
+- `2090/33` Interactionism
+- `2090/34` Interpretive sociology
+  - `2090/34a` Ethnomethodology
+  - `2090/34b` Phenomenology
+  - `2090/34c` Social constructionism
+  - `2090/34d` Symbolic interactionism
+- `2090/35` Jealousy sociology
+- `2090/36` Macrosociology
+- `2090/37` Marxist sociology
+- `2090/38` Mathematical sociology
+- `2090/39` Medical sociology
+- `2090/40` Mesosociology
+- `2090/41` Microsociology
+- `2090/42` Military sociology
+- `2090/43` Natural resource sociology
+- `2090/44` Organizational theory
+  - `2090/44a` Organizational studies
+- `2090/45` Phenomenological sociology
+- `2090/46` Policy sociology
+- `2090/47` Postcolonialism
+- `2090/48` Psychoanalytic sociology
+- `2090/49` Science studies/Science and technology studies
+- `2090/50` Sexology
+  - `2090/50a` Heterosexism
+  - `2090/50b` Human sexual behavior
+  - `2090/50c` Human sexuality
+  - `2090/50d` Queer studies/Queer theory
+  - `2090/50e` Sex education
+- `2090/51` Social capital
+- `2090/52` Social change
+- `2090/53` Social conflict theory
+- `2090/54` Social control
+  - `2090/54a` Pure sociology
+- `2090/55` Social economy
+- `2090/56` Social philosophy
+- `2090/57` Social policy
+- `2090/58` Social psychology
+- `2090/59` Social stratification
+- `2090/60` Social theory
+- `2090/61` Social research
+- `2090/62` Social transformation
+  - `2090/62a` Computational sociology
+  - `2090/62b` Economic sociology/Socioeconomics
+    - `2090/62b1` Economic development
+    - `2090/62b2` Social development
+    - `2090/62b3` Social development
+- `2090/63` Sociobiology
+- `2090/64` Sociocybernetics
+- `2090/65` Sociolinguistics
+- `2090/66` Sociology of aging
+- `2090/67` Sociology of agriculture
+- `2090/68` Sociology of art
+- `2090/69` Sociology of autism
+- `2090/70` Sociology of childhood
+- `2090/71` Sociology of conflict
+- `2090/72` Sociology of culture
+- `2090/73` Sociology of cyberspace
+- `2090/74` Sociology of development
+- `2090/75` Sociology of deviance
+- `2090/76` Sociology of disaster
+- `2090/77` Sociology of education
+- `2090/78` Sociology of emotions
+- `2090/79` Sociology of fatherhood
+- `2090/80` Sociology of film
+- `2090/81` Sociology of finance
+- `2090/82` Sociology of food
+- `2090/83` Sociology of gender
+- `2090/84` Sociology of generations
+- `2090/85` Sociology of globalization
+- `2090/86` Sociology of government
+- `2090/87` Sociology of health and illness
+- `2090/88` Sociology of human consciousness
+- `2090/89` Sociology of immigration
+- `2090/90` Sociology of knowledge
+- `2090/91` Sociology of language
+- `2090/92` Sociology of law
+- `2090/93` Sociology of leisure
+- `2090/94` Sociology of literature
+- `2090/95` Sociology of markets
+- `2090/96` Sociology of marriage
+- `2090/97` Sociology of motherhood
+- `2090/98` Sociology of music
+- `2090/99` Sociology of natural resources
+- `2090/100` Sociology of organizations
+- `2090/101` Sociology of peace, war, and social conflict
+- `2090/102` Sociology of punishment
+- `2090/103` Sociology of race and ethnic relations
+- `2090/104` Sociology of religion
+- `2090/105` Sociology of risk
+- `2090/106` Sociology of science
+- `2090/107` Sociology of scientific knowledge
+- `2090/108` Sociology of social change
+- `2090/109` Sociology of social movements
+- `2090/110` Sociology of space
+- `2090/111` Sociology of sport
+- `2090/112` Sociology of technology
+- `2090/113` Sociology of terrorism
+- `2090/114` Sociology of the body
+- `2090/115` Sociology of the family
+- `2090/116` Sociology of the history of science
+- `2090/117` Sociology of the Internet
+- `2090/118` Sociology of work
+- `2090/119` Sociomusicology
+- `2090/120` Structural sociology
+- `2090/121` Theoretical sociology
+- `2090/122` Urban studies or Urban sociology/Rural sociology
+- `2090/123` Victimology
+- `2090/124` Visual sociology
+- `2090/125` Social theory
+- `2090/126` Social stratification
+- `2090/127` Sociological theory
+- `2090/128` Sociobiology
+- `2090/129` Sociocybernetics
+- `2090/130` Sociolinguistics
+
+### `2100` Interdisciplinary studies
+
+
+#### `2101` Area studies
+
+- `2101/1` African studies
+- `2101/2` American studies
+  - `2101/2a` Appalachian studies
+  - `2101/2b` Canadian studies
+  - `2101/2c` Latin American studies
+- `2101/3` Asian studies
+  - `2101/3a` Central Asian studies
+  - `2101/3b` East Asian studies
+  - `2101/3c` Iranian studies
+  - `2101/3d` Japanology (Japanese studies)
+  - `2101/3e` Korean studies
+  - `2101/3f` Sinology (Chinese studies)
+  - `2101/3g` Indology (South Asian studies)
+    - `2101/3g1` Bengal studies
+    - `2101/3g2` Dravidian studies (Dravidology)
+      - `2101/3g2a` Tamilology
+    - `2101/3g3` Pakistan studies
+    - `2101/3g4` Sindhology
+  - `2101/3h` Southeast Asian studies
+- `2101/4` European studies
+  - `2101/4a` Celtic studies
+  - `2101/4b` German studies
+  - `2101/4c` Indo-European studies
+  - `2101/4d` Scandinavian studies
+  - `2101/4e` Slavic studies
+- `2101/5` Australian studies
+- `2101/6` Pacific studies
+- `2101/7` Middle East studies
+  - `2101/7a` Turkology (Turkish studies)
+- `2101/8` Russian and Eastern European studies
+
+#### `2102` Ethnic and cultural studies
+
+- `2102/1` Cultural studies
+- `2102/2` Ethnic studies
+- `2102/3` Ethnology
+- `2102/4` Culturology
+- `2102/5` Cross-cultural studies
+
+#### `2103` Organizational studies
+
+- `2103/1` Business administration
+- `2103/2` Business economics
+- `2103/3` Business studies
+- `2103/4` Human resources management
+- `2103/5` Industrial organization
+- `2103/6` Management
+- `2103/7` Organizational behavior
+- `2103/8` Organization theory
+- `2103/9` Project management
+- `2103/10` Quality control
+
+## `3000` Natural science
+
+
+### `3010` Physical Science
+
+
+#### `3011` Space sciences
+
+- `3011/1` Aerospace engineering
+  - `3011/1a` Aerospace architecture
+  - `3011/1b` Aerospace physiology
+  - `3011/1c` Aerospace manufacturing
+  - `3011/1d` Astronautics
+    - `3011/1d1` Space architecture
+    - `3011/1d2` Space colonization
+    - `3011/1d3` Space commercialization
+      - `3011/1d3a` Space-based economy
+      - `3011/1d3b` Space industry
+      - `3011/1d3c` Space manufacturing
+      - `3011/1d3d` Space tourism
+    - `3011/1d4` Space environment
+    - `3011/1d5` Space logistics
+    - `3011/1d6` Space food
+    - `3011/1d7` Space medicine
+      - `3011/1d7a` Neuroscience in space
+    - `3011/1d8` Space religion
+    - `3011/1d9` Space sex
+    - `3011/1d10` Space survival
+    - `3011/1d11` Space warfare
+    - `3011/1d12` Space writing
+  - `3011/1e` Aeronautics
+  - `3011/1f` Control engineering
+  - `3011/1g` Human spaceflight
+  - `3011/1h` Robotic spacecraft
+  - `3011/1i` Space corrosion
+- `3011/2` Space technology
+  - `3011/2a` Space telescopes
+  - `3011/2b` Space-based radar
+  - `3011/2c` Space-based solar power
+  - `3011/2d` Spacecraft design
+  - `3011/2e` Spacecraft propulsion
+- `3011/3` Asteroid-impact avoidance
+- `3011/4` Astrobiology
+- `3011/5` Astrobotany
+- `3011/6` Astrochemistry
+  - `3011/6a` Theoretical astronomy
+- `3011/7` Cosmochemistry
+- `3011/8` Cosmology
+  - `3011/8a` Physical cosmology
+- `3011/9` Micro-g environment research
+- `3011/10` Remote sensing
+- `3011/11` Space archaeology
+- `3011/12` Space exploration
+- `3011/13` Space law
+- `3011/14` Space nuclear power
+
+##### `3012` Astronomy
+
+- `3012/1` Astronomy
+  - `3012/1a` Archaeoastronomy
+  - `3012/1b` Astrometry
+  - `3012/1c` Amateur astronomy
+  - `3012/1d` Forensic astronomy
+  - `3012/1e` Extragalactic astronomy
+  - `3012/1f` Galactic astronomy
+  - `3012/1g` High-energy astronomy
+  - `3012/1h` Observational astronomy
+    - `3012/1h1` Radio astronomy
+    - `3012/1h2` Microwave astronomy
+    - `3012/1h3` Submillimetre astronomy
+    - `3012/1h4` Infrared astronomy
+    - `3012/1h5` Optical astronomy
+    - `3012/1h6` UV astronomy
+    - `3012/1h7` X-ray astronomy
+    - `3012/1h8` Gamma-ray astronomy
+    - `3012/1h9` Cosmic-ray astronomy
+    - `3012/1h10` Neutrino astronomy
+    - `3012/1h11` Gravitational wave astronomy
+  - `3012/1i` Photometry
+  - `3012/1j` Spectroscopy
+  - `3012/1k` Stellar astronomy
+    - `3012/1k1` Solar astronomy
+- `3012/2` Astrophysics
+  - `3012/2a` Celestial mechanics
+  - `3012/2b` Compact objects
+  - `3012/2c` Computational astrophysics
+  - `3012/2d` Gravitational astronomy
+    - `3012/2d1` Black holes
+  - `3012/2e` Interstellar medium
+  - `3012/2f` Numerical simulations
+    - `3012/2f1` Astrophysical plasma
+    - `3012/2f2` Galaxy formation and evolution
+    - `3012/2f3` High-energy astrophysics
+    - `3012/2f4` Hydrodynamics
+    - `3012/2f5` Magnetohydrodynamics
+    - `3012/2f6` Star formation
+  - `3012/2g` Orbital mechanics
+  - `3012/2h` Physical cosmology
+  - `3012/2i` Relativistic astrophysics
+  - `3012/2j` Stellar astrophysics
+    - `3012/2j1` Helioseismology
+    - `3012/2j2` Solar physics
+    - `3012/2j3` Stellar evolution
+    - `3012/2j4` Stellar nucleosynthesis
+  - `3012/2k` Space plasma physics
+- `3012/3` Planetary science (alternatively, a part of earth science)
+  - `3012/3a` Atmospheric science
+  - `3012/3b` Exoplanetology
+  - `3012/3c` Planetary formation
+  - `3012/3d` Planetary rings
+  - `3012/3e` Magnetospheres
+  - `3012/3f` Planetary geology
+  - `3012/3g` Planetary surfaces
+  - `3012/3h` Small Solar System bodies
+
+#### `3013` Physics
+
+- `3013/1` Acoustics
+  - `3013/1a` Quantum acoustics
+- `3013/2` Agrophysics
+- `3013/3` Aerodynamics
+- `3013/4` Applied physics
+  - `3013/4a` Accelerator physics
+  - `3013/4b` Communication physics
+- `3013/5` Astrophysics
+- `3013/6` Atmospheric physics
+- `3013/7` Atomic, molecular, and optical physics
+- `3013/8` Atomic physics
+- `3013/9` Biophysics
+  - `3013/9a` Neurophysics
+- `3013/10` Chemical physics
+- `3013/11` Classical physics
+- `3013/12` Computational physics
+- `3013/13` Condensed matter physics
+- `3013/14` Cryogenics
+- `3013/15` Digital physics
+- `3013/16` Dynamics
+  - `3013/16a` Analytical dynamics
+  - `3013/16b` Astrodynamics
+  - `3013/16c` Brownian dynamics
+  - `3013/16d` File dynamics
+  - `3013/16e` Flight dynamics
+  - `3013/16f` Fluid dynamics
+    - `3013/16f1` Aerodynamics
+    - `3013/16f2` Hydrodynamics
+  - `3013/16g` Fractional dynamics
+  - `3013/16h` Geodynamics
+  - `3013/16i` Molecular dynamics
+  - `3013/16j` Newtonian dynamics
+  - `3013/16k` Langevin dynamics
+  - `3013/16l` Quantum chromodynamics
+  - `3013/16m` Quantum electrodynamics
+  - `3013/16n` Relativistic dynamics
+  - `3013/16o` Stellar dynamics
+  - `3013/16p` System dynamics
+  - `3013/16q` Thermodynamics
+  - `3013/16r` Vehicle dynamics
+- `3013/17` Econophysics
+- `3013/18` Electricity
+- `3013/19` Electromagnetism
+- `3013/20` Electrostatic
+- `3013/21` Magnetism
+- `3013/22` Engineering physics
+- `3013/23` Elementary particle physics
+- `3013/24` Experimental physics
+- `3013/25` Fluid dynamics
+- `3013/26` Geophysics
+  - `3013/26a` Biogeophysics
+  - `3013/26b` Geomagnetism
+- `3013/27` Kinematics
+  - `3013/27a` Fluid kinematics
+  - `3013/27b` Relativistic kinematics
+- `3013/28` Kinetics
+  - `3013/28a` Electrokinetics
+  - `3013/28b` Homeokinetics
+- `3013/29` Laser physics
+- `3013/30` Materials physics
+- `3013/31` Mathematical physics
+- `3013/32` Mechanics
+  - `3013/32a` Analytical mechanics
+  - `3013/32b` Applied mechanics
+  - `3013/32c` Ballistics
+  - `3013/32d` Biomechanics
+  - `3013/32e` Celestial mechanics
+  - `3013/32f` Classical mechanics
+  - `3013/32g` Continuum mechanics
+  - `3013/32h` Fluid mechanics
+  - `3013/32i` Fracture mechanics
+  - `3013/32j` Hamiltonian mechanics
+  - `3013/32k` Hydraulics
+  - `3013/32l` Lagrangian mechanics
+  - `3013/32m` Matrix mechanics
+  - `3013/32n` Molecular mechanics
+  - `3013/32o` Optomechanics
+  - `3013/32p` Particle mechanics
+  - `3013/32q` Quantum mechanics
+  - `3013/32r` Relativistic mechanics
+  - `3013/32s` Relativistic quantum mechanics
+  - `3013/32t` Soil mechanics
+  - `3013/32u` Solid mechanics
+  - `3013/32v` Statistical mechanics
+    - `3013/32v1` Quantum statistical mechanics
+- `3013/33` Mineral physics
+- `3013/34` Medical physics
+- `3013/35` Molecular physics
+- `3013/36` Newtonian dynamics
+- `3013/37` Nuclear physics
+- `3013/38` Optics
+  - `3013/38a` Geometrical optics
+  - `3013/38b` Physical optics
+  - `3013/38c` Quantum optics
+- `3013/39` Particle physics
+- `3013/40` Petrophysics
+- `3013/41` Photonics
+- `3013/42` Physical chemistry
+- `3013/43` Polymer physics
+- `3013/44` Plasma physics
+- `3013/45` Quantum physics
+  - `3013/45a` Quantum technology
+- `3013/46` Radiophysics
+- `3013/47` Relativity
+  - `3013/47a` General relativity
+  - `3013/47b` Special relativity
+- `3013/48` Solid mechanics
+- `3013/49` Solid state physics
+- `3013/50` Statistical mechanics
+- `3013/51` Theoretical physics
+- `3013/52` Thermal physics
+- `3013/53` Thermodynamics
+- `3013/54` Social physics
+- `3013/55` Soil physics
+- `3013/56` Solid state physics
+- `3013/57` Spintronics
+- `3013/58` Statics
+  - `3013/58a` Fluid statics
+- `3013/59` Statistical physics
+- `3013/60` Surface physics
+
+#### `3014` Chemistry
+
+- `3014/1` Agrochemistry
+- `3014/2` Analytical chemistry
+- `3014/3` Astrochemistry
+- `3014/4` Atmospheric chemistry
+- `3014/5` Biochemistry
+- `3014/6` Catalysts
+- `3014/7` Chemical biology
+- `3014/8` Chemical engineering
+- `3014/9` Chemical physics
+- `3014/10` Cheminformatics
+- `3014/11` Computational chemistry
+- `3014/12` Cosmochemistry
+- `3014/13` Electrochemistry
+- `3014/14` Environmental chemistry
+- `3014/15` Femtochemistry
+- `3014/16` Flavor
+- `3014/17` Flow chemistry
+- `3014/18` Forensic chemistry
+- `3014/19` Geochemistry
+- `3014/20` Green chemistry
+- `3014/21` Histochemistry
+- `3014/22` Hydrogenation
+- `3014/23` Immunochemistry
+- `3014/24` Inorganic chemistry
+- `3014/25` Marine chemistry
+- `3014/26` Mathematical chemistry
+- `3014/27` Mechanochemistry
+- `3014/28` Medicinal chemistry
+- `3014/29` Molecular biology
+- `3014/30` Molecular mechanics
+- `3014/31` Nanotechnology
+- `3014/32` Natural product chemistry
+- `3014/33` Neurochemistry
+- `3014/34` Nuclear chemistry
+- `3014/35` Oenology
+- `3014/36` Organic chemistry
+- `3014/37` Organometallic chemistry
+- `3014/38` Petrochemistry
+- `3014/39` Pharmacology
+- `3014/40` Photochemistry
+- `3014/41` Physical chemistry
+- `3014/42` Physical organic chemistry
+- `3014/43` Phytochemistry
+- `3014/44` Polymer chemistry
+- `3014/45` Quantum chemistry
+- `3014/46` Radiochemistry
+- `3014/47` Soil chemistry
+- `3014/48` Solid-state chemistry
+- `3014/49` Sonochemistry
+- `3014/50` Supramolecular chemistry
+- `3014/51` Surface chemistry
+- `3014/52` Synthetic chemistry
+- `3014/53` Systems chemistry
+- `3014/54` Theoretical chemistry
+- `3014/55` Thermochemistry
+
+#### `3015` Earth science
+
+- `3015/1` Chronology
+- `3015/2` Edaphology
+- `3015/3` Environmental chemistry
+- `3015/4` Environmental science
+- `3015/5` Gemology
+- `3015/6` Geochemistry
+- `3015/7` Geodesy
+- `3015/8` Physical geography
+  - `3015/8a` Atmospheric science / Meteorology
+  - `3015/8b` Biogeography / Phytogeography
+  - `3015/8c` Climatology / Paleoclimatology / Palaeogeography
+  - `3015/8d` Coastal geography / Oceanography
+  - `3015/8e` Edaphology / Pedology or Soil science
+  - `3015/8f` Geobiology
+  - `3015/8g` Geology (Geomorphology, Mineralogy, Petrology, Sedimentology, Speleology, Tectonics, Volcanology)
+  - `3015/8h` Geostatistics
+  - `3015/8i` Glaciology
+  - `3015/8j` Hydrology/ Limnology / Hydrogeology
+  - `3015/8k` Landscape ecology
+  - `3015/8l` Quaternary science
+- `3015/9` Geophysics
+- `3015/10` Paleontology
+  - `3015/10a` Paleobiology
+  - `3015/10b` Paleoecology
+- `3015/11` Ecology
+- `3015/12` Forensic geology
+- `3015/13` Geophysics
+- `3015/14` Planetary science (alternatively, a part of space science)
+- `3015/15` Seismology
+
+### `3020` Life science
+
+
+#### `3021` Biology
+
+- `3021/1` Aerobiology
+- `3021/2` Anatomy
+  - `3021/2a` Comparative anatomy
+  - `3021/2b` Human anatomy
+- `3021/3` Biochemistry
+- `3021/4` Bioinformatics
+- `3021/5` Biophysics
+- `3021/6` Biotechnology
+- `3021/7` Botany
+  - `3021/7a` Ethnobotany
+  - `3021/7b` Phycology
+- `3021/8` Cell biology
+- `3021/9` Chronobiology
+- `3021/10` Cognitive biology
+- `3021/11` Computational biology
+- `3021/12` Conservation biology
+- `3021/13` Cryobiology
+- `3021/14` Developmental biology
+  - `3021/14a` Embryology
+  - `3021/14b` Gerontology
+  - `3021/14c` Teratology
+- `3021/15` Ecology
+  - `3021/15a` Agroecology
+  - `3021/15b` Ethnoecology
+  - `3021/15c` Human ecology
+  - `3021/15d` Landscape ecology
+- `3021/16` Endocrinology
+- `3021/17` Epigenetics
+- `3021/18` Ethnobiology
+  - `3021/18a` Anthrozoology
+- `3021/19` Evolutionary biology
+- `3021/20` Evolution
+  - `3021/20a` Systematics
+  - `3021/20b` Taxonomy
+- `3021/21` Forensic biology
+- `3021/22` Genetics
+  - `3021/22a` Behavioural genetics
+  - `3021/22b` Molecular genetics
+  - `3021/22c` Population genetics
+- `3021/23` Geobiology
+- `3021/24` Histology
+- `3021/25` Human biology
+- `3021/26` Immunology
+- `3021/27` Limnology
+- `3021/28` Linnaean taxonomy
+- `3021/29` Marine biology
+- `3021/30` Mathematical biology
+- `3021/31` Microbiology
+  - `3021/31a` Bacteriology
+  - `3021/31b` Protistology
+- `3021/32` Molecular biology
+- `3021/33` Mycology
+- `3021/34` Neuroscience
+  - `3021/34a` Behavioral neuroscience
+  - `3021/34b` Neurophysics
+  - `3021/34c` Computational Neuroscience
+- `3021/35` Nutrition
+- `3021/36` Paleobiology
+  - `3021/36a` Paleontology
+- `3021/37` Parasitology
+- `3021/38` Pathology
+  - `3021/38a` Anatomical pathology
+  - `3021/38b` Clinical pathology
+  - `3021/38c` Dermatopathology
+  - `3021/38d` Forensic pathology
+  - `3021/38e` Hematopathology
+  - `3021/38f` Histopathology
+  - `3021/38g` Molecular pathology
+  - `3021/38h` Surgical pathology
+  - `3021/38i` Phytopathology
+- `3021/39` Physiology
+  - `3021/39a` Human physiology
+    - `3021/39a1` Exercise physiology
+- `3021/40` Structural Biology
+- `3021/41` Systematics (Taxonomy)
+- `3021/42` Population biology
+- `3021/43` Quantum biology
+- `3021/44` Sociobiology
+- `3021/45` Theoretical biology
+- `3021/46` Toxicology
+- `3021/47` Systems biology
+- `3021/48` Virology
+  - `3021/48a` Molecular virology
+- `3021/49` Xenobiology
+- `3021/50` Zoology
+  - `3021/50a` Animal communications
+  - `3021/50b` Apiology
+  - `3021/50c` Arachnology
+  - `3021/50d` Arthropodology
+  - `3021/50e` Batrachology
+  - `3021/50f` Bryozoology
+  - `3021/50g` Carcinology
+  - `3021/50h` Cetology
+  - `3021/50i` Cnidariology
+  - `3021/50j` Entomology
+    - `3021/50j1` Forensic entomology
+  - `3021/50k` Ethnozoology
+  - `3021/50l` Ethology
+  - `3021/50m` Helminthology
+  - `3021/50n` Herpetology
+  - `3021/50o` Ichthyology
+  - `3021/50p` Invertebrate zoology
+  - `3021/50q` Mammalogy
+    - `3021/50q1` Cynology
+    - `3021/50q2` Felinology
+  - `3021/50r` Malacology
+    - `3021/50r1` Conchology
+    - `3021/50r2` Limacology
+    - `3021/50r3` Teuthology
+  - `3021/50s` Myriapodology
+  - `3021/50t` Myrmecology
+  - `3021/50u` Nematology
+  - `3021/50v` Neuroethology
+  - `3021/50w` Oology
+  - `3021/50x` Ornithology
+  - `3021/50y` Planktology
+  - `3021/50z` Primatology
+  - `3021/50aa` Zootomy
+  - `3021/50ab` Zoosemiotics
+
+## `4000` Formal science
+
+
+### `4010` Computer science
+_Also a branch of electrical engineering_
+
+- `4010/1` Logic in computer science
+  - `4010/1a` Formal methods (Formal verification)
+  - `4010/1b` Logic programming
+  - `4010/1c` Multi-valued logic
+    - `4010/1c1` Fuzzy logic
+  - `4010/1d` Programming language semantics
+  - `4010/1e` Type theory
+- `4010/2` Operating systems
+- `4010/3` Algorithms
+  - `4010/3a` Computational geometry
+  - `4010/3b` Distributed algorithms
+  - `4010/3c` Parallel algorithms
+  - `4010/3d` Randomized algorithms
+- `4010/4` Artificial intelligence
+  - `4010/4a` Cognitive science
+    - `4010/4a1` Automated reasoning
+    - `4010/4a2` Computer vision
+    - `4010/4a3` Machine learning
+      - `4010/4a3a` Artificial neural networks
+      - `4010/4a3b` Support vector machine
+    - `4010/4a4` Natural language processing (Computational linguistics)
+    - `4010/4a5` Computer vision
+  - `4010/4b` Expert systems
+  - `4010/4c` Robotics
+- `4010/5` Database
+- `4010/6` Data science
+- `4010/7` Data structures
+- `4010/8` Computer architecture
+- `4010/9` Computer graphics
+  - `4010/9a` Image processing
+  - `4010/9b` Scientific visualization
+- `4010/10` Computer communications (networks)
+  - `4010/10a` Cloud computing
+  - `4010/10b` Information theory
+  - `4010/10c` Internet, World Wide Web
+  - `4010/10d` Ubiquitous computing
+  - `4010/10e` Wireless computing (Mobile computing)
+- `4010/11` Computer security and reliability
+  - `4010/11a` Cryptanalysis
+  - `4010/11b` Cryptography
+  - `4010/11c` Fault-tolerant computing
+  - `4010/11d` Information security
+  - `4010/11e` Network security
+- `4010/12` Computing in mathematics, natural sciences, engineering, and medicine
+  - `4010/12a` Algebraic (symbolic) computation
+  - `4010/12b` Computational biology (bioinformatics)
+  - `4010/12c` Computational chemistry
+  - `4010/12d` Computational mathematics
+  - `4010/12e` Computational neuroscience
+  - `4010/12f` Computational number theory
+  - `4010/12g` Computational physics
+  - `4010/12h` Computer-aided engineering
+    - `4010/12h1` Computational fluid dynamics
+    - `4010/12h2` Finite element analysis
+  - `4010/12i` Numerical analysis
+  - `4010/12j` Algebraic (symbolic) computation
+  - `4010/12k` Scientific computing (Computational science)
+- `4010/13` Computing in social sciences, arts, humanities, and professions
+  - `4010/13a` Community informatics
+  - `4010/13b` Computational economics
+  - `4010/13c` Computational finance
+  - `4010/13d` Computational sociology
+  - `4010/13e` Digital humanities (Humanities computing)
+  - `4010/13f` History of computer hardware
+  - `4010/13g` History of computer science
+  - `4010/13h` Humanistic informatics
+  - `4010/13i` Databases
+    - `4010/13i1` Distributed databases
+    - `4010/13i2` Object databases
+    - `4010/13i3` Relational databases
+  - `4010/13j` Data management
+  - `4010/13k` Data mining
+  - `4010/13l` Information science
+  - `4010/13m` Information architecture
+  - `4010/13n` Information management
+  - `4010/13o` Information retrieval
+  - `4010/13p` Information system
+  - `4010/13q` Information technology
+  - `4010/13r` Knowledge management
+  - `4010/13s` Multimedia, hypermedia
+    - `4010/13s1` Sound and music computing
+- `4010/14` Distributed computing
+  - `4010/14a` Grid computing
+- `4010/15` Human-computer interaction
+- `4010/16` Operating systems
+- `4010/17` Parallel computing
+  - `4010/17a` High-performance computing
+- `4010/18` Computer program
+- `4010/19` Computer programming
+- `4010/20` Programming languages
+  - `4010/20a` Compilers
+  - `4010/20b` Programming paradigms
+    - `4010/20b1` Concurrent programming
+    - `4010/20b2` Functional programming
+    - `4010/20b3` Imperative programming
+    - `4010/20b4` Logic programming
+    - `4010/20b5` Object-oriented programming
+  - `4010/20c` Program semantics
+  - `4010/20d` Type theory
+- `4010/21` Quantum computing
+  - `4010/21a` Quantum information
+- `4010/22` Software engineering
+  - `4010/22a` Formal methods (Formal verification)
+  - `4010/22b` Game Development
+- `4010/23` Theoretical computer science
+- `4010/24` Theory of computation
+  - `4010/24a` Automata theory (Formal languages)
+  - `4010/24b` Computability theory
+  - `4010/24c` Computational complexity theory
+  - `4010/24d` Concurrency theory
+- `4010/25` VLSI design
+
+### `4020` Logic
+
+- `4020/1` Mathematical logic
+  - `4020/1a` Set theory
+  - `4020/1b` Proof theory
+  - `4020/1c` Model theory
+  - `4020/1d` Recursion theory
+  - `4020/1e` Modal logic
+  - `4020/1f` Intuitionistic logic
+- `4020/2` Philosophical logic
+  - `4020/2a` Logical reasoning
+  - `4020/2b` Modal logic
+    - `4020/2b1` Deontic logic
+    - `4020/2b2` Doxastic logic
+- `4020/3` Logic in computer science
+  - `4020/3a` Programming language semantics
+  - `4020/3b` Formal methods (Formal verification)
+  - `4020/3c` Type theory
+  - `4020/3d` Logic programming
+  - `4020/3e` Multi-valued logic
+    - `4020/3e1` Fuzzy logic
+
+### `4030` Mathematics
+
+
+#### `4031` Pure mathematics
+
+- `4031/1` Mathematical logic and Foundations of mathematics
+  - `4031/1a` Intuitionistic logic
+  - `4031/1b` Modal logic
+  - `4031/1c` Model theory
+  - `4031/1d` Proof theory
+  - `4031/1e` Recursion theory
+  - `4031/1f` Set theory
+- `4031/2` Arithmetic
+- `4031/3` Algebra
+  - `4031/3a` Associative algebra
+  - `4031/3b` Category theory
+    - `4031/3b1` Topos theory
+  - `4031/3c` Differential algebra
+  - `4031/3d` Field theory
+  - `4031/3e` Group theory
+    - `4031/3e1` Group representation
+  - `4031/3f` Homological algebra
+  - `4031/3g` K-theory
+  - `4031/3h` Lattice theory (Order theory)
+  - `4031/3i` Lie algebra
+  - `4031/3j` Linear algebra (Vector space)
+  - `4031/3k` Multilinear algebra
+  - `4031/3l` Non-associative algebra
+  - `4031/3m` Representation theory
+  - `4031/3n` Ring theory
+    - `4031/3n1` Commutative algebra
+    - `4031/3n2` Noncommutative algebra
+  - `4031/3o` Universal algebra
+- `4031/4` Analysis
+  - `4031/4a` Complex analysis
+  - `4031/4b` Functional analysis
+    - `4031/4b1` Operator theory
+  - `4031/4c` Harmonic analysis
+    - `4031/4c1` Fourier analysis
+  - `4031/4d` Non-standard analysis
+  - `4031/4e` Ordinary differential equations
+  - `4031/4f` p-adic analysis
+  - `4031/4g` Partial differential equations
+  - `4031/4h` Real analysis
+    - `4031/4h1` Calculus
+- `4031/5` Probability theory
+  - `4031/5a` Ergodic theory
+  - `4031/5b` Measure theory
+    - `4031/5b1` Integral geometry
+  - `4031/5c` Stochastic process
+- `4031/6` Geometry and Topology
+  - `4031/6a` Affine geometry
+  - `4031/6b` Algebraic geometry
+  - `4031/6c` Algebraic topology
+  - `4031/6d` Convex geometry
+  - `4031/6e` Differential topology
+  - `4031/6f` Discrete geometry
+  - `4031/6g` Finite geometry
+  - `4031/6h` Galois geometry
+  - `4031/6i` General topology
+  - `4031/6j` Geometric topology
+  - `4031/6k` Integral geometry
+  - `4031/6l` Noncommutative geometry
+  - `4031/6m` Non-Euclidean geometry
+  - `4031/6n` Projective geometry
+  - `4031/6o` Euclidean geometry
+  - `4031/6p` Solid geometry
+  - `4031/6q` Trigonometry
+- `4031/7` Number theory
+  - `4031/7a` Algebraic number theory
+  - `4031/7b` Analytic number theory
+  - `4031/7c` Arithmetic combinatorics
+  - `4031/7d` Arithmetic
+  - `4031/7e` Geometric number theory
+
+#### `4032` Applied mathematics
+
+- `4032/1` Approximation theory
+- `4032/2` Combinatorics
+  - `4032/2a` Coding theory
+- `4032/3` Dynamical systems
+  - `4032/3a` Chaos theory
+  - `4032/3b` Fractal geometry
+- `4032/4` Game theory
+- `4032/5` Graph theory
+- `4032/6` Information theory
+- `4032/7` Mathematical physics
+  - `4032/7a` Quantum field theory
+  - `4032/7b` Quantum gravity
+    - `4032/7b1` String theory
+  - `4032/7c` Quantum mechanics
+  - `4032/7d` Statistical mechanics
+- `4032/8` Numerical analysis
+- `4032/9` Operations research
+  - `4032/9a` Assignment problem
+  - `4032/9b` Decision analysis
+  - `4032/9c` Dynamic programming
+  - `4032/9d` Inventory theory
+  - `4032/9e` Linear programming
+  - `4032/9f` Mathematical optimization
+  - `4032/9g` Optimal maintenance
+  - `4032/9h` Real options analysis
+  - `4032/9i` Scheduling
+  - `4032/9j` Stochastic processes
+  - `4032/9k` Systems analysis
+- `4032/10` Statistics
+  - `4032/10a` Actuarial science
+  - `4032/10b` Demography
+  - `4032/10c` Econometrics
+  - `4032/10d` Mathematical statistics
+  - `4032/10e` Data visualization
+- `4032/11` Computational mathematics
+- `4032/12` Theory of computation
+  - `4032/12a` Computational complexity theory
+- `4032/13` Cryptography
+- `4032/14` Steganography
+- `4032/15` Mathematical game
+- `4032/16` Mathematical puzzle
+
+##### `4033` Statistics
+
+- `4033/1` Mathematical statistics
+- `4033/2` Econometrics
+- `4033/3` Actuarial science
+- `4033/4` Demography
+- `4033/5` Computational statistics
+  - `4033/5a` Data mining
+  - `4033/5b` Regression
+  - `4033/5c` Simulation
+    - `4033/5c1` Bootstrap (statistics)
+- `4033/6` Design of experiments
+  - `4033/6a` Block design and Analysis of variance
+  - `4033/6b` Response surface methodology
+- `4033/7` Sample Survey
+  - `4033/7a` Sampling theory
+- `4033/8` Statistical modelling
+  - `4033/8a` Biostatistics
+    - `4033/8a1` Epidemiology
+  - `4033/8b` Multivariate analysis
+    - `4033/8b1` Structural equation model
+    - `4033/8b2` Time series
+  - `4033/8c` Reliability theory
+  - `4033/8d` Quality control
+- `4033/9` Statistical theory
+  - `4033/9a` Decision theory
+  - `4033/9b` Mathematical statistics
+    - `4033/9b1` Probability
+  - `4033/9c` Survey methodology
+
+## `5000` Applied science
+
+
+### `5010` Agriculture
+
+- `5010/1` Aeroponics
+  - `5010/1a` Fogponics
+- `5010/2` Agroecology
+- `5010/3` Agrology
+- `5010/4` Agronomy
+- `5010/5` Animal husbandry (Animal science)
+  - `5010/5a` Beekeeping (Apiculture)
+- `5010/6` Anthroponics
+- `5010/7` Agricultural economics
+- `5010/8` Agricultural engineering
+  - `5010/8a` Biological systems engineering
+  - `5010/8b` Food engineering
+- `5010/9` Aquaculture
+- `5010/10` Aquaponics
+- `5010/11` Enology
+- `5010/12` Entomology
+- `5010/13` Food science
+  - `5010/13a` Culinary arts
+- `5010/14` Forestry
+- `5010/15` Horticulture
+- `5010/16` Hydrology
+- `5010/17` Hydroponics
+- `5010/18` Pedology
+- `5010/19` Plant science
+  - `5010/19a` Pomology
+- `5010/20` Pest control
+- `5010/21` Purification
+- `5010/22` Urban agriculture
+- `5010/23` Viticulture
+
+### `5020` Architecture and design
+
+- `5020/1` Architecture
+  - `5020/1a` Interior architecture
+  - `5020/1b` Landscape architecture
+- `5020/2` Architectural analytics
+- `5020/3` Historic preservation
+- `5020/4` Interior design (interior architecture)
+- `5020/5` Landscape architecture (landscape planning)
+- `5020/6` Landscape design
+- `5020/7` Urban planning (urban design)
+- `5020/8` Visual communication
+  - `5020/8a` Graphic design
+    - `5020/8a1` Type design
+  - `5020/8b` Technical drawing
+- `5020/9` Industrial design (product design)
+  - `5020/9a` Ergonomics
+  - `5020/9b` Toy and amusement design
+- `5020/10` User experience design
+  - `5020/10a` Interaction design
+  - `5020/10b` Information architecture
+  - `5020/10c` User interface design
+  - `5020/10d` User experience evaluation
+- `5020/11` Decorative arts
+- `5020/12` Fashion design
+- `5020/13` Textile design
+- `5020/14` Food design
+
+### `5030` Education
+
+- `5030/1` Comparative education
+- `5030/2` Critical pedagogy
+- `5030/3` Curriculum and instruction
+  - `5030/3a` Alternative education
+  - `5030/3b` Early childhood education
+  - `5030/3c` Elementary education
+  - `5030/3d` Secondary education
+  - `5030/3e` Higher education
+  - `5030/3f` Mastery learning
+  - `5030/3g` Cooperative learning
+  - `5030/3h` Agricultural education
+  - `5030/3i` Art education
+  - `5030/3j` Bilingual education
+  - `5030/3k` Chemistry education
+  - `5030/3l` Counselor education
+  - `5030/3m` Language education
+  - `5030/3n` Legal education
+  - `5030/3o` Mathematics education
+  - `5030/3p` Medical education
+  - `5030/3q` Military education and training
+  - `5030/3r` Music education
+  - `5030/3s` Nursing education
+  - `5030/3t` Outdoor education
+  - `5030/3u` Peace education
+  - `5030/3v` Physical education/Sports coaching
+  - `5030/3w` Physics education
+  - `5030/3x` Reading education
+  - `5030/3y` Religious education
+  - `5030/3z` Science education
+  - `5030/3aa` Special education
+  - `5030/3ab` Sex education
+  - `5030/3ac` Sociology of education
+  - `5030/3ad` Technology education
+  - `5030/3ae` Vocational education
+- `5030/4` Educational leadership
+- `5030/5` Educational philosophy
+- `5030/6` Educational psychology
+- `5030/7` Educational technology
+- `5030/8` Distance education
+
+### `5040` Engineering and technology
+
+
+#### `5041` Chemical engineering
+
+- `5041/1` Biocatalysts
+- `5041/2` Bioengineering
+  - `5041/2a` Biochemical engineering
+  - `5041/2b` Biomolecular engineering
+  - `5041/2c` Bionics
+- `5041/3` Catalysis
+- `5041/4` Materials engineering
+- `5041/5` Molecular engineering
+- `5041/6` Nanotechnology
+- `5041/7` Polymer engineering
+- `5041/8` Process design
+  - `5041/8a` Petroleum engineering
+  - `5041/8b` Nuclear engineering
+  - `5041/8c` Food engineering
+- `5041/9` Process engineering
+- `5041/10` Reaction engineering
+- `5041/11` Thermodynamics
+- `5041/12` Transport phenomena
+
+#### `5042` Civil engineering
+
+- `5042/1` Coastal engineering
+- `5042/2` Earthquake engineering
+- `5042/3` Ecological engineering
+- `5042/4` Environmental engineering
+- `5042/5` Geotechnical engineering
+  - `5042/5a` Engineering geology
+- `5042/6` Hydraulic engineering
+- `5042/7` Mining engineering
+- `5042/8` Transportation engineering
+  - `5042/8a` Highway engineering
+- `5042/9` Structural engineering
+  - `5042/9a` Architectural engineering
+- `5042/10` Structural mechanics
+- `5042/11` Surveying
+- `5042/12` Agricultural engineering
+- `5042/13` Construction
+- `5042/14` Infrastructure
+
+#### `5043` Educational technology
+
+- `5043/1` Instructional design
+  - `5043/1a` Distance education
+  - `5043/1b` Instructional simulation
+- `5043/2` Human performance technology
+- `5043/3` Knowledge management
+
+#### `5044` Electrical engineering
+
+- `5044/1` Applied physics
+- `5044/2` Computer engineering
+- `5044/3` Computer science
+- `5044/4` Control systems engineering
+  - `5044/4a` Control theory
+- `5044/5` Electronic engineering
+  - `5044/5a` Electronics
+  - `5044/5b` Instrumentation engineering
+- `5044/6` Engineering physics
+  - `5044/6a` Photonics
+- `5044/7` Information theory
+- `5044/8` Mechatronics
+- `5044/9` Power engineering
+- `5044/10` Quantum computing
+- `5044/11` Robotics
+  - `5044/11a` Microbotics
+- `5044/12` Semiconductors
+- `5044/13` Telecommunications engineering
+
+#### `5045` Materials science
+
+- `5045/1` Biomaterials
+- `5045/2` Ceramic engineering
+- `5045/3` Crystallography
+- `5045/4` Nanomaterials
+- `5045/5` Photonics
+- `5045/6` Physical Metallurgy
+- `5045/7` Polymer engineering
+- `5045/8` Polymer science
+- `5045/9` Semiconductors
+- `5045/10` Corrosion engineering
+
+#### `5046` Mechanical engineering
+
+- `5046/1` Aerospace engineering
+  - `5046/1a` Aeronautics
+  - `5046/1b` Astronautics
+- `5046/2` Acoustical engineering
+- `5046/3` Automotive engineering
+- `5046/4` Biomedical engineering
+  - `5046/4a` Biomechanical engineering
+  - `5046/4b` Neural engineering
+- `5046/5` Continuum mechanics
+- `5046/6` Fluid mechanics
+- `5046/7` Heat transfer
+- `5046/8` Industrial engineering
+- `5046/9` Manufacturing engineering
+- `5046/10` Marine engineering
+- `5046/11` Mass transfer
+- `5046/12` Mechatronics
+- `5046/13` Nanoengineering
+- `5046/14` Ocean engineering
+- `5046/15` Optical engineering
+- `5046/16` Robotics
+- `5046/17` Thermal engineering
+- `5046/18` Thermodynamics
+
+#### `5047` Systems science
+
+- `5047/1` Chaos theory
+- `5047/2` Complex systems
+- `5047/3` Conceptual systems
+- `5047/4` Control theory
+  - `5047/4a` Affect control theory
+  - `5047/4b` Control engineering
+  - `5047/4c` Control systems
+  - `5047/4d` Dynamical systems
+  - `5047/4e` Perceptual control theory
+- `5047/5` Cybernetics
+  - `5047/5a` Biocybernetics
+  - `5047/5b` Engineering cybernetics
+  - `5047/5c` Management cybernetics
+  - `5047/5d` Medical cybernetics
+  - `5047/5e` New Cybernetics
+  - `5047/5f` Second-order cybernetics
+  - `5047/5g` Sociocybernetics
+- `5047/6` Network science
+- `5047/7` Operations research
+- `5047/8` Systems biology
+  - `5047/8a` Computational systems biology
+  - `5047/8b` Synthetic biology
+  - `5047/8c` Systems immunology
+  - `5047/8d` Systems neuroscience
+- `5047/9` System dynamics
+  - `5047/9a` Social dynamics
+- `5047/10` Systems ecology
+  - `5047/10a` Ecosystem ecology
+- `5047/11` Systems engineering
+  - `5047/11a` Biological systems engineering
+  - `5047/11b` Earth systems engineering and management
+  - `5047/11c` Enterprise systems engineering
+  - `5047/11d` Systems analysis
+- `5047/12` Systems psychology
+  - `5047/12a` Ergonomics
+  - `5047/12b` Family systems theory
+  - `5047/12c` Systemic therapy
+- `5047/13` Systems theory
+  - `5047/13a` Biochemical systems theory
+  - `5047/13b` Ecological systems theory
+  - `5047/13c` Developmental systems theory
+  - `5047/13d` General systems theory
+  - `5047/13e` Living systems theory
+  - `5047/13f` LTI system theory
+  - `5047/13g` Mathematical system theory
+  - `5047/13h` Sociotechnical systems theory
+  - `5047/13i` World-systems theory
+- `5047/14` Systems theory in anthropology
+
+### `5050` Environmental studies and forestry
+
+- `5050/1` Environmental management
+  - `5050/1a` Coastal management
+  - `5050/1b` Fisheries management
+  - `5050/1c` Land management
+  - `5050/1d` Natural resource management
+  - `5050/1e` Waste management
+  - `5050/1f` Wildlife management
+- `5050/2` Environmental policy
+- `5050/3` Wildlife observation
+- `5050/4` Recreation ecology
+- `5050/5` Silviculture
+- `5050/6` Sustainability studies
+  - `5050/6a` Sustainable development
+- `5050/7` Toxicology
+- `5050/8` Ecology
+
+### `5060` Family and consumer science
+
+- `5060/1` Consumer education
+- `5060/2` Housing
+- `5060/3` Interior design
+- `5060/4` Nutrition
+  - `5060/4a` Foodservice management
+- `5060/5` Textiles
+
+### `5070` Human physical performance and recreation
+
+- `5070/1` Biomechanics / Sports biomechanics
+- `5070/2` Sports coaching
+- `5070/3` Escapology
+- `5070/4` Ergonomics
+- `5070/5` Physical fitness
+  - `5070/5a` Aerobics
+  - `5070/5b` Personal trainer / Personal fitness training
+- `5070/6` Game design
+- `5070/7` Exercise physiology
+- `5070/8` Kinesiology / Exercise physiology / Performance science
+- `5070/9` Leisure studies
+- `5070/10` Navigation
+- `5070/11` Outdoor activity
+- `5070/12` Physical activity
+- `5070/13` Physical education / Pedagogy
+- `5070/14` Sociology of sport
+- `5070/15` Sexology
+- `5070/16` Sports / exercise
+- `5070/17` Sports journalism / sportscasting
+- `5070/18` Sport management
+  - `5070/18a` Athletic director
+- `5070/19` Sport psychology
+- `5070/20` Sports medicine
+  - `5070/20a` Athletic training
+- `5070/21` Survival skills
+  - `5070/21a` Batoning
+  - `5070/21b` Bushcraft
+  - `5070/21c` Scoutcraft
+  - `5070/21d` Woodcraft
+- `5070/22` Toy and amusement design
+
+### `5080` Journalism, media studies and communication
+
+- `5080/1` Journalism
+  - `5080/1a` Broadcast journalism
+  - `5080/1b` Digital journalism
+  - `5080/1c` Literary journalism
+  - `5080/1d` New media journalism
+  - `5080/1e` Print journalism
+  - `5080/1f` Sports journalism / sportscasting
+- `5080/2` Media studies (Mass media)
+  - `5080/2a` Newspaper
+  - `5080/2b` Magazine
+  - `5080/2c` Radio
+  - `5080/2d` Television
+    - `5080/2d1` Television studies
+  - `5080/2e` Film
+    - `5080/2e1` Film studies
+  - `5080/2f` Game studies
+  - `5080/2g` Fan studies
+- `5080/3` Narratology
+  - `5080/3a` Internet
+- `5080/4` Communication studies
+  - `5080/4a` Advertising
+  - `5080/4b` Animal communication
+  - `5080/4c` Communication design
+  - `5080/4d` Conspiracy theory
+  - `5080/4e` Digital media
+  - `5080/4f` Electronic media
+  - `5080/4g` Environmental communication
+  - `5080/4h` Hoax
+  - `5080/4i` Information theory
+  - `5080/4j` Intercultural communication
+  - `5080/4k` Marketing
+  - `5080/4l` Mass communication
+  - `5080/4m` Nonverbal communication
+  - `5080/4n` Organizational communication
+  - `5080/4o` Popular culture studies
+  - `5080/4p` Propaganda
+  - `5080/4q` Public relations
+  - `5080/4r` Speech communication
+  - `5080/4s` Technical writing
+  - `5080/4t` Translation
+
+### `5090` Library and museum studies
+
+- `5090/1` Archival science
+- `5090/2` Archivist
+- `5090/3` Bibliographic databases
+- `5090/4` Bibliometrics
+- `5090/5` Bookmobile
+- `5090/6` Cataloging
+  - `5090/6a` Citation analysis
+- `5090/7` Categorization
+- `5090/8` Classification
+  - `5090/8a` Library classification
+  - `5090/8b` Taxonomic classification
+  - `5090/8c` Scientific classification
+  - `5090/8d` Statistical classification
+  - `5090/8e` Security classification
+  - `5090/8f` Film classification
+- `5090/9` Collections care
+- `5090/10` Collection management
+- `5090/11` Collection Management Policy
+- `5090/12` Conservation science
+- `5090/13` Conservation and restoration of cultural heritage
+- `5090/14` Curator
+- `5090/15` Data storage
+- `5090/16` Database management
+- `5090/17` Data modeling
+- `5090/18` Digital preservation
+- `5090/19` Dissemination
+- `5090/20` Film preservation
+- `5090/21` Five laws of library science
+- `5090/22` Historic preservation
+- `5090/23` History of library science
+- `5090/24` Human-computer interaction
+- `5090/25` Indexer
+- `5090/26` Informatics
+- `5090/27` Information architecture
+- `5090/28` Information broker
+- `5090/29` Information literacy
+- `5090/30` Information retrieval
+- `5090/31` Information science
+- `5090/32` Information systems and technology
+- `5090/33` Integrated library system
+- `5090/34` Interlibrary loan
+- `5090/35` Knowledge engineering
+- `5090/36` Knowledge management
+- `5090/37` Library
+- `5090/38` Library binding
+- `5090/39` Library circulation
+- `5090/40` Library instruction
+- `5090/41` Library portal
+- `5090/42` Library technical services
+- `5090/43` Management
+- `5090/44` Mass deacidification
+- `5090/45` Museology
+- `5090/46` Museum education
+  - `5090/46a` Museum administration
+- `5090/47` Object conservation
+- `5090/48` Preservation
+- `5090/49` Prospect research
+- `5090/50` Readers' advisory
+- `5090/51` Records management
+- `5090/52` Reference
+- `5090/53` Reference desk
+- `5090/54` Reference management software
+- `5090/55` Registrar
+- `5090/56` Research methods
+- `5090/57` Slow fire
+- `5090/58` Special library
+- `5090/59` Statistics
+
+### `5100` Medicine and health
+
+- `5100/1` Alternative medicine
+- `5100/2` Audiology
+- `5100/3` Clinical laboratory sciences/Clinical pathology/Laboratory medicine
+  - `5100/3a` Clinical biochemistry
+  - `5100/3b` Cytogenetics
+  - `5100/3c` Cytohematology
+  - `5100/3d` Cytology
+  - `5100/3e` Haemostasiology
+  - `5100/3f` Histology
+  - `5100/3g` Clinical immunology
+  - `5100/3h` Clinical microbiology
+  - `5100/3i` Molecular genetics
+  - `5100/3j` Parasitology
+- `5100/4` Clinical physiology
+- `5100/5` Deathcare
+  - `5100/5a` Funeral director
+  - `5100/5b` Mortuary science
+- `5100/6` Dentistry
+  - `5100/6a` Dental hygiene and epidemiology
+  - `5100/6b` Dental surgery
+  - `5100/6c` Endodontics
+  - `5100/6d` Implantology
+  - `5100/6e` Oral and maxillofacial surgery
+  - `5100/6f` Orthodontics
+  - `5100/6g` Periodontics
+  - `5100/6h` Prosthodontics
+- `5100/7` Dermatology
+- `5100/8` Emergency medicine
+- `5100/9` Epidemiology
+- `5100/10` Geriatrics
+- `5100/11` Gynaecology
+- `5100/12` Health informatics/Clinical informatics
+- `5100/13` Hematology
+- `5100/14` Holistic medicine
+- `5100/15` Infectious disease
+- `5100/16` Intensive care medicine
+- `5100/17` Internal medicine
+  - `5100/17a` Cardiology
+    - `5100/17a1` Cardiac electrophysiology
+  - `5100/17b` Endocrinology
+  - `5100/17c` Gastroenterology
+  - `5100/17d` Hepatology
+  - `5100/17e` Nephrology
+  - `5100/17f` Neurology
+  - `5100/17g` Oncology
+  - `5100/17h` Pulmonology
+  - `5100/17i` Rheumatology
+- `5100/18` Medical toxicology
+- `5100/19` Music therapy
+- `5100/20` Nursing
+- `5100/21` Nutrition and dietetics
+- `5100/22` Obstetrics
+- `5100/23` Occupational hygiene
+- `5100/24` Occupational therapy
+- `5100/25` Occupational toxicology
+- `5100/26` Ophthalmology
+  - `5100/26a` Neuro-ophthalmology
+- `5100/27` Optometry
+- `5100/28` Otolaryngology
+- `5100/29` Pathology
+- `5100/30` Pediatrics
+- `5100/31` Pharmaceutical sciences
+  - `5100/31a` Pharmaceutical chemistry
+  - `5100/31b` Pharmaceutical toxicology
+  - `5100/31c` Pharmaceutics
+  - `5100/31d` Pharmacocybernetics
+  - `5100/31e` Pharmacodynamics
+  - `5100/31f` Pharmacogenomics
+  - `5100/31g` Pharmacognosy
+  - `5100/31h` Pharmacokinetics
+  - `5100/31i` Pharmacology
+  - `5100/31j` Pharmacy
+- `5100/32` Physical fitness
+  - `5100/32a` Group Fitness / aerobics
+  - `5100/32b` Kinesiology / Exercise physiology / Performance science
+  - `5100/32c` Personal fitness training
+- `5100/33` Physical therapy
+- `5100/34` Osteopathy
+- `5100/35` Physiotherapy
+- `5100/36` Podiatry
+- `5100/37` Preventive medicine
+- `5100/38` Primary care
+  - `5100/38a` General practice
+- `5100/39` Psychiatry
+  - `5100/39a` Forensic psychiatry
+- `5100/40` Psychosomatic
+- `5100/41` Psychotherapy
+- `5100/42` Psychology
+- `5100/43` Therapy
+- `5100/44` Public health
+- `5100/45` Radiology
+- `5100/46` Recreational therapy
+- `5100/47` Rehabilitation medicine
+- `5100/48` Respiratory therapy
+- `5100/49` Sleep medicine
+- `5100/50` Speech–language pathology
+- `5100/51` Sports medicine
+- `5100/52` Surgery
+  - `5100/52a` Bariatric surgery
+  - `5100/52b` Cardiothoracic surgery
+  - `5100/52c` Neurosurgery
+  - `5100/52d` Orthoptics
+  - `5100/52e` Orthopedic surgery
+  - `5100/52f` Plastic surgery
+  - `5100/52g` Trauma surgery
+  - `5100/52h` Traumatology
+  - `5100/52i` Anesthesiology
+- `5100/53` Traditional medicine
+- `5100/54` Urology
+  - `5100/54a` Andrology
+- `5100/55` Veterinary medicine
+- `5100/56` Cosmetology
+- `5100/57` Cleaning
+- `5100/58` Decontamination
+- `5100/59` Sterilization (microbiology)
+- `5100/60` Sports medicine
+
+### `5110` Military sciences
+
+- `5110/1` Amphibious warfare
+- `5110/2` Artillery
+- `5110/3` Battlespace
+  - `5110/3a` Air
+  - `5110/3b` Information
+  - `5110/3c` Land
+  - `5110/3d` Sea
+  - `5110/3e` Space
+- `5110/4` Campaigning
+- `5110/5` Military engineering
+- `5110/6` Doctrine
+- `5110/7` Espionage
+- `5110/8` Game theory
+- `5110/9` Grand strategy
+  - `5110/9a` Containment
+  - `5110/9b` Limited war
+  - `5110/9c` Military science
+  - `5110/9d` Philosophy of war
+  - `5110/9e` Strategic studies
+  - `5110/9f` Chess
+  - `5110/9g` Total war
+  - `5110/9h` War
+- `5110/10` Leadership
+- `5110/11` Logistics
+  - `5110/11a` Materiel
+  - `5110/11b` Supply chain management
+- `5110/12` Military operation
+- `5110/13` Military history
+  - `5110/13a` Prehistoric
+  - `5110/13b` Ancient
+  - `5110/13c` Medieval
+  - `5110/13d` Early modern
+  - `5110/13e` Industrial
+  - `5110/13f` Modern
+  - `5110/13g` Fourth-generation warfare
+- `5110/14` Military intelligence
+- `5110/15` Military law
+- `5110/16` Military medicine
+- `5110/17` Naval science
+  - `5110/17a` Naval engineering
+  - `5110/17b` Naval tactics
+  - `5110/17c` Naval architecture
+- `5110/18` Organization
+  - `5110/18a` Command and control
+  - `5110/18b` Doctrine
+  - `5110/18c` Education and training
+  - `5110/18d` Engineers
+  - `5110/18e` Intelligence
+  - `5110/18f` Ranks
+  - `5110/18g` Staff
+  - `5110/18h` Technology and equipment
+  - `5110/18i` Military exercises
+  - `5110/18j` Military simulation
+  - `5110/18k` Military sports
+- `5110/19` Strategy
+  - `5110/19a` Attrition
+  - `5110/19b` Deception
+  - `5110/19c` Defensive
+  - `5110/19d` Offensive
+  - `5110/19e` Counter-offensive
+  - `5110/19f` Maneuver
+  - `5110/19g` Goal
+  - `5110/19h` Naval
+- `5110/20` Tactics
+  - `5110/20a` Aerial
+  - `5110/20b` Battle
+  - `5110/20c` Cavalry
+  - `5110/20d` Charge
+  - `5110/20e` Counter-attack
+  - `5110/20f` Counter-insurgency
+  - `5110/20g` Counter-intelligence
+  - `5110/20h` Counter-terrorism
+  - `5110/20i` Foxhole
+  - `5110/20j` Endemic warfare
+  - `5110/20k` Guerrilla warfare
+  - `5110/20l` Infiltration
+  - `5110/20m` Irregular warfare
+  - `5110/20n` Morale
+  - `5110/20o` Naval tactics
+  - `5110/20p` Siege
+  - `5110/20q` Surgical strike
+  - `5110/20r` Tactical objective
+  - `5110/20s` Trench warfare
+- `5110/21` Military weapons
+  - `5110/21a` Armor
+  - `5110/21b` Artillery
+  - `5110/21c` Biological
+  - `5110/21d` Cavalry
+  - `5110/21e` Conventional
+  - `5110/21f` Chemical
+  - `5110/21g` Cyber
+  - `5110/21h` Economic
+  - `5110/21i` Electronic
+  - `5110/21j` Infantry
+  - `5110/21k` Nuclear
+  - `5110/21l` Psychological
+  - `5110/21m` Unconventional
+- `5110/22` Other Military
+  - `5110/22a` Arms control
+  - `5110/22b` Arms race
+  - `5110/22c` Assassination
+  - `5110/22d` Asymmetric warfare
+  - `5110/22e` Civil defense
+  - `5110/22f` Clandestine operation
+  - `5110/22g` Collateral damage
+  - `5110/22h` Cold war (general term)
+  - `5110/22i` Combat
+  - `5110/22j` Covert operation
+  - `5110/22k` Cyberwarfare
+  - `5110/22l` Defense industry
+  - `5110/22m` Disarmament
+  - `5110/22n` Intelligence agency
+  - `5110/22o` Laws of war
+  - `5110/22p` Mercenary
+  - `5110/22q` Military campaign
+  - `5110/22r` Military operation
+  - `5110/22s` Mock combat
+  - `5110/22t` Network-centric warfare
+  - `5110/22u` Paramilitary
+  - `5110/22v` Principles of war
+  - `5110/22w` Private defense agency
+  - `5110/22x` Private military company
+  - `5110/22y` Proxy war
+  - `5110/22z` Religious war
+  - `5110/22aa` Security
+  - `5110/22ab` Special forces
+  - `5110/22ac` Special operations
+  - `5110/22ad` Theater (warfare)
+  - `5110/22ae` Theft
+  - `5110/22af` Undercover
+  - `5110/22ag` War crimes
+  - `5110/22ah` Warrior
+
+### `5120` Public administration
+
+- `5120/1` Civil service
+- `5120/2` Corrections
+- `5120/3` Conservation biology
+- `5120/4` Criminal justice
+- `5120/5` Disaster research
+- `5120/6` Disaster response
+- `5120/7` Emergency management
+- `5120/8` Emergency services
+- `5120/9` Fire safety (Structural fire protection)
+- `5120/10` Fire ecology (Wildland fire management)
+- `5120/11` Governmental affairs
+- `5120/12` International affairs
+- `5120/13` Law enforcement
+- `5120/14` Peace and conflict studies
+- `5120/15` Police science
+- `5120/16` Policy studies
+  - `5120/16a` Policy analysis
+- `5120/17` Public administration
+  - `5120/17a` Nonprofit administration
+  - `5120/17b` Non-governmental organization (NGO) administration
+  - `5120/17c` Public policy doctrine
+  - `5120/17d` Public policy school
+  - `5120/17e` Regulation
+- `5120/18` Public safety
+- `5120/19` Public service
+
+### `5130` Public policy
+
+- `5130/1` Agricultural policy
+- `5130/2` Commercial policy
+- `5130/3` Cultural policy
+- `5130/4` Domestic policy
+- `5130/5` Drug policy
+  - `5130/5a` Drug policy reform
+- `5130/6` Economic policy
+  - `5130/6a` Fiscal policy
+  - `5130/6b` Incomes policy
+  - `5130/6c` Industrial policy
+  - `5130/6d` Investment policy
+  - `5130/6e` Monetary policy
+  - `5130/6f` Tax policy
+- `5130/7` Education policy
+- `5130/8` Energy policy
+  - `5130/8a` Nuclear energy policy
+  - `5130/8b` Renewable energy policy
+- `5130/9` Environmental policy
+- `5130/10` Food policy
+- `5130/11` Foreign policy
+- `5130/12` Governance
+- `5130/13` Health policy
+  - `5130/13a` Pharmaceutical policy
+  - `5130/13b` Vaccination policy
+- `5130/14` Housing policy
+- `5130/15` Immigration policy
+- `5130/16` Knowledge policy
+- `5130/17` Language policy
+- `5130/18` Military policy
+- `5130/19` Science policy
+  - `5130/19a` Climate change policy
+  - `5130/19b` Stem cell research policy
+  - `5130/19c` Space policy
+  - `5130/19d` Technology policy
+- `5130/20` Security policy
+- `5130/21` Social policy
+- `5130/22` Public policy by country
+
+### `5140` Social work
+
+- `5140/1` Child welfare
+- `5140/2` Community practice
+  - `5140/2a` Community organizing
+  - `5140/2b` Social policy
+- `5140/3` Human Services
+- `5140/4` Corrections
+- `5140/5` Gerontology
+- `5140/6` Medical social work
+- `5140/7` Mental health
+- `5140/8` School social work
+
+### `5150` Transportation
+
+- `5150/1` Highway safety
+- `5150/2` Infographics
+- `5150/3` Intermodal transportation studies
+- `5150/4` Logistics
+- `5150/5` Marine transportation
+  - `5150/5a` Port management
+  - `5150/5b` Seafaring
+- `5150/6` Operations research
+- `5150/7` Mass transit
+- `5150/8` Travel
+- `5150/9` Vehicles

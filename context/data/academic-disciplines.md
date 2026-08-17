@@ -1,0 +1,2718 @@
+# Outline of Academic Disciplines
+
+Source: [Outline of academic disciplines](https://en.wikipedia.org/wiki/Outline_of_academic_disciplines) (Wikipedia, CC BY-SA 4.0).
+Retrieved 2026-08-17.
+
+Heading levels mirror the outline's own hierarchy; nested list items are sub-disciplines.
+
+## Humanities
+
+### Performing arts
+
+- Music
+  - Accompanying
+  - Chamber music
+  - Church music
+  - Conducting
+    - Choral conducting
+    - Orchestral conducting
+    - Wind ensemble conducting
+  - Early music
+  - Jazz studies
+  - Musical composition
+  - Music education
+  - Music genre
+    - List of music genres and styles
+  - Musicology
+    - Historical musicology
+    - Systematic musicology
+    - Ethnomusicology
+  - Music theory
+  - Orchestral studies
+  - Organology
+    - Organ and historical keyboards
+    - Piano
+    - Strings, harp, oud, and guitar
+    - Singing
+    - Woodwinds, brass, and percussion
+  - Recording
+- Dance
+  - Choreography
+  - Dance notation
+  - Ethnochoreology
+  - History of dance
+- Television
+  - Television studies
+- Theatre
+  - Acting
+  - Directing
+  - Dramaturgy
+  - History of theatre
+  - Musical theatre
+  - Playwrighting
+  - Puppetry
+  - Scenography
+  - Stage design
+  - Ventriloquism
+- Film
+  - Animation
+  - Film criticism
+  - Filmmaking
+  - Film theory
+  - Film studies
+  - Live action
+- Oral literature
+  - Public speaking
+  - Performance poetry
+  - Spoken word
+  - Storytelling
+- Electronic game
+  - Arcade game
+  - Audio game
+  - Outline of video games
+
+### Visual arts
+
+- Applied arts
+  - Craft
+    - Calligraphy
+    - Decorative arts
+    - Fashion
+    - Paper craft
+    - Textile arts
+    - Woodwork
+    - Metalwork
+    - Pottery
+    - Graphic design
+  - Architecture (Outline of architecture)
+    - Interior architecture
+    - Landscape architecture
+      - Landscape design
+      - Landscape planning
+    - Architectural analytics
+    - Historic preservation
+    - Interior design (interior architecture)
+    - Technical drawing
+- Art director
+- Fine arts
+  - Graphic arts
+    - Drawing
+    - Painting
+    - Photography
+    - Printmaking
+  - Sculpture
+- Digital art
+  - 3D Modeling
+  - Animation
+  - Digital painting
+- Mixed media
+- Studio art
+- Culinary Arts
+  - Food photography
+  - Food presentation
+  - Gourmet
+
+### History
+
+_Also regarded as a Social science_
+
+- Prehistory
+- Ancient history
+  - Ancient Egypt
+  - Carthage
+  - Ancient Greek history
+  - Ancient Roman history
+    - History of the Roman Republic
+    - History of the Roman Empire
+  - Ancient Chinese history
+  - Ancient Middle Eastern history
+  - Assyrian Civilization
+  - Bronze Age Civilizations
+  - Biblical history
+  - History of the Indus Valley Civilization
+  - Preclassic Maya
+  - History of Mesopotamia
+  - The Stone Age
+  - History of the Yangtze civilization
+  - History of the Yellow River civilization
+- Modern history
+- Asian history
+  - Chinese history
+  - Japanese history
+  - Korean history
+  - Mongolian history
+  - Indian history
+  - Indonesian history
+  - Turkish history
+  - Iranian history
+  - Vietnamese history
+  - Philippine history
+- Australian history
+- European history
+  - British history
+  - French history
+  - German history
+  - Dutch history
+  - Italian history
+  - Spanish history
+  - Portuguese history
+  - Polish history
+  - Balkan history
+  - Scandinavian history
+    - Swedish history
+    - Norwegian history
+    - Danish history
+    - Finnish history
+    - Icelandic history
+  - Russian history
+- African history
+  - South African history
+  - Egyptian history
+  - East and Central African history
+  - Nigerian history
+- Pre-Columbian era history
+- Pan-American history
+  - North American history
+    - American history
+    - Canadian history
+    - Mexican history
+    - Cuban history
+  - South American history
+    - Latin American history
+    - Brazilian history
+    - Colombian history
+    - Venezuelan history
+    - Peruvian history
+    - Argentine history
+  - Pre-Columbian era
+    - Mayan history
+    - Aztec history
+    - Inca history
+    - Mississippian culture* Art History
+- Latin American history
+- Jewish history
+- Cultural history
+- Ecclesiastical history of the Catholic Church
+- Economic history
+- Environmental history
+- Intellectual history
+- Philosophical history
+  - Ancient philosophy
+  - Contemporary philosophy
+  - Medieval philosophy
+    - Humanism
+    - Scholasticism
+  - Modern philosophy
+- Political history
+  - History of political thought
+- Public history
+- Scientific history
+- Technological history
+- World history
+
+### Languages and literature
+
+_Linguistics listed in Social science_
+
+- Comics studies
+- Classics
+- Comparative literature
+- Creative writing
+  - Poetry
+  - Prose
+  - Non-fiction
+  - Fiction
+  - Creative nonfiction
+  - Literary journalism
+  - Screenwriting
+  - Playwrighting
+- English studies
+- English literature
+- History of literature
+  - Ancient literature
+  - Medieval literature
+  - Post-colonial literature
+  - Post-modern literature
+- Literary genre
+- Literary theory
+  - Critical theory
+  - Literary criticism
+  - Poetics
+  - Rhetoric
+- Languages
+  - Business English
+  - Classical language
+  - Modern language
+  - Standard English
+  - World Englishes
+- World literature
+  - American literature
+    - African-American literature
+    - Southern literature
+  - British literature
+  - Canadian literature
+  - Indian English literature
+  - Irish literature
+  - New Zealand literature
+  - Scottish literature
+  - South African literature
+  - Welsh literature
+
+### Law
+
+_Also regarded as a Social science_
+
+- Legal management (academic discipline)
+  - Corporate law
+  - Mercantile law
+  - Business law
+- Administrative law
+- Canon law
+- Comparative law
+- Constitutional law
+- Competition law
+- Criminal law
+  - Criminal procedure
+  - Criminal justice
+    - Police science
+    - Forensic science
+- Islamic law
+- Jewish law
+- Jurisprudence (Philosophy of Law)
+- Civil law
+  - Admiralty law
+  - Animal law/Animal rights
+  - Common law
+  - Corporations
+  - Civil procedure
+  - Contract law
+  - Environmental law
+  - Family law
+  - Federal law
+  - International law
+    - Public international law
+    - Supranational law
+  - Labor law
+  - Paralegal studies
+  - Property law
+  - Tax law
+  - Tort law
+- Law enforcement
+- Procedural law
+- Substantive law
+
+### Philosophy
+
+_Also regarded as the separate, an entry at the highest level of the hierarchy_
+
+- Aesthetics / Philosophy of art
+- Applied philosophy
+  - Philosophy of economics
+  - Philosophy of education
+  - Philosophy of engineering
+  - Philosophy of history
+  - Philosophy of language
+  - Philosophy of law
+  - Philosophy of mathematics
+  - Philosophy of music
+  - Philosophy of psychology
+  - Philosophy of religion
+  - Philosophy of physical sciences
+    - Philosophy of biology
+    - Philosophy of chemistry
+    - Philosophy of physics
+  - Philosophy of social science
+  - Philosophy of technology
+  - Systems philosophy
+  - Political philosophy and Social philosophy
+    - Anarchism
+    - Feminist philosophy
+    - Manosphere Schools of Gender Dynamics
+    - Libertarianism
+    - Marxism
+- Epistemology
+  - Justification
+  - Reasoning errors
+- Ethics
+  - Applied ethics
+    - Animal rights
+    - Bioethics
+    - Environmental ethics
+  - Meta-ethics
+  - Moral psychology, Descriptive ethics, Value theory
+  - Normative ethics
+    - Virtue ethics
+- Logic
+  - Mathematical logic
+  - Philosophical logic
+- Meta-philosophy
+- Metaphysics
+  - Philosophy of Action
+  - Determinism and Free will
+  - Ontology
+  - Philosophy of mind
+    - Philosophy of pain
+    - Philosophy of artificial intelligence
+    - Philosophy of perception
+    - Neurophilosophy
+  - Philosophy of space and time
+  - Teleology
+  - Theism and Atheism
+- Philosophical traditions and schools
+  - African philosophy
+  - Analytic philosophy
+  - Aristotelianism
+  - Continental philosophy
+  - Eastern philosophy
+  - Feminist philosophy
+  - Islamic philosophy
+  - Platonism
+- History of philosophy
+  - Ancient philosophy
+  - Medieval philosophy
+    - Scholasticism
+    - Humanism
+  - Modern philosophy
+  - Contemporary philosophy
+
+### Religious studies
+
+_Also regarded as a social science_
+
+- History of Religion
+- Anthropology of Religion
+- Sociology of Religion
+- Psychology of Religion
+- Phenomenology of Religion
+- Philosophy of Religion
+- Comparative religion
+- Mythology and Folklore
+- Theism
+- Irreligion
+
+### Divinity
+
+- Canon law
+- Church history
+- Field ministry
+  - Pastoral counseling
+  - Pastoral theology
+  - Religious education techniques
+  - Homiletics
+  - Liturgy
+  - Sacred music
+  - Missiology
+- Hermeneutics
+- Scriptural study and languages
+  - Avestan
+  - Biblical Hebrew
+  - Biblical studies/Sacred Scripture
+  - Classical Arabic
+  - Classical Armenian
+  - Coptic
+  - Ge'ez
+  - Koine Greek
+  - Latin
+  - Old Church Slavonic
+  - Old Georgian
+  - Pali
+  - Syriac
+  - Vedic Sanskrit (Vedas)
+- Theology
+  - Dogmatic theology
+  - Ecclesiology
+  - Sacramental theology
+  - Systematic theology
+  - Christian ethics
+  - Hindu ethics
+  - Moral theology
+  - Historical theology
+
+### Theology
+
+- Biblical studies
+  - Biblical Hebrew, Koine Greek, Aramaic
+- Buddhist theology
+  - Pali Studies
+- Christian theology
+  - Anglican theology
+  - Baptist theology
+  - Catholic theology
+  - Eastern Orthodox theology
+  - Protestant theology
+- Hindu theology
+  - Sanskrit Studies
+  - Dravidian Studies
+- Jewish theology
+- Muslim theology
+  - Arabic Studies
+- Buddhist studies
+
+### Religion
+
+- Abrahamic religions
+  - Christianity
+    - Christian theology
+  - Islam/ Islamic studies
+  - Judaism/ Jewish studies
+- Apologetics
+- Indian religions
+  - Buddhism/ Buddhist studies
+  - Hinduism
+  - Jainism
+  - Sikhism
+- East Asian religions
+  - Chinese folk religion
+  - Confucianism
+  - Shinto
+  - Daoism
+  - I-Kuan Tao
+  - Caodaism
+  - Chondogyo
+  - Tenrikyo
+  - Oomoto
+- Other religions
+  - African religions
+  - Ancient Egyptian religion
+  - Native American religions
+  - Gnosticism
+  - Occult
+  - Esotericism
+  - Mysticism
+  - Spirituality
+  - New religious movements
+  - Sumerian religion
+  - Zoroastrianism
+- Comparative religion
+- Mythology and Folklore
+- Theism
+- Irreligion
+  - Agnosticism
+  - Atheism and religious humanism
+  - Nontheism
+
+## Social science
+
+### Anthropology
+
+- Archaeology
+  - Biocultural anthropology
+  - Feminist archaeology
+  - Maritime archaeology
+- Anthropological criminology
+- Anthropological linguistics
+  - Synchronic linguistics (or Descriptive linguistics)
+  - Diachronic linguistics (or Historical linguistics)
+  - Ethnolinguistics
+  - Semiotic anthropology
+  - Sociolinguistics
+- Anthrozoology
+- Biological anthropology
+  - Gene-culture coevolution
+  - Evolutionary anthropology
+  - Forensic anthropology
+  - Human behavioral ecology
+  - Human evolution
+  - Medical anthropology
+  - Molecular anthropology
+  - Neuroanthropology
+  - Nutritional anthropology
+  - Paleoanthropology
+  - Population genetics
+  - Primatology
+- Biocultural anthropology
+- Cultural anthropology
+  - Anthropology of development
+  - Anthropology of religion
+  - Applied anthropology
+  - Cognitive anthropology
+  - Cyborg anthropology
+  - Digital anthropology
+  - Digital culture
+  - Ecological anthropology
+  - Economic anthropology
+  - Environmental anthropology
+  - Ethnobiology
+  - Ethnobotany
+  - Ethnography
+  - Ethnohistory
+  - Ethnology
+  - Ethnomuseology
+  - Ethnomusicology
+  - Feminist anthropology
+  - Folklore
+  - Kinship
+  - Legal anthropology
+  - Mythology
+  - Missiology
+  - Political anthropology
+  - Political economic anthropology
+  - Psychological anthropology
+  - Public anthropology
+  - Symbolic anthropology
+  - Transpersonal anthropology
+  - Urban anthropology
+- Linguistic anthropology
+- Social anthropology
+  - Anthropology of art
+  - Anthropology of institutions
+  - Anthropology of media
+  - Visual anthropology
+- Sociocultural anthropology
+
+#### Archaeology
+
+- Aerial archaeology
+- Aviation archaeology
+- Anthracology
+- Archaeo-optics
+- Archaeoacoustics
+- Archaeoastronomy
+- Archaeogeography
+- Archaeological culture
+- Archaeological theory
+  - Great ages archaeology
+  - Functionalism
+  - Processualism
+  - Post-processualism
+  - Cognitive archaeology
+  - Gender archaeology
+  - Feminist archaeology
+- Archaeometry
+  - Archaeogenetics
+  - Bioarchaeology
+  - Computational archaeology
+  - Dendrochronology
+  - Geoarchaeology
+  - Isotope analysis
+  - Palynology
+  - Radiocarbon dating
+  - Zooarchaeology
+- Archaeology of religion and ritual
+- Archaeology of trade
+- Archaeomythology
+- Architectural analytics
+- Battlefield archaeology
+- Calceology
+- Conflict archaeology
+- Data archaeology
+- Digital archaeology
+- Experimental archaeology
+- Environmental archaeology
+- Ethnoarchaeology
+- Forensic archaeology
+- Glyptology
+- History of archaeology
+- Household archaeology
+- Landscape archaeology and Landscape history
+- Manuscriptology
+- Maritime archaeology
+- Media archaeology
+- Modern archaeology
+  - Settlement archaeology
+- Music archaeology
+- Osteology
+- Palaeoarchaeology
+- Paleoanthropology
+- Paleoethnobotany
+- Paleopathology
+- Paleoradiology
+- Taphonomy
+- Urban archaeology
+- Historical archaeology
+  - Prehistoric archaeology
+  - protohistoric archaeology
+  - Biblical archaeology
+  - Classical archaeology
+  - Egyptology
+  - Assyriology
+  - Etruscology
+  - Near Eastern archaeology
+  - Medieval archaeology
+  - Post-medieval archaeology
+  - Industrial archaeology
+  - Contemporary archaeology
+
+### Business
+
+- Accounting
+  - Accounting research
+  - Accounting scholarship
+- Business administration
+- Business analysis
+- Business ethics
+- Business law
+- Corporate governance
+- E-Business
+- Entrepreneurship
+- Decision science
+- Finance
+- Industrial and labor relations
+  - Collective bargaining
+  - Human resources
+  - Organizational studies
+  - Labor economics
+  - Labor history
+- Information technology
+  - Information systems (Business informatics)
+  - Management information systems
+  - Health informatics
+- International trade
+- Management
+- Marketing
+- Operations management
+- Purchasing
+- Risk management and insurance
+- Strategy or Strategic Management
+- Systems science
+
+### Economics
+
+- Agricultural economics
+- Anarchist economics
+- Applied economics
+- Behavioural economics
+- Bioeconomics
+- Business
+- Complexity economics
+- Computational economics
+- Consumer economics
+- Development economics
+- Digital economy
+- Ecological economics
+- Econometrics
+- Economic geography
+- Economic history
+- Economic sector
+- Economic sociology
+- Economic systems
+- Economic value
+- Education economics
+- Energy economics
+- Entrepreneurial economics
+- Environmental economics
+- Evolutionary economics
+- Experimental economics
+- Feminist economics
+- Family economics
+- Financial economics
+- Financial econometrics
+- Green economics
+- Growth economics
+- Human development theory
+- Industrial organization
+- Information economics
+- Institutional economics
+- International economics
+- Islamic economics
+- JEL classification codes in searching for articles by fields in economics journals
+- Knowledge economy
+- Labor economics
+- Health economics
+- Law and economics
+- Macroeconomics
+- Managerial economics
+- Market economy
+- Marxian economics
+- Mathematical economics
+- Microeconomics
+- Monetary economics
+- Neuroeconomics
+- Participatory economics
+- Political economy
+- Public economics
+- Public choice
+- Public finance
+- Real estate economics
+- Resource economics
+- Social choice theory
+- Socialist economics
+- Socioeconomics
+- Transport economics
+- Welfare economics
+
+### Futurology
+
+_(also known as future studies or prospective studies)_
+
+- Cashless society
+- Climate
+
+### Geography
+
+- Physical geography (is also listed in Earth Science)
+  - Atmology
+  - Biogeography
+  - Climatology
+    - Palaeoclimatology
+  - Coastal geography
+  - Emergency management
+  - Environmental geography
+  - Geobiology
+  - Geochemistry
+  - Geographic information systems
+  - Geology
+  - Geomatics
+  - Geomorphology
+  - Geodesy
+  - Geophysics
+  - Glaciology
+  - Hydrology/Hydrography
+    - Glaciology
+    - Limnology
+    - Biogeochemistry
+    - Oceanography
+  - Landscape ecology
+  - Lithology
+  - Meteorology
+  - Mineralogy
+  - Oceanography
+  - Palaeogeography
+  - Palaeontology
+  - Petrology
+  - Quaternary science
+  - Soil geography
+- Human geography
+  - Behavioural geography
+  - Cognitive geography
+  - Cultural geography
+    - Feminist geography
+  - Development geography
+  - Economic geography
+  - Health geography
+  - Historical geography
+  - Language geography
+  - Mathematical geography
+  - Marketing geography
+  - Military geography
+  - Political geography and Geopolitics
+  - Population geography
+  - Religion geography
+  - Social geography
+  - Children's geographies
+  - Strategic geography
+  - Time geography
+  - Tourism geography
+  - Transport geography
+  - Urban geography
+- Integrated geography
+- Cartography
+  - Celestial cartography
+  - Planetary cartography
+  - Topography
+- Navigation
+- Regional geography
+- Remote sensing
+
+### Linguistics
+
+_Also regarded as a formal science_
+
+- Applied linguistics
+- Composition studies
+- Computational linguistics
+- Discourse analysis
+- English studies
+- Etymology
+- Grammar
+- Grammatology
+- Historical linguistics
+- History of linguistics
+- Interlinguistics
+- Lexicology
+- Linguistic typology
+- Morphology
+- Natural language processing
+- Philosophy of language
+- Philosophy of linguistics
+- Linguistic philosophy
+- Philology
+- Phonetics
+- Phonology
+- Pragmatics
+- Psycholinguistics
+- Rhetoric
+- Semantics
+- Semiotics
+- Sociolinguistics
+- Syntax
+- Terminology science
+- Usage
+- Word usage
+
+### Political science
+
+- American politics
+- Canadian politics
+- Civics
+- Health politics
+- Biopolitics
+- Comparative politics
+- European studies
+- Geopolitics (Political geography)
+- Indian politics
+- International relations
+- International organizations
+- Nationalism studies
+- Peace and conflict studies
+- Policy studies
+- Political behavior
+- Political culture
+- Political economy
+- Political history
+- Political philosophy
+- Public administration
+  - Nonprofit administration
+  - Non-governmental organization (NGO) administration
+- Public law
+- Public policy
+- Psephology
+- Social choice theory
+- Singapore politics
+
+### Psychology
+
+- Abnormal psychology
+- Applied psychology
+- Biological psychology
+- Clinical neuropsychology
+- Clinical psychology
+- Cognitive psychology
+- Community psychology
+- Comparative psychology
+- Conservation psychology
+- Consumer psychology
+- Counseling psychology
+- Criminal psychology
+- Cultural psychology
+  - Asian psychology
+  - Black psychology
+- Developmental psychology
+- Differential psychology
+- Ecological psychology
+- Educational psychology
+- Environmental psychology
+- Evolutionary psychology
+- Experimental psychology
+- Group psychology
+- Family psychology
+- Feminine psychology
+- Forensic developmental psychology
+- Forensic psychology
+- Health psychology
+- Humanistic psychology
+- Indigenous psychology
+- Legal psychology
+- Mathematical psychology
+- Media psychology
+- Medical psychology
+- Military psychology
+- Moral psychology and Descriptive ethics
+- Music psychology
+- Neuropsychology
+- Occupational health psychology
+- Occupational psychology
+- Organizational psychology (a.k.a., Industrial Psychology)
+- Parapsychology
+- Pediatric psychology
+- Pedology (children study)
+- Personality psychology
+- Phenomenology
+- Political psychology
+- Positive psychology
+- Problem solving
+- Psychoanalysis
+- Psychobiology
+- Psychology of religion
+- Psychometrics
+- Psychopathology
+  - Child psychopathology
+- Psychophysics
+- Quantitative psychology
+- Rehabilitation psychology
+- School psychology
+- Social psychology
+- Sport psychology
+- Traffic psychology
+- Transpersonal psychology
+- Travel psychology
+
+### Sociology
+
+- Analytical sociology
+- Applied sociology
+  - Leisure studies
+  - Political sociology
+  - Public sociology
+  - Social engineering
+- Architectural sociology
+- Area studies
+  - African studies
+  - American studies
+    - Appalachian studies
+    - Canadian studies
+    - Latin American studies
+  - Asian studies
+    - Central Asian studies
+    - East Asian studies
+    - Filipinology
+    - Iranian studies
+    - Japanese studies
+    - Korean studies
+    - Sinology
+    - Indology (South Asian studies)
+      - Bengal studies
+      - Dravidian studies (Dravidology)
+      - Tamilology
+      - Pakistan studies
+      - Sindhology
+    - Southeast Asian studies
+    - Thai studies
+  - Australian studies
+  - European studies
+    - Celtic studies
+    - German studies
+    - Sociology in Poland
+    - Scandinavian studies
+    - Slavic studies
+  - Middle Eastern studies
+    - Arab studies
+    - Assyriology
+    - Egyptology
+    - Jewish studies
+- Behavioral sociology
+- Chinese sociology
+- Collective behavior
+  - Social movements
+  - Activism
+- Social phenomenon
+- Community informatics
+  - Social network analysis
+- Comparative sociology
+- Conflict theory
+- Criminology/Criminal justice
+- Critical management studies
+- Critical sociology
+- Cultural sociology
+- Cultural studies/ethnic studies
+  - Africana studies
+  - Cross-cultural studies
+  - Culturology
+  - Deaf studies
+  - Ethnology
+  - Utopian studies
+  - Whiteness studies
+- Demography/Population
+- Digital sociology
+- Dramaturgical sociology
+- Economic sociology
+- Educational sociology
+- Empirical sociology
+- Environmental sociology
+- Evolutionary sociology
+- Feminist sociology
+- Figurational sociology
+- Futures studies
+- Gender studies
+  - Men's studies
+  - Women's studies
+  - Queer studies
+- Historical sociology
+- Human ecology
+- Humanistic sociology
+- Industrial sociology
+- Interactionism
+- Interpretive sociology
+  - Ethnomethodology
+  - Phenomenology
+  - Social constructionism
+  - Symbolic interactionism
+- Jealousy sociology
+- Macrosociology
+- Marxist sociology
+- Mathematical sociology
+- Medical sociology
+- Mesosociology
+- Microsociology
+- Military sociology
+- Natural resource sociology
+- Organizational theory
+  - Organizational studies
+- Phenomenological sociology
+- Policy sociology
+- Postcolonialism
+- Psychoanalytic sociology
+- Science studies/Science and technology studies
+- Sexology
+  - Heterosexism
+  - Human sexual behavior
+  - Human sexuality
+  - Queer studies/Queer theory
+  - Sex education
+- Social capital
+- Social change
+- Social conflict theory
+- Social control
+  - Pure sociology
+- Social economy
+- Social philosophy
+- Social policy
+- Social psychology
+- Social stratification
+- Social theory
+- Social research
+- Social transformation
+  - Computational sociology
+  - Economic sociology/Socioeconomics
+    - Economic development
+    - Social development
+    - Social development
+- Sociobiology
+- Sociocybernetics
+- Sociolinguistics
+- Sociology of aging
+- Sociology of agriculture
+- Sociology of art
+- Sociology of autism
+- Sociology of childhood
+- Sociology of conflict
+- Sociology of culture
+- Sociology of cyberspace
+- Sociology of development
+- Sociology of deviance
+- Sociology of disaster
+- Sociology of education
+- Sociology of emotions
+- Sociology of fatherhood
+- Sociology of film
+- Sociology of finance
+- Sociology of food
+- Sociology of gender
+- Sociology of generations
+- Sociology of globalization
+- Sociology of government
+- Sociology of health and illness
+- Sociology of human consciousness
+- Sociology of immigration
+- Sociology of knowledge
+- Sociology of language
+- Sociology of law
+- Sociology of leisure
+- Sociology of literature
+- Sociology of markets
+- Sociology of marriage
+- Sociology of motherhood
+- Sociology of music
+- Sociology of natural resources
+- Sociology of organizations
+- Sociology of peace, war, and social conflict
+- Sociology of punishment
+- Sociology of race and ethnic relations
+- Sociology of religion
+- Sociology of risk
+- Sociology of science
+- Sociology of scientific knowledge
+- Sociology of social change
+- Sociology of social movements
+- Sociology of space
+- Sociology of sport
+- Sociology of technology
+- Sociology of terrorism
+- Sociology of the body
+- Sociology of the family
+- Sociology of the history of science
+- Sociology of the Internet
+- Sociology of work
+- Sociomusicology
+- Structural sociology
+- Theoretical sociology
+- Urban studies or Urban sociology/Rural sociology
+- Victimology
+- Visual sociology
+- Social theory
+- Social stratification
+- Sociological theory
+- Sociobiology
+- Sociocybernetics
+- Sociolinguistics
+
+### Interdisciplinary studies
+
+#### Area studies
+
+- African studies
+- American studies
+  - Appalachian studies
+  - Canadian studies
+  - Latin American studies
+- Asian studies
+  - Central Asian studies
+  - East Asian studies
+  - Iranian studies
+  - Japanology (Japanese studies)
+  - Korean studies
+  - Sinology (Chinese studies)
+  - Indology (South Asian studies)
+    - Bengal studies
+    - Dravidian studies (Dravidology)
+      - Tamilology
+    - Pakistan studies
+    - Sindhology
+  - Southeast Asian studies
+- European studies
+  - Celtic studies
+  - German studies
+  - Indo-European studies
+  - Scandinavian studies
+  - Slavic studies
+- Australian studies
+- Pacific studies
+- Middle East studies
+  - Turkology (Turkish studies)
+- Russian and Eastern European studies
+
+#### Ethnic and cultural studies
+
+- Cultural studies
+- Ethnic studies
+- Ethnology
+- Culturology
+- Cross-cultural studies
+
+#### Organizational studies
+
+- Business administration
+- Business economics
+- Business studies
+- Human resources management
+- Industrial organization
+- Management
+- Organizational behavior
+- Organization theory
+- Project management
+- Quality control
+
+## Natural science
+
+### Physical Science
+
+#### Space sciences
+
+- Aerospace engineering
+  - Aerospace architecture
+  - Aerospace physiology
+  - Aerospace manufacturing
+  - Astronautics
+    - Space architecture
+    - Space colonization
+    - Space commercialization
+      - Space-based economy
+      - Space industry
+      - Space manufacturing
+      - Space tourism
+    - Space environment
+    - Space logistics
+    - Space food
+    - Space medicine
+      - Neuroscience in space
+    - Space religion
+    - Space sex
+    - Space survival
+    - Space warfare
+    - Space writing
+  - Aeronautics
+  - Control engineering
+  - Human spaceflight
+  - Robotic spacecraft
+  - Space corrosion
+- Space technology
+  - Space telescopes
+  - Space-based radar
+  - Space-based solar power
+  - Spacecraft design
+  - Spacecraft propulsion
+- Asteroid-impact avoidance
+- Astrobiology
+- Astrobotany
+- Astrochemistry
+  - Theoretical astronomy
+- Cosmochemistry
+- Cosmology
+  - Physical cosmology
+- Micro-g environment research
+- Remote sensing
+- Space archaeology
+- Space exploration
+- Space law
+- Space nuclear power
+
+##### Astronomy
+
+- Astronomy
+  - Archaeoastronomy
+  - Astrometry
+  - Amateur astronomy
+  - Forensic astronomy
+  - Extragalactic astronomy
+  - Galactic astronomy
+  - High-energy astronomy
+  - Observational astronomy
+    - Radio astronomy
+    - Microwave astronomy
+    - Submillimetre astronomy
+    - Infrared astronomy
+    - Optical astronomy
+    - UV astronomy
+    - X-ray astronomy
+    - Gamma-ray astronomy
+    - Cosmic-ray astronomy
+    - Neutrino astronomy
+    - Gravitational wave astronomy
+  - Photometry
+  - Spectroscopy
+  - Stellar astronomy
+    - Solar astronomy
+- Astrophysics
+  - Celestial mechanics
+  - Compact objects
+  - Computational astrophysics
+  - Gravitational astronomy
+    - Black holes
+  - Interstellar medium
+  - Numerical simulations
+    - Astrophysical plasma
+    - Galaxy formation and evolution
+    - High-energy astrophysics
+    - Hydrodynamics
+    - Magnetohydrodynamics
+    - Star formation
+  - Orbital mechanics
+  - Physical cosmology
+  - Relativistic astrophysics
+  - Stellar astrophysics
+    - Helioseismology
+    - Solar physics
+    - Stellar evolution
+    - Stellar nucleosynthesis
+  - Space plasma physics
+- Planetary science (alternatively, a part of earth science)
+  - Atmospheric science
+  - Exoplanetology
+  - Planetary formation
+  - Planetary rings
+  - Magnetospheres
+  - Planetary geology
+  - Planetary surfaces
+  - Small Solar System bodies
+
+#### Physics
+
+- Acoustics
+  - Quantum acoustics
+- Agrophysics
+- Aerodynamics
+- Applied physics
+  - Accelerator physics
+  - Communication physics
+- Astrophysics
+- Atmospheric physics
+- Atomic, molecular, and optical physics
+- Atomic physics
+- Biophysics
+  - Neurophysics
+- Chemical physics
+- Classical physics
+- Computational physics
+- Condensed matter physics
+- Cryogenics
+- Digital physics
+- Dynamics
+  - Analytical dynamics
+  - Astrodynamics
+  - Brownian dynamics
+  - File dynamics
+  - Flight dynamics
+  - Fluid dynamics
+    - Aerodynamics
+    - Hydrodynamics
+  - Fractional dynamics
+  - Geodynamics
+  - Molecular dynamics
+  - Newtonian dynamics
+  - Langevin dynamics
+  - Quantum chromodynamics
+  - Quantum electrodynamics
+  - Relativistic dynamics
+  - Stellar dynamics
+  - System dynamics
+  - Thermodynamics
+  - Vehicle dynamics
+- Econophysics
+- Electricity
+- Electromagnetism
+- Electrostatic
+- Magnetism
+- Engineering physics
+- Elementary particle physics
+- Experimental physics
+- Fluid dynamics
+- Geophysics
+  - Biogeophysics
+  - Geomagnetism
+- Kinematics
+  - Fluid kinematics
+  - Relativistic kinematics
+- Kinetics
+  - Electrokinetics
+  - Homeokinetics
+- Laser physics
+- Materials physics
+- Mathematical physics
+- Mechanics
+  - Analytical mechanics
+  - Applied mechanics
+  - Ballistics
+  - Biomechanics
+  - Celestial mechanics
+  - Classical mechanics
+  - Continuum mechanics
+  - Fluid mechanics
+  - Fracture mechanics
+  - Hamiltonian mechanics
+  - Hydraulics
+  - Lagrangian mechanics
+  - Matrix mechanics
+  - Molecular mechanics
+  - Optomechanics
+  - Particle mechanics
+  - Quantum mechanics
+  - Relativistic mechanics
+  - Relativistic quantum mechanics
+  - Soil mechanics
+  - Solid mechanics
+  - Statistical mechanics
+    - Quantum statistical mechanics
+- Mineral physics
+- Medical physics
+- Molecular physics
+- Newtonian dynamics
+- Nuclear physics
+- Optics
+  - Geometrical optics
+  - Physical optics
+  - Quantum optics
+- Particle physics
+- Petrophysics
+- Photonics
+- Physical chemistry
+- Polymer physics
+- Plasma physics
+- Quantum physics
+  - Quantum technology
+- Radiophysics
+- Relativity
+  - General relativity
+  - Special relativity
+- Solid mechanics
+- Solid state physics
+- Statistical mechanics
+- Theoretical physics
+- Thermal physics
+- Thermodynamics
+- Social physics
+- Soil physics
+- Solid state physics
+- Spintronics
+- Statics
+  - Fluid statics
+- Statistical physics
+- Surface physics
+
+#### Chemistry
+
+- Agrochemistry
+- Analytical chemistry
+- Astrochemistry
+- Atmospheric chemistry
+- Biochemistry
+- Catalysts
+- Chemical biology
+- Chemical engineering
+- Chemical physics
+- Cheminformatics
+- Computational chemistry
+- Cosmochemistry
+- Electrochemistry
+- Environmental chemistry
+- Femtochemistry
+- Flavor
+- Flow chemistry
+- Forensic chemistry
+- Geochemistry
+- Green chemistry
+- Histochemistry
+- Hydrogenation
+- Immunochemistry
+- Inorganic chemistry
+- Marine chemistry
+- Mathematical chemistry
+- Mechanochemistry
+- Medicinal chemistry
+- Molecular biology
+- Molecular mechanics
+- Nanotechnology
+- Natural product chemistry
+- Neurochemistry
+- Nuclear chemistry
+- Oenology
+- Organic chemistry
+- Organometallic chemistry
+- Petrochemistry
+- Pharmacology
+- Photochemistry
+- Physical chemistry
+- Physical organic chemistry
+- Phytochemistry
+- Polymer chemistry
+- Quantum chemistry
+- Radiochemistry
+- Soil chemistry
+- Solid-state chemistry
+- Sonochemistry
+- Supramolecular chemistry
+- Surface chemistry
+- Synthetic chemistry
+- Systems chemistry
+- Theoretical chemistry
+- Thermochemistry
+
+#### Earth science
+
+- Chronology
+- Edaphology
+- Environmental chemistry
+- Environmental science
+- Gemology
+- Geochemistry
+- Geodesy
+- Physical geography
+  - Atmospheric science / Meteorology
+  - Biogeography / Phytogeography
+  - Climatology / Paleoclimatology / Palaeogeography
+  - Coastal geography / Oceanography
+  - Edaphology / Pedology or Soil science
+  - Geobiology
+  - Geology (Geomorphology, Mineralogy, Petrology, Sedimentology, Speleology, Tectonics, Volcanology)
+  - Geostatistics
+  - Glaciology
+  - Hydrology/ Limnology / Hydrogeology
+  - Landscape ecology
+  - Quaternary science
+- Geophysics
+- Paleontology
+  - Paleobiology
+  - Paleoecology
+- Ecology
+- Forensic geology
+- Geophysics
+- Planetary science (alternatively, a part of space science)
+- Seismology
+
+### Life science
+
+#### Biology
+
+- Aerobiology
+- Anatomy
+  - Comparative anatomy
+  - Human anatomy
+- Biochemistry
+- Bioinformatics
+- Biophysics
+- Biotechnology
+- Botany
+  - Ethnobotany
+  - Phycology
+- Cell biology
+- Chronobiology
+- Cognitive biology
+- Computational biology
+- Conservation biology
+- Cryobiology
+- Developmental biology
+  - Embryology
+  - Gerontology
+  - Teratology
+- Ecology
+  - Agroecology
+  - Ethnoecology
+  - Human ecology
+  - Landscape ecology
+- Endocrinology
+- Epigenetics
+- Ethnobiology
+  - Anthrozoology
+- Evolutionary biology
+- Evolution
+  - Systematics
+  - Taxonomy
+- Forensic biology
+- Genetics
+  - Behavioural genetics
+  - Molecular genetics
+  - Population genetics
+- Geobiology
+- Histology
+- Human biology
+- Immunology
+- Limnology
+- Linnaean taxonomy
+- Marine biology
+- Mathematical biology
+- Microbiology
+  - Bacteriology
+  - Protistology
+- Molecular biology
+- Mycology
+- Neuroscience
+  - Behavioral neuroscience
+  - Neurophysics
+  - Computational Neuroscience
+- Nutrition
+- Paleobiology
+  - Paleontology
+- Parasitology
+- Pathology
+  - Anatomical pathology
+  - Clinical pathology
+  - Dermatopathology
+  - Forensic pathology
+  - Hematopathology
+  - Histopathology
+  - Molecular pathology
+  - Surgical pathology
+  - Phytopathology
+- Physiology
+  - Human physiology
+    - Exercise physiology
+- Structural Biology
+- Systematics (Taxonomy)
+- Population biology
+- Quantum biology
+- Sociobiology
+- Theoretical biology
+- Toxicology
+- Systems biology
+- Virology
+  - Molecular virology
+- Xenobiology
+- Zoology
+  - Animal communications
+  - Apiology
+  - Arachnology
+  - Arthropodology
+  - Batrachology
+  - Bryozoology
+  - Carcinology
+  - Cetology
+  - Cnidariology
+  - Entomology
+    - Forensic entomology
+  - Ethnozoology
+  - Ethology
+  - Helminthology
+  - Herpetology
+  - Ichthyology
+  - Invertebrate zoology
+  - Mammalogy
+    - Cynology
+    - Felinology
+  - Malacology
+    - Conchology
+    - Limacology
+    - Teuthology
+  - Myriapodology
+  - Myrmecology
+  - Nematology
+  - Neuroethology
+  - Oology
+  - Ornithology
+  - Planktology
+  - Primatology
+  - Zootomy
+  - Zoosemiotics
+
+## Formal science
+
+### Computer science
+
+_Also a branch of electrical engineering_
+
+- Logic in computer science
+  - Formal methods (Formal verification)
+  - Logic programming
+  - Multi-valued logic
+    - Fuzzy logic
+  - Programming language semantics
+  - Type theory
+- Operating systems
+- Algorithms
+  - Computational geometry
+  - Distributed algorithms
+  - Parallel algorithms
+  - Randomized algorithms
+- Artificial intelligence
+  - Cognitive science
+    - Automated reasoning
+    - Computer vision
+    - Machine learning
+      - Artificial neural networks
+      - Support vector machine
+    - Natural language processing (Computational linguistics)
+    - Computer vision
+  - Expert systems
+  - Robotics
+- Database
+- Data science
+- Data structures
+- Computer architecture
+- Computer graphics
+  - Image processing
+  - Scientific visualization
+- Computer communications (networks)
+  - Cloud computing
+  - Information theory
+  - Internet, World Wide Web
+  - Ubiquitous computing
+  - Wireless computing (Mobile computing)
+- Computer security and reliability
+  - Cryptanalysis
+  - Cryptography
+  - Fault-tolerant computing
+  - Information security
+  - Network security
+- Computing in mathematics, natural sciences, engineering, and medicine
+  - Algebraic (symbolic) computation
+  - Computational biology (bioinformatics)
+  - Computational chemistry
+  - Computational mathematics
+  - Computational neuroscience
+  - Computational number theory
+  - Computational physics
+  - Computer-aided engineering
+    - Computational fluid dynamics
+    - Finite element analysis
+  - Numerical analysis
+  - Algebraic (symbolic) computation
+  - Scientific computing (Computational science)
+- Computing in social sciences, arts, humanities, and professions
+  - Community informatics
+  - Computational economics
+  - Computational finance
+  - Computational sociology
+  - Digital humanities (Humanities computing)
+  - History of computer hardware
+  - History of computer science
+  - Humanistic informatics
+  - Databases
+    - Distributed databases
+    - Object databases
+    - Relational databases
+  - Data management
+  - Data mining
+  - Information science
+  - Information architecture
+  - Information management
+  - Information retrieval
+  - Information system
+  - Information technology
+  - Knowledge management
+  - Multimedia, hypermedia
+    - Sound and music computing
+- Distributed computing
+  - Grid computing
+- Human-computer interaction
+- Operating systems
+- Parallel computing
+  - High-performance computing
+- Computer program
+- Computer programming
+- Programming languages
+  - Compilers
+  - Programming paradigms
+    - Concurrent programming
+    - Functional programming
+    - Imperative programming
+    - Logic programming
+    - Object-oriented programming
+  - Program semantics
+  - Type theory
+- Quantum computing
+  - Quantum information
+- Software engineering
+  - Formal methods (Formal verification)
+  - Game Development
+- Theoretical computer science
+- Theory of computation
+  - Automata theory (Formal languages)
+  - Computability theory
+  - Computational complexity theory
+  - Concurrency theory
+- VLSI design
+
+### Logic
+
+- Mathematical logic
+  - Set theory
+  - Proof theory
+  - Model theory
+  - Recursion theory
+  - Modal logic
+  - Intuitionistic logic
+- Philosophical logic
+  - Logical reasoning
+  - Modal logic
+    - Deontic logic
+    - Doxastic logic
+- Logic in computer science
+  - Programming language semantics
+  - Formal methods (Formal verification)
+  - Type theory
+  - Logic programming
+  - Multi-valued logic
+    - Fuzzy logic
+
+### Mathematics
+
+#### Pure mathematics
+
+- Mathematical logic and Foundations of mathematics
+  - Intuitionistic logic
+  - Modal logic
+  - Model theory
+  - Proof theory
+  - Recursion theory
+  - Set theory
+- Arithmetic
+- Algebra
+  - Associative algebra
+  - Category theory
+    - Topos theory
+  - Differential algebra
+  - Field theory
+  - Group theory
+    - Group representation
+  - Homological algebra
+  - K-theory
+  - Lattice theory (Order theory)
+  - Lie algebra
+  - Linear algebra (Vector space)
+  - Multilinear algebra
+  - Non-associative algebra
+  - Representation theory
+  - Ring theory
+    - Commutative algebra
+    - Noncommutative algebra
+  - Universal algebra
+- Analysis
+  - Complex analysis
+  - Functional analysis
+    - Operator theory
+  - Harmonic analysis
+    - Fourier analysis
+  - Non-standard analysis
+  - Ordinary differential equations
+  - p-adic analysis
+  - Partial differential equations
+  - Real analysis
+    - Calculus
+- Probability theory
+  - Ergodic theory
+  - Measure theory
+    - Integral geometry
+  - Stochastic process
+- Geometry and Topology
+  - Affine geometry
+  - Algebraic geometry
+  - Algebraic topology
+  - Convex geometry
+  - Differential topology
+  - Discrete geometry
+  - Finite geometry
+  - Galois geometry
+  - General topology
+  - Geometric topology
+  - Integral geometry
+  - Noncommutative geometry
+  - Non-Euclidean geometry
+  - Projective geometry
+  - Euclidean geometry
+  - Solid geometry
+  - Trigonometry
+- Number theory
+  - Algebraic number theory
+  - Analytic number theory
+  - Arithmetic combinatorics
+  - Arithmetic
+  - Geometric number theory
+
+#### Applied mathematics
+
+- Approximation theory
+- Combinatorics
+  - Coding theory
+- Dynamical systems
+  - Chaos theory
+  - Fractal geometry
+- Game theory
+- Graph theory
+- Information theory
+- Mathematical physics
+  - Quantum field theory
+  - Quantum gravity
+    - String theory
+  - Quantum mechanics
+  - Statistical mechanics
+- Numerical analysis
+- Operations research
+  - Assignment problem
+  - Decision analysis
+  - Dynamic programming
+  - Inventory theory
+  - Linear programming
+  - Mathematical optimization
+  - Optimal maintenance
+  - Real options analysis
+  - Scheduling
+  - Stochastic processes
+  - Systems analysis
+- Statistics
+  - Actuarial science
+  - Demography
+  - Econometrics
+  - Mathematical statistics
+  - Data visualization
+- Computational mathematics
+- Theory of computation
+  - Computational complexity theory
+- Cryptography
+- Steganography
+- Mathematical game
+- Mathematical puzzle
+
+##### Statistics
+
+- Mathematical statistics
+- Econometrics
+- Actuarial science
+- Demography
+- Computational statistics
+  - Data mining
+  - Regression
+  - Simulation
+    - Bootstrap (statistics)
+- Design of experiments
+  - Block design and Analysis of variance
+  - Response surface methodology
+- Sample Survey
+  - Sampling theory
+- Statistical modelling
+  - Biostatistics
+    - Epidemiology
+  - Multivariate analysis
+    - Structural equation model
+    - Time series
+  - Reliability theory
+  - Quality control
+- Statistical theory
+  - Decision theory
+  - Mathematical statistics
+    - Probability
+  - Survey methodology
+
+## Applied science
+
+### Agriculture
+
+- Aeroponics
+  - Fogponics
+- Agroecology
+- Agrology
+- Agronomy
+- Animal husbandry (Animal science)
+  - Beekeeping (Apiculture)
+- Anthroponics
+- Agricultural economics
+- Agricultural engineering
+  - Biological systems engineering
+  - Food engineering
+- Aquaculture
+- Aquaponics
+- Enology
+- Entomology
+- Food science
+  - Culinary arts
+- Forestry
+- Horticulture
+- Hydrology
+- Hydroponics
+- Pedology
+- Plant science
+  - Pomology
+- Pest control
+- Purification
+- Urban agriculture
+- Viticulture
+
+### Architecture and design
+
+- Architecture
+  - Interior architecture
+  - Landscape architecture
+- Architectural analytics
+- Historic preservation
+- Interior design (interior architecture)
+- Landscape architecture (landscape planning)
+- Landscape design
+- Urban planning (urban design)
+- Visual communication
+  - Graphic design
+    - Type design
+  - Technical drawing
+- Industrial design (product design)
+  - Ergonomics
+  - Toy and amusement design
+- User experience design
+  - Interaction design
+  - Information architecture
+  - User interface design
+  - User experience evaluation
+- Decorative arts
+- Fashion design
+- Textile design
+- Food design
+
+### Education
+
+- Comparative education
+- Critical pedagogy
+- Curriculum and instruction
+  - Alternative education
+  - Early childhood education
+  - Elementary education
+  - Secondary education
+  - Higher education
+  - Mastery learning
+  - Cooperative learning
+  - Agricultural education
+  - Art education
+  - Bilingual education
+  - Chemistry education
+  - Counselor education
+  - Language education
+  - Legal education
+  - Mathematics education
+  - Medical education
+  - Military education and training
+  - Music education
+  - Nursing education
+  - Outdoor education
+  - Peace education
+  - Physical education/Sports coaching
+  - Physics education
+  - Reading education
+  - Religious education
+  - Science education
+  - Special education
+  - Sex education
+  - Sociology of education
+  - Technology education
+  - Vocational education
+- Educational leadership
+- Educational philosophy
+- Educational psychology
+- Educational technology
+- Distance education
+
+### Engineering and technology
+
+#### Chemical engineering
+
+- Biocatalysts
+- Bioengineering
+  - Biochemical engineering
+  - Biomolecular engineering
+  - Bionics
+- Catalysis
+- Materials engineering
+- Molecular engineering
+- Nanotechnology
+- Polymer engineering
+- Process design
+  - Petroleum engineering
+  - Nuclear engineering
+  - Food engineering
+- Process engineering
+- Reaction engineering
+- Thermodynamics
+- Transport phenomena
+
+#### Civil engineering
+
+- Coastal engineering
+- Earthquake engineering
+- Ecological engineering
+- Environmental engineering
+- Geotechnical engineering
+  - Engineering geology
+- Hydraulic engineering
+- Mining engineering
+- Transportation engineering
+  - Highway engineering
+- Structural engineering
+  - Architectural engineering
+- Structural mechanics
+- Surveying
+- Agricultural engineering
+- Construction
+- Infrastructure
+
+#### Educational technology
+
+- Instructional design
+  - Distance education
+  - Instructional simulation
+- Human performance technology
+- Knowledge management
+
+#### Electrical engineering
+
+- Applied physics
+- Computer engineering
+- Computer science
+- Control systems engineering
+  - Control theory
+- Electronic engineering
+  - Electronics
+  - Instrumentation engineering
+- Engineering physics
+  - Photonics
+- Information theory
+- Mechatronics
+- Power engineering
+- Quantum computing
+- Robotics
+  - Microbotics
+- Semiconductors
+- Telecommunications engineering
+
+#### Materials science
+
+- Biomaterials
+- Ceramic engineering
+- Crystallography
+- Nanomaterials
+- Photonics
+- Physical Metallurgy
+- Polymer engineering
+- Polymer science
+- Semiconductors
+- Corrosion engineering
+
+#### Mechanical engineering
+
+- Aerospace engineering
+  - Aeronautics
+  - Astronautics
+- Acoustical engineering
+- Automotive engineering
+- Biomedical engineering
+  - Biomechanical engineering
+  - Neural engineering
+- Continuum mechanics
+- Fluid mechanics
+- Heat transfer
+- Industrial engineering
+- Manufacturing engineering
+- Marine engineering
+- Mass transfer
+- Mechatronics
+- Nanoengineering
+- Ocean engineering
+- Optical engineering
+- Robotics
+- Thermal engineering
+- Thermodynamics
+
+#### Systems science
+
+- Chaos theory
+- Complex systems
+- Conceptual systems
+- Control theory
+  - Affect control theory
+  - Control engineering
+  - Control systems
+  - Dynamical systems
+  - Perceptual control theory
+- Cybernetics
+  - Biocybernetics
+  - Engineering cybernetics
+  - Management cybernetics
+  - Medical cybernetics
+  - New Cybernetics
+  - Second-order cybernetics
+  - Sociocybernetics
+- Network science
+- Operations research
+- Systems biology
+  - Computational systems biology
+  - Synthetic biology
+  - Systems immunology
+  - Systems neuroscience
+- System dynamics
+  - Social dynamics
+- Systems ecology
+  - Ecosystem ecology
+- Systems engineering
+  - Biological systems engineering
+  - Earth systems engineering and management
+  - Enterprise systems engineering
+  - Systems analysis
+- Systems psychology
+  - Ergonomics
+  - Family systems theory
+  - Systemic therapy
+- Systems theory
+  - Biochemical systems theory
+  - Ecological systems theory
+  - Developmental systems theory
+  - General systems theory
+  - Living systems theory
+  - LTI system theory
+  - Mathematical system theory
+  - Sociotechnical systems theory
+  - World-systems theory
+- Systems theory in anthropology
+
+### Environmental studies and forestry
+
+- Environmental management
+  - Coastal management
+  - Fisheries management
+  - Land management
+  - Natural resource management
+  - Waste management
+  - Wildlife management
+- Environmental policy
+- Wildlife observation
+- Recreation ecology
+- Silviculture
+- Sustainability studies
+  - Sustainable development
+- Toxicology
+- Ecology
+
+### Family and consumer science
+
+- Consumer education
+- Housing
+- Interior design
+- Nutrition
+  - Foodservice management
+- Textiles
+
+### Human physical performance and recreation
+
+- Biomechanics / Sports biomechanics
+- Sports coaching
+- Escapology
+- Ergonomics
+- Physical fitness
+  - Aerobics
+  - Personal trainer / Personal fitness training
+- Game design
+- Exercise physiology
+- Kinesiology / Exercise physiology / Performance science
+- Leisure studies
+- Navigation
+- Outdoor activity
+- Physical activity
+- Physical education / Pedagogy
+- Sociology of sport
+- Sexology
+- Sports / exercise
+- Sports journalism / sportscasting
+- Sport management
+  - Athletic director
+- Sport psychology
+- Sports medicine
+  - Athletic training
+- Survival skills
+  - Batoning
+  - Bushcraft
+  - Scoutcraft
+  - Woodcraft
+- Toy and amusement design
+
+### Journalism, media studies and communication
+
+- Journalism
+  - Broadcast journalism
+  - Digital journalism
+  - Literary journalism
+  - New media journalism
+  - Print journalism
+  - Sports journalism / sportscasting
+- Media studies (Mass media)
+  - Newspaper
+  - Magazine
+  - Radio
+  - Television
+    - Television studies
+  - Film
+    - Film studies
+  - Game studies
+  - Fan studies
+- Narratology
+  - Internet
+- Communication studies
+  - Advertising
+  - Animal communication
+  - Communication design
+  - Conspiracy theory
+  - Digital media
+  - Electronic media
+  - Environmental communication
+  - Hoax
+  - Information theory
+  - Intercultural communication
+  - Marketing
+  - Mass communication
+  - Nonverbal communication
+  - Organizational communication
+  - Popular culture studies
+  - Propaganda
+  - Public relations
+  - Speech communication
+  - Technical writing
+  - Translation
+
+### Library and museum studies
+
+- Archival science
+- Archivist
+- Bibliographic databases
+- Bibliometrics
+- Bookmobile
+- Cataloging
+  - Citation analysis
+- Categorization
+- Classification
+  - Library classification
+  - Taxonomic classification
+  - Scientific classification
+  - Statistical classification
+  - Security classification
+  - Film classification
+- Collections care
+- Collection management
+- Collection Management Policy
+- Conservation science
+- Conservation and restoration of cultural heritage
+- Curator
+- Data storage
+- Database management
+- Data modeling
+- Digital preservation
+- Dissemination
+- Film preservation
+- Five laws of library science
+- Historic preservation
+- History of library science
+- Human-computer interaction
+- Indexer
+- Informatics
+- Information architecture
+- Information broker
+- Information literacy
+- Information retrieval
+- Information science
+- Information systems and technology
+- Integrated library system
+- Interlibrary loan
+- Knowledge engineering
+- Knowledge management
+- Library
+- Library binding
+- Library circulation
+- Library instruction
+- Library portal
+- Library technical services
+- Management
+- Mass deacidification
+- Museology
+- Museum education
+  - Museum administration
+- Object conservation
+- Preservation
+- Prospect research
+- Readers' advisory
+- Records management
+- Reference
+- Reference desk
+- Reference management software
+- Registrar
+- Research methods
+- Slow fire
+- Special library
+- Statistics
+
+### Medicine and health
+
+- Alternative medicine
+- Audiology
+- Clinical laboratory sciences/Clinical pathology/Laboratory medicine
+  - Clinical biochemistry
+  - Cytogenetics
+  - Cytohematology
+  - Cytology
+  - Haemostasiology
+  - Histology
+  - Clinical immunology
+  - Clinical microbiology
+  - Molecular genetics
+  - Parasitology
+- Clinical physiology
+- Deathcare
+  - Funeral director
+  - Mortuary science
+- Dentistry
+  - Dental hygiene and epidemiology
+  - Dental surgery
+  - Endodontics
+  - Implantology
+  - Oral and maxillofacial surgery
+  - Orthodontics
+  - Periodontics
+  - Prosthodontics
+- Dermatology
+- Emergency medicine
+- Epidemiology
+- Geriatrics
+- Gynaecology
+- Health informatics/Clinical informatics
+- Hematology
+- Holistic medicine
+- Infectious disease
+- Intensive care medicine
+- Internal medicine
+  - Cardiology
+    - Cardiac electrophysiology
+  - Endocrinology
+  - Gastroenterology
+  - Hepatology
+  - Nephrology
+  - Neurology
+  - Oncology
+  - Pulmonology
+  - Rheumatology
+- Medical toxicology
+- Music therapy
+- Nursing
+- Nutrition and dietetics
+- Obstetrics
+- Occupational hygiene
+- Occupational therapy
+- Occupational toxicology
+- Ophthalmology
+  - Neuro-ophthalmology
+- Optometry
+- Otolaryngology
+- Pathology
+- Pediatrics
+- Pharmaceutical sciences
+  - Pharmaceutical chemistry
+  - Pharmaceutical toxicology
+  - Pharmaceutics
+  - Pharmacocybernetics
+  - Pharmacodynamics
+  - Pharmacogenomics
+  - Pharmacognosy
+  - Pharmacokinetics
+  - Pharmacology
+  - Pharmacy
+- Physical fitness
+  - Group Fitness / aerobics
+  - Kinesiology / Exercise physiology / Performance science
+  - Personal fitness training
+- Physical therapy
+- Osteopathy
+- Physiotherapy
+- Podiatry
+- Preventive medicine
+- Primary care
+  - General practice
+- Psychiatry
+  - Forensic psychiatry
+- Psychosomatic
+- Psychotherapy
+- Psychology
+- Therapy
+- Public health
+- Radiology
+- Recreational therapy
+- Rehabilitation medicine
+- Respiratory therapy
+- Sleep medicine
+- Speech–language pathology
+- Sports medicine
+- Surgery
+  - Bariatric surgery
+  - Cardiothoracic surgery
+  - Neurosurgery
+  - Orthoptics
+  - Orthopedic surgery
+  - Plastic surgery
+  - Trauma surgery
+  - Traumatology
+  - Anesthesiology
+- Traditional medicine
+- Urology
+  - Andrology
+- Veterinary medicine
+- Cosmetology
+- Cleaning
+- Decontamination
+- Sterilization (microbiology)
+- Sports medicine
+
+### Military sciences
+
+- Amphibious warfare
+- Artillery
+- Battlespace
+  - Air
+  - Information
+  - Land
+  - Sea
+  - Space
+- Campaigning
+- Military engineering
+- Doctrine
+- Espionage
+- Game theory
+- Grand strategy
+  - Containment
+  - Limited war
+  - Military science
+  - Philosophy of war
+  - Strategic studies
+  - Chess
+  - Total war
+  - War
+- Leadership
+- Logistics
+  - Materiel
+  - Supply chain management
+- Military operation
+- Military history
+  - Prehistoric
+  - Ancient
+  - Medieval
+  - Early modern
+  - Industrial
+  - Modern
+  - Fourth-generation warfare
+- Military intelligence
+- Military law
+- Military medicine
+- Naval science
+  - Naval engineering
+  - Naval tactics
+  - Naval architecture
+- Organization
+  - Command and control
+  - Doctrine
+  - Education and training
+  - Engineers
+  - Intelligence
+  - Ranks
+  - Staff
+  - Technology and equipment
+  - Military exercises
+  - Military simulation
+  - Military sports
+- Strategy
+  - Attrition
+  - Deception
+  - Defensive
+  - Offensive
+  - Counter-offensive
+  - Maneuver
+  - Goal
+  - Naval
+- Tactics
+  - Aerial
+  - Battle
+  - Cavalry
+  - Charge
+  - Counter-attack
+  - Counter-insurgency
+  - Counter-intelligence
+  - Counter-terrorism
+  - Foxhole
+  - Endemic warfare
+  - Guerrilla warfare
+  - Infiltration
+  - Irregular warfare
+  - Morale
+  - Naval tactics
+  - Siege
+  - Surgical strike
+  - Tactical objective
+  - Trench warfare
+- Military weapons
+  - Armor
+  - Artillery
+  - Biological
+  - Cavalry
+  - Conventional
+  - Chemical
+  - Cyber
+  - Economic
+  - Electronic
+  - Infantry
+  - Nuclear
+  - Psychological
+  - Unconventional
+- Other Military
+  - Arms control
+  - Arms race
+  - Assassination
+  - Asymmetric warfare
+  - Civil defense
+  - Clandestine operation
+  - Collateral damage
+  - Cold war (general term)
+  - Combat
+  - Covert operation
+  - Cyberwarfare
+  - Defense industry
+  - Disarmament
+  - Intelligence agency
+  - Laws of war
+  - Mercenary
+  - Military campaign
+  - Military operation
+  - Mock combat
+  - Network-centric warfare
+  - Paramilitary
+  - Principles of war
+  - Private defense agency
+  - Private military company
+  - Proxy war
+  - Religious war
+  - Security
+  - Special forces
+  - Special operations
+  - Theater (warfare)
+  - Theft
+  - Undercover
+  - War crimes
+  - Warrior
+
+### Public administration
+
+- Civil service
+- Corrections
+- Conservation biology
+- Criminal justice
+- Disaster research
+- Disaster response
+- Emergency management
+- Emergency services
+- Fire safety (Structural fire protection)
+- Fire ecology (Wildland fire management)
+- Governmental affairs
+- International affairs
+- Law enforcement
+- Peace and conflict studies
+- Police science
+- Policy studies
+  - Policy analysis
+- Public administration
+  - Nonprofit administration
+  - Non-governmental organization (NGO) administration
+  - Public policy doctrine
+  - Public policy school
+  - Regulation
+- Public safety
+- Public service
+
+### Public policy
+
+- Agricultural policy
+- Commercial policy
+- Cultural policy
+- Domestic policy
+- Drug policy
+  - Drug policy reform
+- Economic policy
+  - Fiscal policy
+  - Incomes policy
+  - Industrial policy
+  - Investment policy
+  - Monetary policy
+  - Tax policy
+- Education policy
+- Energy policy
+  - Nuclear energy policy
+  - Renewable energy policy
+- Environmental policy
+- Food policy
+- Foreign policy
+- Governance
+- Health policy
+  - Pharmaceutical policy
+  - Vaccination policy
+- Housing policy
+- Immigration policy
+- Knowledge policy
+- Language policy
+- Military policy
+- Science policy
+  - Climate change policy
+  - Stem cell research policy
+  - Space policy
+  - Technology policy
+- Security policy
+- Social policy
+- Public policy by country
+
+### Social work
+
+- Child welfare
+- Community practice
+  - Community organizing
+  - Social policy
+- Human Services
+- Corrections
+- Gerontology
+- Medical social work
+- Mental health
+- School social work
+
+### Transportation
+
+- Highway safety
+- Infographics
+- Intermodal transportation studies
+- Logistics
+- Marine transportation
+  - Port management
+  - Seafaring
+- Operations research
+- Mass transit
+- Travel
+- Vehicles
