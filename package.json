@@ -1,0 +1,33 @@
+{
+  "name": "zettelkasten-adilsoncarvalho-com",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A living Antinet Zettelkasten implementation manual",
+  "packageManager": "pnpm@10.29.3",
+  "engines": {
+    "node": ">=20.3.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "data": "cd context/scripts && python3 01-number.py && python3 05-emit-markdown.py && python3 06-emit-hubs-json.py",
+    "test": "node --test \"src/lib/*.test.ts\""
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.2.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "typescript": "^6.0.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

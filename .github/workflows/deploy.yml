@@ -1,0 +1,76 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish; queue at most one behind it.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: Verify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .tool-versions
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Address grammar tests
+        run: node --test "src/lib/*.test.ts"
+
+      # The generator asserts every address is unique. Re-running it here means a
+      # source-outline edit that introduces a collision fails CI instead of shipping.
+      - name: Regenerate addresses and check for drift
+        run: |
+          cd context/scripts
+          python3 01-number.py
+          python3 05-emit-markdown.py
+          python3 06-emit-hubs-json.py
+          cd ../..
+          if ! git diff --quiet -- context/data context/content; then
+            echo "::error::Generated data is out of date. Run 'pnpm data' and commit the result."
+            git diff --stat -- context/data context/content
+            exit 1
+          fi
+
+  build:
+    name: Build
+    needs: verify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .tool-versions
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - uses: withastro/action@v4
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

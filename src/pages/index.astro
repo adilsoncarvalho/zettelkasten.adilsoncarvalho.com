@@ -1,0 +1,206 @@
+---
+import Base from '../layouts/Base.astro';
+import { stats } from '../lib/antinet.ts';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const routes = [
+  {
+    href: '/rules',
+    label: 'Filing rules',
+    blurb:
+      'How an address is computed, and the one decision you make every time you file: does this card continue the one in my hand, or dig into it?',
+    when: 'Start here if you have a card and nowhere to put it.',
+  },
+  {
+    href: '/divisions',
+    label: 'The 65 divisions',
+    blurb:
+      'The four-digit numbers. These are the guide cards — the only place in the whole system where taxonomy lives.',
+    when: 'Start here if you are building the skeleton of a new Antinet.',
+  },
+  {
+    href: '/outline',
+    label: 'The numbered outline',
+    blurb: `All ${stats.total.toLocaleString('en')} addresses, searchable. A worked example of the scheme applied to a real body of knowledge.`,
+    when: 'Start here if you want to see the scheme at full scale.',
+  },
+  {
+    href: '/hubs',
+    label: 'Hub cards',
+    blurb:
+      'What to do when your interests cut across the numbering — which they will, because interests are practices and divisions are disciplines.',
+    when: 'Start here once you have enough cards to lose one.',
+  },
+];
+
+const questions = [
+  ['Can four digits really hold everything?', '/divisions'],
+  ['What number does this card get?', '/rules'],
+  ['How do I file a card between two others?', '/rules'],
+  ['What if my topic is not a discipline?', '/hubs'],
+  ['Where does the taxonomy stop and the address begin?', '/rules'],
+];
+---
+
+<Base
+  title="Start"
+  description="A living implementation manual for the Antinet Zettelkasten — the practical questions of running one, answered in one place from a worked implementation."
+>
+  <section class="hero">
+    <p class="eyebrow">A living implementation manual</p>
+    <h1>The Antinet, answered in one place</h1>
+    <p class="lede">
+      Running an Antinet Zettelkasten raises practical questions that most sources either skip
+      or answer in passing, scattered across a dozen half-agreeing posts. This site answers
+      them from a worked implementation: a complete numbering scheme, applied at full scale,
+      with the reasoning left in.
+    </p>
+  </section>
+
+  <section class="figures" aria-label="Scale of the worked example">
+    <div><b class="ad">{stats.total.toLocaleString('en')}</b><span>Addresses</span></div>
+    <div><b class="ad">{stats.divisions}</b><span>Divisions</span></div>
+    <div><b class="ad">{stats.drawers}</b><span>Drawers</span></div>
+    <div><b class="ad">{stats.maxDepth}</b><span>Levels deep</span></div>
+  </section>
+
+  <h2>What is here</h2>
+  <div class="routes">
+    {
+      routes.map((r) => (
+        <a class="route" href={`${base}${r.href}`}>
+          <h3>{r.label}</h3>
+          <p>{r.blurb}</p>
+          <p class="when">{r.when}</p>
+        </a>
+      ))
+    }
+  </div>
+
+  <h2>If you arrived with a question</h2>
+  <ul class="qs">
+    {
+      questions.map(([q, href]) => (
+        <li>
+          <a href={`${base}${href}`}>{q}</a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <h2>The one idea to take away</h2>
+  <div class="callout">
+    <p>
+      <strong>The four digits are the classification. Everything after the slash is
+      position, not meaning.</strong>
+    </p>
+    <p>
+      Which means the branch never has to be <em>correct</em> — only unique and stable. Almost
+      every difficulty people report with a numbered Zettelkasten comes from trying to make the
+      address carry meaning it was never built to hold. The number's job is to be a pointer
+      other cards can rely on forever. Finding things is a different job, done by hub cards and
+      a keyword index.
+    </p>
+  </div>
+
+  <p class="foot-note">
+    The worked example numbers an outline of academic disciplines, but the scheme is not about
+    academia — it is a demonstration at a scale large enough to break a system that does not
+    work. Your own Antinet will file mostly your own thinking, branching off these anchors.
+  </p>
+</Base>
+
+<style>
+  .hero {
+    padding: 3.5rem 0 0;
+  }
+  .hero h1 {
+    margin: 0.5rem 0 1rem;
+  }
+  .figures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.75rem;
+    margin: 2.25rem 0 0.5rem;
+  }
+  .figures div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+  .figures b {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .figures span {
+    font: 500 0.7rem/1 var(--sans);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .routes {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    margin-top: 1.25rem;
+  }
+  .route {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--brass);
+    border-radius: 3px;
+    padding: 1.2rem 1.3rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  .route:hover {
+    background: var(--tint);
+  }
+  .route h3 {
+    margin: 0 0 0.4rem;
+    color: var(--brass);
+  }
+  .route p {
+    margin: 0;
+    font-size: 0.91rem;
+    max-width: none;
+  }
+  .route .when {
+    margin-top: 0.6rem;
+    color: var(--muted);
+    font-size: 0.83rem;
+  }
+  .qs {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: grid;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .qs li {
+    background: var(--surface);
+    max-width: none;
+  }
+  .qs a {
+    display: block;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    color: var(--ink);
+    font-family: var(--serif);
+  }
+  .qs a:hover {
+    background: var(--tint);
+    color: var(--brass);
+  }
+  .foot-note {
+    margin-top: 2.5rem;
+    color: var(--muted);
+    font-size: 0.89rem;
+  }
+</style>

@@ -1,0 +1,455 @@
+---
+import Base from '../layouts/Base.astro';
+
+const written = [
+  ['1040/9d1', 'Persuasion — HUB', '1040/9d'],
+  ['1040/9d1a', 'Definition of a thesis', '1040/9d1'],
+  ['1040/9d1a1', 'Thesis vs. hypothesis', '1040/9d1a'],
+  ['1040/9d1b', 'Ethos, pathos, logos', '1040/9d1'],
+  ['1040/9d1b1', 'Aristotle, Rhetoric Bk I', '1040/9d1b'],
+  ['1040/9d1a2', 'A thesis must be contestable', '1040/9d1a'],
+  ['1040/9d2', 'Rhetoric ≠ sophistry', '1040/9d'],
+];
+
+const drawer = [
+  ['1040/9d', 'Rhetoric — guide card', 1, false],
+  ['1040/9d1', 'Persuasion — HUB', 2, false],
+  ['1040/9d1a', 'Definition of a thesis', 3, false],
+  ['1040/9d1a1', 'Thesis vs. hypothesis', 4, false],
+  ['1040/9d1a2', 'A thesis must be contestable', 4, true],
+  ['1040/9d1b', 'Ethos, pathos, logos', 3, false],
+  ['1040/9d1b1', 'Aristotle, Rhetoric Bk I', 4, false],
+  ['1040/9d2', 'Rhetoric ≠ sophistry', 2, false],
+] as const;
+
+const derivation = [
+  [1, '1040/9d', 'letter d', 'number → 1', '1040/9d1'],
+  [2, '1040/9d1', 'number 1', 'letter → a', '1040/9d1a'],
+  [3, '1040/9d1a', 'letter a', 'number → 1', '1040/9d1a1'],
+  [4, '1040/9d1', 'number 1', 'letter → b (a taken)', '1040/9d1b'],
+  [5, '1040/9d1b', 'letter b', 'number → 1', '1040/9d1b1'],
+  [6, '1040/9d1a', 'letter a', 'number → 2 (1 taken)', '1040/9d1a2'],
+  [7, '1040/9d', 'letter d', 'number → 2 (1 taken)', '1040/9d2'],
+];
+
+const devices = [
+  ['Hub card', 'A list of addresses on one theme — a switchboard, not prose', 'In place, at the theme’s centre of gravity', 'Freely, often'],
+  ['Keyword index', 'Term → one or two entry-point addresses. Deliberately sparse', 'Its own drawer, alphabetical', 'Rarely, by addition'],
+  ['Bibliographic card', 'One source, its details, and the cards drawn from it', 'Its own drawer, by author', 'Never — append only'],
+];
+
+const nevers = [
+  ['Never renumber a card', 'Other cards point at that address, and so does the keyword index. An address is a promise.'],
+  ['Never use more than one slash', 'The alternation already marks every level. 1010/1d/1 collides with 1010/1d1, which is Choral conducting.'],
+  ['Never file at a drawer root', 'N000/1 is free in all five drawers and still wrong — 454 unrelated disciplines as neighbours, and neighbours are the point.'],
+  ['Never make the branch taxonomic', 'The outline reads that way only because it was seeded from a taxonomy. Your own cards will not. Forcing it is the Dewey trap one level down.'],
+  ['Never wait for the right category', 'There is no right category — only the card this one is talking back to. File behind the nearest anchor and let the hub find it.'],
+];
+---
+
+<Base
+  title="Filing rules"
+  description="How to compute an Antinet address, when to branch and when to continue, and what a hub card is for."
+>
+  <section class="hero">
+    <p class="eyebrow">The operating manual</p>
+    <h1>Filing rules</h1>
+    <p class="lede">
+      How to compute an address, the one decision you make every time you file, and why you
+      will never renumber a card.
+    </p>
+  </section>
+
+  <h2>Anatomy of an address</h2>
+  <div class="card anat">
+    <div class="spec">
+      <i class="d" data-l="drawer">1</i><i class="d" data-l="discipline">04</i><i
+        class="d"
+        data-l="sub-disc.">0</i
+      ><i class="sep">/</i><i class="b" data-l="branch">9d1a</i>
+    </div>
+    <div class="two">
+      <div>
+        <h4 class="eyebrow">The four digits — meaning</h4>
+        <p>
+          Fixed in advance. Sixty-five of them. This is the <em>only</em> place taxonomy lives:
+          <code>1040</code> is Languages and literature, and always will be. You never invent one.
+        </p>
+      </div>
+      <div>
+        <h4 class="eyebrow">After the slash — position</h4>
+        <p>
+          Pure address. Answers “where does this card physically sit?” and nothing else. It
+          grows as you file, and it never means anything.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p>
+    One slash, ever. After it, segments alternate <strong>number → letter → number →
+    letter</strong>. The type switch <em>is</em> the level marker, which is why no further
+    punctuation is needed: consecutive digits form one segment, consecutive letters form one
+    segment. So <code>3021/50aa</code> reads unambiguously as 50 → aa.
+  </p>
+
+  <h2>Computing the next address</h2>
+  <ol class="steps">
+    <li>Decide which card the new one hangs off. Call it the <strong>parent</strong>.</li>
+    <li>
+      Look at the parent’s last segment. Ends in a <strong>number</strong> → append a
+      <strong>letter</strong>. Ends in a <strong>letter</strong> → append a
+      <strong>number</strong>.
+    </li>
+    <li>Take the next unused one. Done — permanently.</li>
+  </ol>
+
+  <h2>Child or sibling</h2>
+  <p>
+    These are not two operations. They are the same operation with a different parent — which
+    is what makes the system runnable at 2am with a card in your hand.
+  </p>
+  <div class="tbl">
+    <table>
+      <thead>
+        <tr><th>You want</th><th>Parent is</th><th>From <code>1040/9d1a</code></th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="pill c">Child</span> digs into the card</td>
+          <td>the card itself</td>
+          <td><span class="ad">1040/9d1a1</span></td>
+        </tr>
+        <tr>
+          <td><span class="pill s">Sibling</span> continues past it</td>
+          <td>the card’s parent — drop the last segment</td>
+          <td><span class="ad">1040/9d1b</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout">
+    <p>
+      The question to ask at the drawer: <strong>does this continue the card in my hand, or dig
+      into it?</strong> Continue → step back one segment and append. Dig in → append directly.
+    </p>
+  </div>
+
+  <h2>A worked sequence</h2>
+  <p>Seven cards filed behind Rhetoric <code>1040/9d</code>, in the order they were written. Watch card 6.</p>
+  <div class="work">
+    <div class="card">
+      <h4 class="eyebrow">Order written</h4>
+      <ol class="seq">
+        {
+          written.map(([addr, title]) => (
+            <li>
+              <span class="ad">{addr}</span>
+              <span>{title}</span>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+    <div class="card">
+      <h4 class="eyebrow">Order in the drawer</h4>
+      <ol class="seq drw">
+        {
+          drawer.map(([addr, title, depth, hi]) => (
+            <li class={hi ? 'hi' : undefined} style={`--d:${depth}`}>
+              <span class="ad">{addr}</span>
+              <span>{title}</span>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </div>
+  <p>
+    Card 6 was written sixth and sits fourth. It slid between two cards that already existed,
+    and nothing moved to accommodate it. That is the whole payoff of the alternating scheme —
+    and the reason you must never renumber: a card’s address is the only stable thing other
+    cards can point at.
+  </p>
+
+  <h3>How each address was derived</h3>
+  <div class="tbl">
+    <table>
+      <thead>
+        <tr><th>#</th><th>Parent</th><th>Ends in</th><th>So append</th><th>Address</th></tr>
+      </thead>
+      <tbody>
+        {
+          derivation.map(([n, parent, ends, append, addr]) => (
+            <tr>
+              <td>{n}</td>
+              <td><code>{parent}</code></td>
+              <td>{ends}</td>
+              <td>{append}</td>
+              <td><span class="ad">{addr}</span></td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Inserting between two cards</h2>
+  <p>
+    There is no <em>between</em>. There is only <em>behind</em> — and behind turns out to be
+    enough, because a child always sits between its parent and its parent’s next sibling.
+  </p>
+  <div class="callout">
+    <p>
+      To place a card between <code>X</code> and the card after it: <strong>append to X.</strong>
+      Sorting does the rest.
+    </p>
+  </div>
+  <p>
+    The one genuine limit: nothing can sit between a card and its own <em>first</em> child.
+    That gap is closed, and you will never need it, because sibling order carries no meaning —
+    <code>9d2</code> is not “prior to” <code>9d3</code>. When sequence genuinely matters, that is
+    a hub card’s job, not the number’s.
+  </p>
+
+  <h2>Hub cards, and the other two indexes</h2>
+  <p>
+    If the number cannot tell you what a card says, something else has to find it. Three
+    devices do that work, and they are not interchangeable.
+  </p>
+  <div class="tbl">
+    <table>
+      <thead>
+        <tr><th>Device</th><th>Holds</th><th>Lives</th><th>Rewritten</th></tr>
+      </thead>
+      <tbody>
+        {
+          devices.map(([d, holds, lives, rew]) => (
+            <tr>
+              <td><strong>{d}</strong></td>
+              <td>{holds}</td>
+              <td>{lives}</td>
+              <td>{rew}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+  <p>
+    A hub is the one card you are <em>allowed</em> to rewrite, because it holds no thinking —
+    only pointers. That licence is what lets it collapse the drawer separation the four-digit
+    numbers impose: a Persuasion hub can point at <code>1040/9d</code>, <code>5080/4p</code> and
+    <code>2020/15</code> on the same line, and no filing scheme could have put those three
+    together. Keep it a list. The moment a hub contains arguments, it has become a card that
+    belongs somewhere and you have lost your index.
+  </p>
+
+  <h2>Never</h2>
+  <ul class="never">
+    {
+      nevers.map(([rule, why]) => (
+        <li>
+          <b>{rule}</b>
+          <span>{why}</span>
+        </li>
+      ))
+    }
+  </ul>
+</Base>
+
+<style>
+  .hero {
+    padding: 3.5rem 0 0;
+  }
+  .hero h1 {
+    margin: 0.5rem 0 1rem;
+  }
+  .anat {
+    padding: 2rem 1.5rem 1.2rem;
+  }
+  .spec {
+    font: 600 clamp(1.5rem, 6vw, 2.2rem) / 1 var(--mono);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2.2rem;
+  }
+  .spec i {
+    font-style: normal;
+    position: relative;
+    padding-bottom: 2.5rem;
+  }
+  .spec i::before {
+    content: '';
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    top: 1.25em;
+    height: 0.5rem;
+    border: 1px solid var(--brass-dim);
+    border-top: 0;
+  }
+  .spec i::after {
+    content: attr(data-l);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0.3rem;
+    white-space: nowrap;
+    font: 500 0.6rem/1.35 var(--sans);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .spec i.sep {
+    color: var(--muted);
+  }
+  .spec i.sep::before,
+  .spec i.sep::after {
+    display: none;
+  }
+  .spec i.d {
+    color: var(--brass);
+  }
+  .two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .two > div {
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+  }
+  .two h4 {
+    margin: 0 0 0.5rem;
+  }
+  .two p {
+    font-size: 0.89rem;
+    color: var(--muted);
+    margin: 0;
+    max-width: none;
+  }
+  .steps {
+    counter-reset: s;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  .steps li {
+    counter-increment: s;
+    position: relative;
+    padding: 0.4rem 0 0.4rem 2.2rem;
+  }
+  .steps li::before {
+    content: counter(s);
+    position: absolute;
+    left: 0;
+    top: 0.45rem;
+    font: 600 0.8rem/1.5 var(--mono);
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    color: var(--brass);
+    border: 1px solid var(--brass-dim);
+    border-radius: 50%;
+  }
+  .pill {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    border-radius: 2px;
+    font: 500 0.72rem var(--sans);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .pill.c {
+    background: color-mix(in srgb, var(--brass) 18%, transparent);
+    color: var(--brass);
+  }
+  .pill.s {
+    background: color-mix(in srgb, var(--muted) 18%, transparent);
+    color: var(--muted);
+  }
+  .work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin: 1.25rem 0;
+  }
+  .work h4 {
+    margin: 0 0 0.9rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .seq {
+    counter-reset: q;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .seq li {
+    counter-increment: q;
+    display: flex;
+    gap: 0.6rem;
+    align-items: baseline;
+    padding: 0.22rem 0;
+    font-size: 0.85rem;
+    max-width: none;
+  }
+  .seq:not(.drw) li::before {
+    content: counter(q);
+    color: var(--muted);
+    font: 500 0.7rem var(--mono);
+    flex: 0 0 0.9rem;
+  }
+  .seq .ad {
+    font-size: 0.78rem;
+    flex: 0 0 5.6rem;
+  }
+  .drw li {
+    padding-left: calc((var(--d) - 1) * 0.7rem);
+  }
+  .seq li.hi {
+    background: color-mix(in srgb, var(--brass) 12%, transparent);
+    border-radius: 2px;
+    margin: 0 -0.4rem;
+    padding-left: calc((var(--d) - 1) * 0.7rem + 0.4rem);
+    padding-right: 0.4rem;
+  }
+  .seq li.hi .ad {
+    font-weight: 600;
+  }
+  .never {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  .never li {
+    padding: 0.6rem 0 0.6rem 1.7rem;
+    border-bottom: 1px solid var(--rule);
+    position: relative;
+  }
+  .never li::before {
+    content: '×';
+    position: absolute;
+    left: 0.3rem;
+    top: 0.5rem;
+    color: var(--warn);
+    font: 600 1.1rem var(--sans);
+  }
+  .never b {
+    font-weight: 600;
+  }
+  .never span {
+    display: block;
+    color: var(--muted);
+    font-size: 0.87rem;
+    margin-top: 0.15rem;
+  }
+  @media (max-width: 680px) {
+    .two,
+    .work {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
