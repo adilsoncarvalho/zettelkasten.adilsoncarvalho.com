@@ -1,0 +1,54 @@
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+(CC BY-NC-SA 4.0)
+
+Copyright (c) 2026 Adilson Carvalho
+
+WHAT THIS COVERS
+
+All original written work in this repository and on the published site:
+
+  - The Antinet numbering scheme: the four-digit division allocation, the
+    alternating number/letter branch grammar, and the drawer sort order.
+  - The filing rules: child vs sibling, insertion, the worked sequences, the
+    hub-card model, and the three-index model.
+  - All prose in `context/*.md` and all page copy on the site.
+
+None of this derives from any third-party source. It is applicable to any
+taxonomy and does not depend on the outline used to demonstrate it.
+
+WHAT THIS DOES NOT COVER
+
+  - Software — see LICENSE (MIT).
+  - Data derived from the Wikipedia outline of academic disciplines — see
+    context/data/LICENSE (CC BY-SA 4.0). That material is not ours to
+    relicense, and these terms do not apply to it.
+
+See NOTICE.md for the full boundary.
+
+YOUR RIGHTS AND OBLIGATIONS
+
+You are free to share and adapt this material, provided that you:
+
+  BY   — give appropriate credit to "Adilson Carvalho,
+         zettelkasten.adilsoncarvalho.com", link to the licence, and indicate
+         if changes were made;
+  NC   — do not use it for commercial purposes without prior written
+         permission from the author;
+  SA   — distribute any adaptation under this same licence.
+
+No warranties are given. The licence may not give you all of the permissions
+necessary for your intended use.
+
+A NOTE ON USING THE METHOD
+
+Applying this numbering scheme to your own Zettelkasten is not reproduction of
+this work, and needs no permission or attribution. A method of arranging index
+cards is not a copyrightable work. These terms govern the *expression* — the
+prose, the tables, the worked examples — not the practice.
+
+FULL LEGAL TEXT
+
+  Deed:      https://creativecommons.org/licenses/by-nc-sa/4.0/
+  Legalcode: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+For commercial licensing enquiries, contact the author.

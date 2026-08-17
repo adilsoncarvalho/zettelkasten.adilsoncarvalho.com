@@ -77,17 +77,25 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
           A living implementation manual for the Antinet Zettelkasten — the practical
           questions, answered in one place.
         </p>
+        <p class="attr">
+          © 2026 Adilson Carvalho. The numbering scheme, the filing rules and all prose are
+          original work, licensed{' '}
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> —
+          reuse with attribution, non-commercially. <a href={`${base}/colophon#licensing`}
+            >What is covered by what</a
+          >.
+        </p>
         {
           derived && (
             <p class="attr">
-              Discipline names derived from{' '}
+              The address-and-name listings on this page are adapted from{' '}
               <a href="https://en.wikipedia.org/wiki/Outline_of_academic_disciplines">
                 Outline of academic disciplines
               </a>{' '}
-              (Wikipedia), retrieved 2026-08-17, licensed{' '}
-              <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. This
-              page is a derivative work and is offered under the same licence. The numbering
-              scheme applied to it is original.
+              (Wikipedia), retrieved 2026-08-17, and are licensed{' '}
+              <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. That
+              obligation attaches to those listings, not to the surrounding prose or to the
+              scheme itself.
             </p>
           )
         }

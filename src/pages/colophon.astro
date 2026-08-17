@@ -9,7 +9,6 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 <Base
   title="Colophon"
   description="Sources, licence, and method — how the Antinet numbering was generated and verified."
-  derived
 >
   <section class="hero">
     <p class="eyebrow">Sources and method</p>
@@ -28,11 +27,71 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     >, retrieved <strong>2026-08-17</strong> and licensed
     <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
   </p>
+
+  <h2 id="licensing">Licensing</h2>
   <p>
-    Every page here that renders discipline names is a derivative work and is offered under the
-    same licence. The <strong>numbering scheme</strong> applied on top — the division
-    allocation, the alternating branch grammar, the filing rules — is original and not
-    Wikipedia content.
+    Two different things are on this site, and they carry different obligations. The line
+    between them is worth stating precisely, because it is not where most people would guess.
+  </p>
+  <div class="tbl">
+    <table>
+      <thead>
+        <tr><th>Material</th><th>Licence</th><th>Where</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>The scheme, the rules, and all prose</strong></td>
+          <td>
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+            <span class="sub">© 2026 Adilson Carvalho</span>
+          </td>
+          <td>Every page</td>
+        </tr>
+        <tr>
+          <td><strong>Address-and-name listings</strong></td>
+          <td>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+            <span class="sub">adapted from Wikipedia</span>
+          </td>
+          <td>
+            <a href={`${base}/outline`}>Outline</a>, <a href={`${base}/divisions`}>Divisions</a>,
+            and the satellite tables on <a href={`${base}/hubs`}>Hubs</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    Individual discipline names are not copyrightable — nobody owns “Rhetoric”. What the source
+    protects is the <em>selection and hierarchical arrangement</em>, and an address encodes that
+    arrangement directly. So an address paired with its name is adapted material and carries the
+    ShareAlike obligation, even though neither half is protected alone.
+  </p>
+  <p>
+    The <strong>numbering scheme</strong> is a different matter. The division allocation, the
+    alternating branch grammar, the filing rules and the hub-card model derive from nothing —
+    they would work identically on any taxonomy. They are original, and they are not offered
+    under the source’s licence.
+  </p>
+  <div class="callout">
+    <p>
+      <strong>Using the method needs no permission at all.</strong> A way of arranging index
+      cards is not a copyrightable work, and numbering your own cards is not reproduction. These
+      terms govern the expression — this prose, these tables, these worked examples — not the
+      practice. Build your Antinet freely.
+    </p>
+  </div>
+  <p>
+    ShareAlike does not spread across the site. It applies to adapted material, and an
+    independent work merely displayed alongside licensed material forms a collection rather than
+    an adaptation. On <a href={`${base}/divisions`}>Divisions</a>, the table is BY-SA while the
+    explanation around it is BY-NC-SA — two works shown together, not one work.
+  </p>
+  <p class="ask">
+    Reuse the prose or the scheme with attribution to <em>Adilson Carvalho,
+    zettelkasten.adilsoncarvalho.com</em>, non-commercially. For commercial use, ask. Site code
+    is MIT.
   </p>
 
   <h2>Method</h2>
@@ -118,6 +177,20 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     max-width: var(--measure);
     color: var(--muted);
     font-size: 0.92rem;
+  }
+  .sub {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 0.15rem;
+  }
+  .ask {
+    margin-top: 1.5rem;
+    padding: 0.9rem 1.1rem;
+    background: var(--tint);
+    border-left: 3px solid var(--brass);
+    border-radius: 2px;
+    font-size: 0.9rem;
   }
   .src {
     margin-top: 2.5rem;

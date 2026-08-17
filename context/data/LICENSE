@@ -1,0 +1,45 @@
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+THIS DIRECTORY CONTAINS ADAPTED MATERIAL. It is not covered by the repository's
+LICENSE or LICENSE-CONTENT, and the author cannot relicense it.
+
+SOURCE
+
+  Outline of academic disciplines
+  https://en.wikipedia.org/wiki/Outline_of_academic_disciplines
+  Wikipedia contributors, retrieved 2026-08-17
+  Licensed CC BY-SA 4.0
+
+FILES COVERED
+
+  academic-disciplines.md   the source outline, reproduced verbatim
+  numbered.json             the outline with addresses applied
+  addresses.csv             the same, flattened
+
+  Also covered, though they live elsewhere in the tree:
+  ../content/numbered-outline.md
+  ../content/division-map.md
+
+  NOT covered: hubs.json contains original theme groupings alongside
+  outline-derived names, and is governed by NOTICE.md.
+
+WHY THIS IS ADAPTED MATERIAL
+
+Individual discipline names are not copyrightable. The protected element is the
+selection and hierarchical arrangement of the outline, and the addresses in these
+files encode that arrangement directly. An address paired with its name is
+therefore adapted material and carries the ShareAlike obligation.
+
+The numbering *scheme* is original work and is licensed separately — see
+LICENSE-CONTENT. The scheme is not encumbered by this licence; only its
+application to this particular outline is.
+
+IF YOU REUSE THESE FILES
+
+  - Attribute Wikipedia (link the article above) AND this project.
+  - Indicate that changes were made.
+  - License your adaptation under CC BY-SA 4.0.
+  - Commercial use is permitted by this licence.
+
+  Deed:      https://creativecommons.org/licenses/by-sa/4.0/
+  Legalcode: https://creativecommons.org/licenses/by-sa/4.0/legalcode

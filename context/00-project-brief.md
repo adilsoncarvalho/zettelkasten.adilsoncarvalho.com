@@ -47,13 +47,46 @@ Use **pnpm** exclusively — never `npm`, `yarn`, or `bun`. If a `package-lock.j
 
 ## Source material and licensing
 
-The outline is derived from
+**Read `NOTICE.md` at the repo root before touching licence text anywhere.** It is the
+authoritative map. Three licences apply:
+
+| Material | Licence |
+|---|---|
+| Code — `src/`, `context/scripts/`, config | MIT (`LICENSE`) |
+| Prose and the numbering scheme | CC BY-NC-SA 4.0 (`LICENSE-CONTENT`) |
+| Outline-derived data — `context/data/`, `context/content/` | CC BY-SA 4.0 (`context/data/LICENSE`) |
+
+The outline is from
 [Outline of academic disciplines](https://en.wikipedia.org/wiki/Outline_of_academic_disciplines)
-(Wikipedia), retrieved **2026-08-17**, licensed **CC BY-SA 4.0**.
+(Wikipedia), retrieved **2026-08-17**.
 
-**This matters for the site:** CC BY-SA 4.0 is a share-alike licence. The published site must
-carry attribution and licence notice, and derivative content built on the outline inherits the
-share-alike obligation. Put the attribution somewhere durable — a footer on every page that
-renders outline content, plus a `LICENSE` note — not only in a README.
+### The boundary, and why it sits where it does
 
-The *numbering scheme* applied on top is original work and is not itself Wikipedia content.
+Individual discipline names are **not** copyrightable. What the source protects is the
+selection and hierarchical arrangement — and an address encodes that arrangement directly. So
+**an address paired with its name is adapted material**; neither half is protected alone.
+
+The **numbering scheme** — division allocation, alternating branch grammar, filing rules,
+hub-card model — derives from nothing and applies to any taxonomy. Original work, licensed
+BY-NC-SA, with commercial rights reserved for a planned print edition.
+
+**ShareAlike does not spread across the project.** It attaches to adapted material only; an
+independent work displayed alongside licensed material forms a Collection. So a page can carry
+a BY-SA table inside BY-NC-SA prose without the prose being infected.
+
+### Implementation on the site
+
+`Base.astro` takes a `derived` prop. Every page gets the BY-NC-SA copyright line; pages passing
+`derived` additionally get the BY-SA attribution scoped **to the listings, not the page**.
+
+Currently `derived`: `/outline`, `/divisions`, `/hubs`.
+Not `derived`: `/`, `/rules` (3 names as examples — de minimis), `/colophon` (states its own
+attribution in the Licensing section).
+
+**Do not write "this page is a derivative work."** That is an overclaim — the page is a
+Collection; the listings are the adapted part.
+
+### Print edition
+
+A manual covering only the scheme, rules and original examples contains no BY-SA material and
+is entirely under the author's control. Keep the numbered outline out of it.
