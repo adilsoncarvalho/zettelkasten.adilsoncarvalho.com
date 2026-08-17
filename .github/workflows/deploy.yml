@@ -3,6 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [master]
+  # Verify runs on PRs too, so a change is checked before it reaches master
+  # rather than after. Build and deploy stay master-only — the github-pages
+  # environment permits deployments from master alone, so a PR that reached
+  # them would only ever fail at the environment gate.
+  pull_request:
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -53,6 +59,7 @@ jobs:
   build:
     name: Build
     needs: verify
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -67,6 +74,7 @@ jobs:
   deploy:
     name: Deploy
     needs: build
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
