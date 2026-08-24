@@ -149,6 +149,102 @@ code {
   color: var(--muted);
 }
 
+/*
+  Heading fragment links (Heading.astro). The whole heading is the click target
+  — see the layout script — and the icon marks that rather than being the only
+  way to hit it, so it is revealed by hovering the heading rather than kept on
+  screen. A pointerless device never gets that reveal, so there the icon stays
+  visible: the affordance would otherwise be undiscoverable.
+
+  Revealed with opacity, never with display, so nothing on the line moves when
+  the icon appears.
+*/
+.linked {
+  cursor: pointer;
+}
+
+.hlink {
+  position: relative;
+  margin-left: 0.45em;
+  color: var(--muted);
+  text-decoration: none;
+  opacity: 0;
+  transition:
+    opacity 0.12s ease-in-out,
+    color 0.12s ease-in-out;
+}
+
+.linked:hover > .hlink,
+.hlink:focus-visible {
+  opacity: 1;
+}
+
+/* Brass on the icon itself, per the accent rule: addresses and active states. */
+.hlink:hover,
+.hlink:focus-visible {
+  color: var(--brass);
+}
+
+.hlink svg {
+  width: 0.72em;
+  height: 0.72em;
+  vertical-align: baseline;
+}
+
+@media (hover: none) {
+  .hlink {
+    opacity: 0.55;
+  }
+}
+
+/*
+  Confirmation for the copy, which is otherwise invisible — nothing navigates
+  and nothing moves. The state sits on the heading, since that is what was
+  clicked, but the bubble hangs off the icon: an h2 carries 1.75rem of top
+  padding, so anchoring to the heading box would float the bubble up past the
+  rule and away from the words. The live region in the layout carries the same
+  word to a screen reader.
+*/
+.linked[data-copied] > .hlink {
+  opacity: 1;
+}
+
+.linked[data-copied] > .hlink::after {
+  content: 'Copied';
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 0.4rem);
+  transform: translateX(-50%);
+  padding: 0.2rem 0.45rem;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  background: var(--surface);
+  color: var(--muted);
+  font: 500 0.62rem/1 var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/*
+  The header is sticky, so an element scrolled to by fragment lands underneath
+  it. Keyed on :target rather than on the headings, which covers the division
+  rows and hub sections that are fragment targets without being headings. The
+  clearance allows for the nav wrapping to a second line on a narrow viewport.
+*/
+:target {
+  scroll-margin-top: 5.5rem;
+}
+
+/* Utility: present to assistive technology, absent on screen. */
+.vh {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
 /* Addresses are the point of the whole system: monospace, tabular, brass. */
 .ad {
   font-family: var(--mono);
@@ -232,5 +328,12 @@ td {
   *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  /* A copy-link affordance means nothing on paper. */
+  .hlink {
+    display: none;
   }
 }

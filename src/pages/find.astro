@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Heading from '../components/Heading.astro';
 import { divisions, core, personal, pageOf, stats } from '../lib/divisions.ts';
 import { index, ambiguous } from '../lib/lookup.ts';
 
@@ -103,7 +104,7 @@ const promptText = [
   </section>
 
   <section class="sheet">
-    <h2 id="questions">Four questions</h2>
+    <Heading level={2} id="questions">Four questions</Heading>
     <ol class="steps">
       <li>
         <strong>Say what the card is about in one noun phrase.</strong>
@@ -130,7 +131,7 @@ const promptText = [
       </li>
     </ol>
 
-    <h2 id="seam">When two disciplines both fit</h2>
+    <Heading level={2} id="seam">When two disciplines both fit</Heading>
     <p>
       Almost every hard call is the same call, wearing a different subject. Two disciplines fit
       because one explains <em>how the thing works</em> and the other tells you
@@ -183,7 +184,7 @@ const promptText = [
   </section>
 
   <section class="screen">
-    <h2 id="lookup">Look up a discipline</h2>
+    <Heading level={2} id="lookup">Look up a discipline</Heading>
     <p>
     {terms.length.toLocaleString('en')} names from the academic outline, each mapped to the discipline
     a card on that subject belongs in. Use it when you know the field's name but not where it
@@ -212,7 +213,7 @@ const promptText = [
     <ul id="results"></ul>
   </div>
 
-  <h2 id="prompt">Build your own filing assistant</h2>
+  <Heading level={2} id="prompt">Build your own filing assistant</Heading>
   <p>
     The table is small enough to hand to any assistant as a prompt. Copy the block below into
     Claude, a custom GPT, a local model, or a Claude Code skill file — it carries the whole
@@ -229,7 +230,7 @@ const promptText = [
     <pre>{promptText}</pre>
   </div>
 
-  <h2>Take it to the box</h2>
+  <Heading level={2}>Take it to the box</Heading>
   <p>
     The four questions and the seam table are the part you want beside the card box rather than
     on a screen. <button id="print" type="button" class="linkish">Print this page</button> — the
@@ -556,7 +557,8 @@ const promptText = [
     .screen {
       display: none;
     }
-    .sheet h2 {
+    /* :global — rendered by Heading.astro, outside this page's style scope. */
+    .sheet :global(h2) {
       margin-top: 0.8rem;
     }
     .seams {

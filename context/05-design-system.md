@@ -72,6 +72,30 @@ vertically. Uppercase micro-labels take `letter-spacing: .09em–.11em` at `.68r
 - Accent discipline: brass appears on division numbers, active states, and the single
   left-border of callouts. Nowhere else.
 
+## Fragment links
+
+Every section heading (`h2`–`h4`, not the page `h1`) is addressable and copyable.
+`src/components/Heading.astro` cuts the `id` from the heading text at build time, so it is in
+the served HTML and an inbound deep link scrolls on arrival rather than after a script runs.
+
+- **The whole heading is the click target.** Clicking anywhere on it copies the absolute URL.
+  The click is cancelled, so the page never jumps to the fragment it just copied; the address
+  bar is updated with `replaceState` instead, which leaves the URL reachable when the clipboard
+  refuses. `cursor: pointer` is the standing signal that the heading is live.
+- **A trailing chain-link icon marks it**, drawn inline — the no-webfont rule holds, and one
+  glyph is not worth a third-party request. Its strokes take `currentColor`. Hidden at rest and
+  revealed on hovering the heading, by opacity rather than `display`, so nothing on the line
+  moves. Muted when revealed, brass when the icon itself is hovered or focused — the accent
+  stays on the active element. Where the device reports no hover the icon is left visible at
+  `.55`, since there is no reveal to discover it by. Hidden in print.
+- **What still behaves normally:** a link the heading already carries (a division code pointing
+  at `/core`), a modified or middle click on the icon, and a click that ends a drag-selection of
+  the heading's own words.
+
+The icon is omitted where it cannot work: a heading already inside a link (the route cards on
+`/`), and the uppercase micro-labels marked up as `h4` that label a diagram rather than opening
+a section. Both are left out simply by not using the component.
+
 ## Published artifacts
 
 | Artifact | URL | Favicon |

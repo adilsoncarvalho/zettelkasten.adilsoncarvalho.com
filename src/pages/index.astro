@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Heading from '../components/Heading.astro';
 import { stats } from '../lib/antinet.ts';
 import { stats as divisionStats } from '../lib/divisions.ts';
 
@@ -88,7 +89,7 @@ const questions = [
     <div><b class="ad">{stats.maxDepth}</b><span>Levels deep</span></div>
   </section>
 
-  <h2>What is here</h2>
+  <Heading level={2}>What is here</Heading>
   <p>
     The taxonomy is published in two tiers, and the split is the thing to notice first:
     {' '}<a href={`${base}/core`}>a canonical list</a> anyone can adopt whole, and
@@ -107,7 +108,7 @@ const questions = [
     }
   </div>
 
-  <h2>If you arrived with a question</h2>
+  <Heading level={2}>If you arrived with a question</Heading>
   <ul class="qs">
     {
       questions.map(([q, href]) => (
@@ -118,7 +119,7 @@ const questions = [
     }
   </ul>
 
-  <h2>The one idea to take away</h2>
+  <Heading level={2}>The one idea to take away</Heading>
   <div class="callout">
     <p>
       <strong>The four digits are the classification. Everything after the slash is

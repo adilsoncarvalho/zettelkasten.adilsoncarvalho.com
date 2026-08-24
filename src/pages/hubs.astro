@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Heading from '../components/Heading.astro';
 import hubs from '../../context/data/hubs.json';
 import { divisions, pageOf } from '../lib/divisions.ts';
 
@@ -34,7 +35,7 @@ const href = (code: string) => `${base}${pageOf(code)}#${code}`;
     </p>
   </div>
 
-  <h2>The six hubs</h2>
+  <Heading level={2}>The six hubs</Heading>
   <div class="strip">
     {
       themes.map((t) => (
@@ -70,8 +71,8 @@ const href = (code: string) => `${base}${pageOf(code)}#${code}`;
 
   {
     themes.map((t) => (
-      <section class="th" id={t.name.toLowerCase()}>
-        <h2>{t.name}</h2>
+      <section class="th">
+        <Heading level={2} id={t.name.toLowerCase()}>{t.name}</Heading>
         <div class="anchor">
           <span class="eyebrow">Hub card</span>
           <b class="ad">{t.hub}</b>
@@ -103,7 +104,7 @@ const href = (code: string) => `${base}${pageOf(code)}#${code}`;
     ))
   }
 
-  <h2>When your vocabulary is not in the map</h2>
+  <Heading level={2}>When your vocabulary is not in the map</Heading>
   <p>
     Of 23 terms probed from these six themes, <strong>22 have no entry in the source outline at
     all.</strong> Sales, startups, keto, productivity, attention, habit, negotiation, branding —
@@ -204,7 +205,8 @@ const href = (code: string) => `${base}${pageOf(code)}#${code}`;
     font-size: 0.89rem;
     margin-top: 1rem;
   }
-  .th h2 {
+  /* :global — rendered by Heading.astro, outside this page's style scope. */
+  .th :global(h2) {
     margin-bottom: 0;
   }
   .anchor {

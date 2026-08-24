@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Heading from '../components/Heading.astro';
 import { underParent, freeUnits, pageOf, referencesIn, stats } from '../lib/divisions.ts';
 import { termCounts } from '../lib/lookup.ts';
 
@@ -89,12 +90,12 @@ const Spell = (n: number) => spell(n).replace(/^./, (c) => c.toUpperCase());
   {
     groups.map(({ parent, rows }) => (
       <section class="parent">
-        <h2>
+        <Heading level={2}>
           <a class="ad" href={`${base}/core#${parent.code}`}>
             {parent.code}
           </a>
           {parent.name}
-        </h2>
+        </Heading>
         <p class="meta">
           Core discipline. {rows.length} of its nine units digits used, {freeUnits(parent.code)} still
           free.
@@ -123,7 +124,7 @@ const Spell = (n: number) => spell(n).replace(/^./, (c) => c.toUpperCase());
     ))
   }
 
-  <h2>What this tier costs</h2>
+  <Heading level={2}>What this tier costs</Heading>
   <p>
     Nothing, in addresses. Every row above took a units digit that the core list leaves empty by
     construction, so not one canonical code moved to make room, and none ever will. That is the
@@ -146,7 +147,7 @@ const Spell = (n: number) => spell(n).replace(/^./, (c) => c.toUpperCase());
     <a href={`${base}/outline`}>The mapping →</a>
   </p>
 
-  <h2>Where these came from</h2>
+  <Heading level={2}>Where these came from</Heading>
   <p>
     Not from planning. Each of these rows existed as a complaint written on three or four cards
     first — the near-miss noted on the card itself, in the closest discipline I could defend — and
@@ -161,7 +162,7 @@ const Spell = (n: number) => spell(n).replace(/^./, (c) => c.toUpperCase());
     <a href={`${base}/hubs`}>How hub cards handle that →</a>
   </p>
 
-  <h2>Yours will end up somewhere else</h2>
+  <Heading level={2}>Yours will end up somewhere else</Heading>
   <p>
     Which is the point of publishing them. Take any row here that already matches how you work —
     a card box is not a purity test, and a tab that saves you a decision has earned its place.
@@ -178,13 +179,14 @@ const Spell = (n: number) => spell(n).replace(/^./, (c) => c.toUpperCase());
   .hero h1 {
     margin: 0.5rem 0 1rem;
   }
-  .parent h2 {
+  /* :global — the heading is rendered by Heading.astro, so the page scope does
+     not reach it. */
+  .parent :global(h2) {
     display: flex;
     align-items: baseline;
     gap: 0.75rem;
-    scroll-margin-top: 5rem;
   }
-  .parent h2 .ad {
+  .parent :global(h2 .ad) {
     font-size: 1rem;
     font-weight: 600;
   }
@@ -212,7 +214,6 @@ const Spell = (n: number) => spell(n).replace(/^./, (c) => c.toUpperCase());
     background: var(--surface);
     padding: 0.7rem 0.9rem;
     max-width: none;
-    scroll-margin-top: 5rem;
   }
   .divs li:target {
     background: var(--tint);
