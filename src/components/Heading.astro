@@ -1,6 +1,6 @@
 ---
 /**
- * A section heading and the fragment link that addresses it.
+ * A section heading, addressable by fragment and copyable by click.
  *
  * The id is cut at build time rather than by a script on load. A fragment that
  * only exists once JavaScript has run is a fragment the browser has already
@@ -11,9 +11,20 @@
  * already the published address of that section (`/core#5060`) and other pages
  * link to it, so it must not move when the heading is reworded.
  *
- * The link is styled in `global.css`, not here — a page that styles its own
- * headings has to reach into this component with `:global()` to do it, and a
- * scoped rule here would then be fighting those.
+ * The whole heading is the click target; the icon marks it rather than being
+ * the only way to hit it. `linked` is the hook the layout script and the
+ * stylesheet both key on, so a heading that is not addressable — the page `h1`,
+ * an `h3` already inside a link — is left out simply by not using this
+ * component.
+ *
+ * The icon is drawn inline rather than pulled from an icon font: the design
+ * system rules out webfonts, and one glyph is not worth a third-party request
+ * that the rest of the site does without. Its strokes take currentColor, so
+ * both themes are free.
+ *
+ * Styled in `global.css`, not here — a page that styles its own headings has to
+ * reach into this component with `:global()` to do it, and a scoped rule here
+ * would then be fighting those.
  */
 import { slug, text } from '../lib/slug.ts';
 
@@ -35,10 +46,22 @@ const fragment = id ?? slug(inner);
 const Tag = `h${level}` as 'h2' | 'h3' | 'h4';
 ---
 
-<Tag id={fragment} class={klass}
+<Tag id={fragment} class:list={['linked', klass]}
   ><Fragment set:html={inner} /><a
     class="hlink"
     href={`#${fragment}`}
-    aria-label={`Copy link to section: ${text(inner)}`}>#</a
+    aria-label={`Copy link to section: ${text(inner)}`}
+    ><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"
+      ><g
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><path d="M10.5 7.5H7.5a4.5 4.5 0 0 0 0 9h3" /><path
+          d="M13.5 7.5h3a4.5 4.5 0 0 1 0 9h-3"
+        /><path d="M8.5 12h7" /></g
+      ></svg
+    ></a
   ></Tag
 >

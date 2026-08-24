@@ -150,45 +150,70 @@ code {
 }
 
 /*
-  Heading fragment links (Heading.astro). Dimmed rather than hidden at rest:
-  hover is the usual reveal, and a device that never hovers would then never
-  show the link at all. Muted at rest, brass on the hover — the accent is
-  reserved for addresses and active states.
+  Heading fragment links (Heading.astro). The whole heading is the click target
+  — see the layout script — and the icon marks that rather than being the only
+  way to hit it, so it is revealed by hovering the heading rather than kept on
+  screen. A pointerless device never gets that reveal, so there the icon stays
+  visible: the affordance would otherwise be undiscoverable.
+
+  Revealed with opacity, never with display, so nothing on the line moves when
+  the icon appears.
 */
+.linked {
+  cursor: pointer;
+}
+
 .hlink {
   position: relative;
-  margin-left: 0.4em;
-  font-family: var(--mono);
-  font-size: 0.8em;
-  font-weight: 400;
+  margin-left: 0.45em;
   color: var(--muted);
   text-decoration: none;
-  opacity: 0.55;
+  opacity: 0;
   transition:
     opacity 0.12s ease-in-out,
     color 0.12s ease-in-out;
 }
 
-/* The link only ever sits inside a heading, so the parent needs no naming. */
-:hover > .hlink,
+.linked:hover > .hlink,
 .hlink:focus-visible {
-  color: var(--brass);
   opacity: 1;
 }
 
-.hlink:hover {
-  text-decoration: underline;
+/* Brass on the icon itself, per the accent rule: addresses and active states. */
+.hlink:hover,
+.hlink:focus-visible {
+  color: var(--brass);
+}
+
+.hlink svg {
+  width: 0.72em;
+  height: 0.72em;
+  vertical-align: baseline;
+}
+
+@media (hover: none) {
+  .hlink {
+    opacity: 0.55;
+  }
 }
 
 /*
-  Confirmation for the copy, which is otherwise invisible. The live region in
-  the layout carries the same word to a screen reader.
+  Confirmation for the copy, which is otherwise invisible — nothing navigates
+  and nothing moves. The state sits on the heading, since that is what was
+  clicked, but the bubble hangs off the icon: an h2 carries 1.75rem of top
+  padding, so anchoring to the heading box would float the bubble up past the
+  rule and away from the words. The live region in the layout carries the same
+  word to a screen reader.
 */
-.hlink[data-copied]::after {
+.linked[data-copied] > .hlink {
+  opacity: 1;
+}
+
+.linked[data-copied] > .hlink::after {
   content: 'Copied';
   position: absolute;
   left: 50%;
-  bottom: calc(100% + 0.45rem);
+  bottom: calc(100% + 0.4rem);
   transform: translateX(-50%);
   padding: 0.2rem 0.45rem;
   border: 1px solid var(--rule);

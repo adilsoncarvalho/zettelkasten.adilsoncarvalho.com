@@ -193,11 +193,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 
     <script is:inline>
       (() => {
-        // The fragment link navigates on its own — the browser puts the fragment
-        // in the address bar and scrolls the section into view. Copying is
-        // layered on top of that, so a browser that refuses clipboard access
-        // (denied permission, insecure context) still leaves the URL somewhere
-        // the reader can take it from, rather than doing nothing at all.
+        // Copying is the whole action: the click is cancelled, so the page never
+        // jumps to the fragment it just copied. The address bar is updated by
+        // replaceState instead — no scroll, no history entry — which leaves the
+        // URL somewhere the reader can still take it from when the clipboard
+        // refuses (denied permission, insecure context).
         const status = document.getElementById('copy-status');
         let shown = null;
         let timer;
@@ -209,14 +209,36 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         };
 
         document.addEventListener('click', (event) => {
-          const link = event.target.closest && event.target.closest('a.hlink');
-          if (!link || !navigator.clipboard) return;
+          if (!event.target.closest) return;
+          const heading = event.target.closest('.linked');
+          const link = heading && heading.querySelector('a.hlink');
+          if (!link) return;
+
+          // A heading can carry a link of its own — a division code pointing at
+          // /core. That link keeps its own behaviour.
+          const inside = event.target.closest('a');
+          if (inside && inside !== link) return;
+
+          // A modified click on the icon stays the browser's, so it can still be
+          // opened in a new tab or copied as a link address.
+          if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+          // Dragging a selection out of the heading ends in a click here. Copying
+          // then would overwrite the words the reader is about to take.
+          const selection = window.getSelection();
+          if (selection && !selection.isCollapsed) return;
+
+          event.preventDefault();
+          const href = link.getAttribute('href');
+          if (location.hash !== href) history.replaceState(null, '', href);
+          if (!navigator.clipboard) return;
+
           // link.href is the resolved absolute URL, fragment included.
           navigator.clipboard.writeText(link.href).then(() => {
             clearTimeout(timer);
             reset();
-            link.setAttribute('data-copied', '');
-            shown = link;
+            heading.setAttribute('data-copied', '');
+            shown = heading;
             status.textContent = 'Link copied';
             timer = setTimeout(reset, 1600);
           }, reset);
