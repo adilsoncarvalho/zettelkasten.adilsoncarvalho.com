@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Heading from '../components/Heading.astro';
 import { byDrawer, personal, stats } from '../lib/divisions.ts';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -56,7 +57,7 @@ const spentShare = Math.round((stats.divisions / (room.length * PER_DRAWER)) * 1
     </ol>
   </div>
 
-  <h2 id="as-is">First, use it exactly as it is</h2>
+  <Heading level={2} id="as-is">First, use it exactly as it is</Heading>
   <p>
     The strong temptation on day one is to personalise the table before a single card is in the
     box — to delete the disciplines you will never write about, and to add the ones you know you
@@ -81,7 +82,7 @@ const spentShare = Math.round((stats.divisions / (room.length * PER_DRAWER)) * 1
     complaints it generates are the data you need, and you cannot get them any other way.
   </p>
 
-  <h2 id="hub">Then check that you want a discipline at all</h2>
+  <Heading level={2} id="hub">Then check that you want a discipline at all</Heading>
   <p>
     Most of the time the feeling <em>there is no row for what I care about</em> is correct and
     the conclusion is wrong. A discipline is a field of study; what people actually care about
@@ -103,7 +104,7 @@ const spentShare = Math.round((stats.divisions / (room.length * PER_DRAWER)) * 1
     </p>
   </div>
 
-  <h2 id="earned">When a row is earned</h2>
+  <Heading level={2} id="earned">When a row is earned</Heading>
   <p>
     A new tab should be paid for by cards that already exist, never by anticipation. Concretely:
   </p>
@@ -135,7 +136,7 @@ const spentShare = Math.round((stats.divisions / (room.length * PER_DRAWER)) * 1
     complaint, and it is what turns four vague frustrations into one obvious new row.
   </p>
 
-  <h2 id="room">The room you have</h2>
+  <Heading level={2} id="room">The room you have</Heading>
   <p>
     A code is <span class="ad">drawer</span> + <span class="ad">discipline</span> +
     <span class="ad">sub-discipline</span> — one digit, then two, then one. Two digits for the
@@ -177,9 +178,9 @@ const spentShare = Math.round((stats.divisions / (room.length * PER_DRAWER)) * 1
     further down.
   </p>
 
-  <h2 id="how">Three ways to add a row, in order of preference</h2>
+  <Heading level={2} id="how">Three ways to add a row, in order of preference</Heading>
 
-  <h3>1. A sub-discipline under an existing discipline</h3>
+  <Heading level={3} class="way" id="sub-discipline">1. A sub-discipline under an existing discipline</Heading>
   <p>
     Take the next free units digit under the discipline it belongs to.
     <span class="ad">5050</span> Medicine and health becomes the parent of
@@ -193,7 +194,7 @@ const spentShare = Math.round((stats.divisions / (room.length * PER_DRAWER)) * 1
     <li>It reads correctly to anyone who knows the scheme: a non-zero fourth digit <em>is</em> the notation for "a sub-discipline of the row above me".</li>
   </ul>
 
-  <h3>2. A new discipline in a free tens slot</h3>
+  <Heading level={3} class="way" id="new-discipline">2. A new discipline in a free tens slot</Heading>
   <p>
     Legal, and there are {totalFree} slots free, so you will not run out. But understand what
     you are doing: a discipline is a claim about how the field is cut, and you are now making one
@@ -217,7 +218,7 @@ const spentShare = Math.round((stats.divisions / (room.length * PER_DRAWER)) * 1
     the same row with less risk.
   </p>
 
-  <h3>3. A new drawer</h3>
+  <Heading level={3} class="way" id="new-drawer">3. A new drawer</Heading>
   <p>
     Four first digits are unused, so this is possible. It is also almost always a mistake. The
     five drawers are not subject areas — they are five <em>kinds of knowing</em>: what people
@@ -231,7 +232,7 @@ const spentShare = Math.round((stats.divisions / (room.length * PER_DRAWER)) * 1
     <span class="ad">9000</span> is reasonable. Keep them out of the taxonomy either way.
   </p>
 
-  <h2 id="scope">Write the scope note in two halves</h2>
+  <Heading level={2} id="scope">Write the scope note in two halves</Heading>
   <p>
     A row without a scope note is just a word, and a word does not settle anything at two in the
     afternoon with a card in your hand. Every row on the core list has a note in the same shape,
@@ -257,7 +258,7 @@ const spentShare = Math.round((stats.divisions / (room.length * PER_DRAWER)) * 1
     when you have forgotten your own reasoning.
   </p>
 
-  <h2 id="never">What not to do</h2>
+  <Heading level={2} id="never">What not to do</Heading>
   <ul class="rules dont">
     <li>
       <strong>Do not renumber a core code.</strong> Not to make room, not to close a gap, not
@@ -289,7 +290,7 @@ const spentShare = Math.round((stats.divisions / (room.length * PER_DRAWER)) * 1
     </li>
   </ul>
 
-  <h2 id="separate">Keep yours visibly separate</h2>
+  <Heading level={2} id="separate">Keep yours visibly separate</Heading>
   <p>
     Two tiers, on purpose: the core list can be handed to a stranger, and additions can arrive
     for years without a canonical code moving. That property is worth maintaining in your own
@@ -405,7 +406,9 @@ const spentShare = Math.round((stats.divisions / (room.length * PER_DRAWER)) * 1
     color: var(--muted);
     font-size: 0.85rem;
   }
-  h3 {
+  /* :global — rendered by Heading.astro, outside this page's style scope, so
+     the class has to be one no other page uses. */
+  :global(.way) {
     margin-top: 1.6rem;
   }
 </style>

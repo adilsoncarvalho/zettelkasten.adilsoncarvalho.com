@@ -1,0 +1,44 @@
+---
+/**
+ * A section heading and the fragment link that addresses it.
+ *
+ * The id is cut at build time rather than by a script on load. A fragment that
+ * only exists once JavaScript has run is a fragment the browser has already
+ * finished scrolling for, so an inbound deep link — the one case these anchors
+ * exist to serve — would land at the top of the page instead of the section.
+ *
+ * Pass `id` where the fragment is data rather than prose: a division code is
+ * already the published address of that section (`/core#5060`) and other pages
+ * link to it, so it must not move when the heading is reworded.
+ *
+ * The link is styled in `global.css`, not here — a page that styles its own
+ * headings has to reach into this component with `:global()` to do it, and a
+ * scoped rule here would then be fighting those.
+ */
+import { slug, text } from '../lib/slug.ts';
+
+interface Props {
+  level: 2 | 3 | 4;
+  /** Explicit fragment, for a heading addressed by a code rather than by words. */
+  id?: string;
+  /**
+   * Hook for a page that styles this heading. It has to be reached with
+   * `:global()`, so keep the name unique to the page rather than reusing a
+   * tag name every page has.
+   */
+  class?: string;
+}
+
+const { level, id, class: klass } = Astro.props;
+const inner = await Astro.slots.render('default');
+const fragment = id ?? slug(inner);
+const Tag = `h${level}` as 'h2' | 'h3' | 'h4';
+---
+
+<Tag id={fragment} class={klass}
+  ><Fragment set:html={inner} /><a
+    class="hlink"
+    href={`#${fragment}`}
+    aria-label={`Copy link to section: ${text(inner)}`}>#</a
+  ></Tag
+>

@@ -74,6 +74,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       <slot />
     </main>
 
+    <p class="vh" id="copy-status" role="status" aria-live="polite"></p>
+
     <footer class="site">
       <div class="page">
         <p>
@@ -188,5 +190,38 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         font-size: 0.8rem;
       }
     </style>
+
+    <script is:inline>
+      (() => {
+        // The fragment link navigates on its own — the browser puts the fragment
+        // in the address bar and scrolls the section into view. Copying is
+        // layered on top of that, so a browser that refuses clipboard access
+        // (denied permission, insecure context) still leaves the URL somewhere
+        // the reader can take it from, rather than doing nothing at all.
+        const status = document.getElementById('copy-status');
+        let shown = null;
+        let timer;
+
+        const reset = () => {
+          if (shown) shown.removeAttribute('data-copied');
+          shown = null;
+          status.textContent = '';
+        };
+
+        document.addEventListener('click', (event) => {
+          const link = event.target.closest && event.target.closest('a.hlink');
+          if (!link || !navigator.clipboard) return;
+          // link.href is the resolved absolute URL, fragment included.
+          navigator.clipboard.writeText(link.href).then(() => {
+            clearTimeout(timer);
+            reset();
+            link.setAttribute('data-copied', '');
+            shown = link;
+            status.textContent = 'Link copied';
+            timer = setTimeout(reset, 1600);
+          }, reset);
+        });
+      })();
+    </script>
   </body>
 </html>

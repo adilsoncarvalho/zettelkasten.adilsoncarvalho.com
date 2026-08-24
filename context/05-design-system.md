@@ -72,6 +72,19 @@ vertically. Uppercase micro-labels take `letter-spacing: .09em–.11em` at `.68r
 - Accent discipline: brass appears on division numbers, active states, and the single
   left-border of callouts. Nowhere else.
 
+## Fragment links
+
+Every section heading (`h2`–`h4`, not the page `h1`) renders a trailing `#` that addresses it.
+Cut at build time by `src/components/Heading.astro`, so the `id` is in the served HTML and an
+inbound deep link scrolls on arrival rather than after a script runs. Muted at `.55` opacity at
+rest, brass and full opacity on hover — visible without hover, because a touch device has none.
+Clicking navigates; a script in the layout copies the absolute URL on top of that, so a browser
+that refuses clipboard access still leaves the link in the address bar. Hidden in print.
+
+The `#` is omitted where it cannot work: a heading already inside a link (the route cards on
+`/`), and the uppercase micro-labels that are marked up as `h4` but label a diagram rather than
+opening a section.
+
 ## Published artifacts
 
 | Artifact | URL | Favicon |

@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Heading from '../components/Heading.astro';
 import { byDrawer, pageOf, referencesIn, stats } from '../lib/divisions.ts';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -64,9 +65,9 @@ function href(code: string) {
   {
     groups.map(({ drawer, rows }) => (
       <section class="drawer">
-        <h2 id={drawer.code}>
+        <Heading level={2} id={drawer.code}>
           <span class="ad">{drawer.code}</span> {drawer.name}
-        </h2>
+        </Heading>
         <p class="meta">{drawer.scope}</p>
         <ul class="divs">
           {rows.map((d) => (
@@ -87,7 +88,7 @@ function href(code: string) {
     ))
   }
 
-  <h2>What is deliberately not here</h2>
+  <Heading level={2}>What is deliberately not here</Heading>
   <p>
     No sub-disciplines. Not because they are unimportant — the opposite: they are the rows most
     worth having and the rows least possible to write for someone else. Nutrition under
@@ -110,7 +111,7 @@ function href(code: string) {
     <a href={`${base}/outline`}>The full mapping →</a>
   </p>
 
-  <h2>Why the numbers stop at four digits</h2>
+  <Heading level={2}>Why the numbers stop at four digits</Heading>
   <p>
     A positional scheme — one digit per level, all the way down — would need about eleven
     digits, because one level of the source outline fans out to 130 siblings. A Dewey-style
@@ -132,13 +133,14 @@ function href(code: string) {
   .hero h1 {
     margin: 0.5rem 0 1rem;
   }
-  .drawer h2 {
+  /* :global — the heading is rendered by Heading.astro, so the page scope does
+     not reach it. */
+  .drawer :global(h2) {
     display: flex;
     align-items: baseline;
     gap: 0.75rem;
-    scroll-margin-top: 5rem;
   }
-  .drawer h2 .ad {
+  .drawer :global(h2 .ad) {
     font-size: 1rem;
     font-weight: 600;
   }
@@ -165,7 +167,6 @@ function href(code: string) {
     background: var(--surface);
     padding: 0.6rem 0.9rem;
     max-width: none;
-    scroll-margin-top: 5rem;
   }
   .divs li:target {
     background: var(--tint);

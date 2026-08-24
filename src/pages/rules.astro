@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Heading from '../components/Heading.astro';
 import { stats } from '../lib/divisions.ts';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -71,7 +72,7 @@ const nevers = [
     </p>
   </section>
 
-  <h2>Anatomy of an address</h2>
+  <Heading level={2}>Anatomy of an address</Heading>
   <div class="card anat">
     <div class="spec">
       <i class="d" data-l="drawer">1</i><i class="d" data-l="discipline">06</i><i
@@ -108,7 +109,7 @@ const nevers = [
     segment. So <code>3021/50aa</code> reads unambiguously as 50 → aa.
   </p>
 
-  <h2>Computing the next address</h2>
+  <Heading level={2}>Computing the next address</Heading>
   <ol class="steps">
     <li>Decide which card the new one hangs off. Call it the <strong>parent</strong>.</li>
     <li>
@@ -119,7 +120,7 @@ const nevers = [
     <li>Take the next unused one. Done — permanently.</li>
   </ol>
 
-  <h2>Child or sibling</h2>
+  <Heading level={2}>Child or sibling</Heading>
   <p>
     These are not two operations. They are the same operation with a different parent — which
     is what makes the system runnable at 2am with a card in your hand.
@@ -150,7 +151,7 @@ const nevers = [
     </p>
   </div>
 
-  <h2>A worked sequence</h2>
+  <Heading level={2}>A worked sequence</Heading>
   <p>
     Seven cards filed behind <a href={`${base}/core#1060`}>{ANCHOR} Writing and rhetoric</a>, in
     the order they were written. Watch card 6.
@@ -190,7 +191,7 @@ const nevers = [
     cards can point at.
   </p>
 
-  <h3>How each address was derived</h3>
+  <Heading level={3}>How each address was derived</Heading>
   <div class="tbl">
     <table>
       <thead>
@@ -212,7 +213,7 @@ const nevers = [
     </table>
   </div>
 
-  <h2>Inserting between two cards</h2>
+  <Heading level={2}>Inserting between two cards</Heading>
   <p>
     There is no <em>between</em>. There is only <em>behind</em> — and behind turns out to be
     enough, because a child always sits between its parent and its parent’s next sibling.
@@ -230,7 +231,7 @@ const nevers = [
     a hub card’s job, not the number’s.
   </p>
 
-  <h2>Hub cards, and the other two indexes</h2>
+  <Heading level={2}>Hub cards, and the other two indexes</Heading>
   <p>
     If the number cannot tell you what a card says, something else has to find it. Three
     devices do that work, and they are not interchangeable.
@@ -263,7 +264,7 @@ const nevers = [
     belongs somewhere and you have lost your index.
   </p>
 
-  <h2>Never</h2>
+  <Heading level={2}>Never</Heading>
   <ul class="never">
     {
       nevers.map(([rule, why]) => (
