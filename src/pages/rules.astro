@@ -338,6 +338,14 @@ const nevers = [
   .spec i.d {
     color: var(--brass);
   }
+  /* Two digits sitting under a label three times their width read as a clump.
+     Tracking spaces the pair out; the matching indent cancels the trailing
+     space letter-spacing leaves behind, which would otherwise pull the pair
+     off the centre of its column. */
+  .spec i[data-l='discipline'] {
+    letter-spacing: 0.25em;
+    text-indent: 0.25em;
+  }
   .two {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -509,6 +517,12 @@ const nevers = [
       /* the horizontal layout's breathing room would push this row's label
          out of the column the other labels share */
       padding: 0;
+    }
+    .spec i[data-l='discipline'] {
+      /* digits are right-aligned in a shared column here, where tracking would
+         stand this row off the edge the others align to */
+      letter-spacing: normal;
+      text-indent: 0;
     }
     .spec i.sep::after {
       display: block;
