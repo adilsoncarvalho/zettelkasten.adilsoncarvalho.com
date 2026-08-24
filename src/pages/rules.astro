@@ -338,11 +338,12 @@ const nevers = [
   .spec i.d {
     color: var(--brass);
   }
-  /* Two digits sitting under a label three times their width read as a clump.
-     Tracking spaces the pair out; the matching indent cancels the trailing
-     space letter-spacing leaves behind, which would otherwise pull the pair
-     off the centre of its column. */
-  .spec i[data-l='discipline'] {
+  /* A multi-character segment reads as one clump against its single-digit
+     neighbours, so every segment is tracked apart. The matching indent cancels
+     the trailing space letter-spacing leaves behind, which would otherwise
+     pull the digits off the centre of their column. */
+  .spec i.d,
+  .spec i.b {
     letter-spacing: 0.25em;
     text-indent: 0.25em;
   }
@@ -486,11 +487,11 @@ const nevers = [
       grid-template-columns: 1fr;
     }
   }
-  /* Below 25rem the labelled columns no longer fit across the card, so the
+  /* Below 28rem the labelled columns no longer fit across the card, so the
      diagram becomes a legend: one segment per row, digits in a fixed column so
      the labels line up. The slash earns a label here because the brackets that
      group the segments visually are gone. */
-  @media (max-width: 25rem) {
+  @media (max-width: 28rem) {
     .spec {
       display: grid;
       justify-content: center;
@@ -518,9 +519,10 @@ const nevers = [
          out of the column the other labels share */
       padding: 0;
     }
-    .spec i[data-l='discipline'] {
+    .spec i.d,
+    .spec i.b {
       /* digits are right-aligned in a shared column here, where tracking would
-         stand this row off the edge the others align to */
+         stand the longer rows off the edge the others align to */
       letter-spacing: normal;
       text-indent: 0;
     }
