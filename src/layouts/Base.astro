@@ -82,6 +82,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
           A living implementation manual for the Antinet Zettelkasten — the practical
           questions, answered in one place.
         </p>
+        <p class="repo">
+          Written in the open:{' '}
+          <a href="https://github.com/adilsoncarvalho/zettelkasten.adilsoncarvalho.com"
+            >the source for this site is on GitHub</a
+          >.
+        </p>
         <p class="attr">
           © 2026 Adilson Carvalho. The numbering scheme, the filing rules and all prose are
           original work, licensed{' '}
@@ -182,6 +188,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       }
       footer p {
         max-width: var(--measure);
+      }
+      .repo {
+        margin-top: 0.5rem;
       }
       .attr {
         margin-top: 0.8rem;
