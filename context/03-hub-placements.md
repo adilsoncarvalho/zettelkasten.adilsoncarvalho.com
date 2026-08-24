@@ -1,274 +1,208 @@
 # Hub Card Placements
 
+> **Re-anchored onto the curated index.** These hubs originally sat at source-outline
+> addresses, from before the disciplines were re-cut — `1040/9d1` behind Rhetoric, and so on.
+> Those coordinates are dead: `1040` is Language and linguistics now, and nothing branches off
+> the outline's own structure any more. Each hub now sits behind a real row of the published
+> index, at the first free position under it, and each satellite names the discipline the
+> subject files in rather than an outline address. The *reasoning* is unchanged — a hub still
+> hangs off a branch address, not off a discipline.
+
 The owner's six standing interests, mapped onto the index. Published as an artifact;
 this is the source content.
+
+**Source of truth is `scripts/03-build-hubs-artifact.py`.** The `THEMES` structure there feeds
+this document, `data/hubs.json` and the artifact. Edit it, then re-run
+`03-build-hubs-artifact.py` and `06-emit-hubs-json.py`.
 
 ## The six hubs
 
 | Theme | Hub address | Sits behind | Anchor |
 |---|---|---|---|
-| **Persuasion** | `1040/9d1` | `1040/9d` | Rhetoric |
-| **Organisations** | `2103/11` | `2103` | Organizational studies |
-| **Ventures** | `2020/8a` | `2020/8` | Entrepreneurship |
-| **Mind** | `2080/62` | `2080` | Psychology |
-| **Metabolism** | `5100/21a` | `5100/21` | Nutrition and dietetics |
-| **Formation** | `1090/3c1` | `1090/3c` | Catholic theology |
+| **Persuasion** | `1060/1` | `1060` | Writing and rhetoric |
+| **Organisations** | `5060/1` | `5060` | Business and management |
+| **Ventures** | `5060/2` | `5060` | Business and management |
+| **Mind** | `2040/1` | `2040` | Psychology |
+| **Metabolism** | `5051/1` | `5051` | Nutrition and metabolic health |
+| **Formation** | `1020/1` | `1020` | Religion and theology |
 
-Each hub sits at its theme's centre of gravity — the anchor most of its material hangs
-off — not at a drawer root.
+Each hub sits at its theme's centre of gravity — the discipline most of its material hangs
+off — and takes the first free position behind it, never a drawer root. Organisations and
+Ventures both centre on `5060`, so they sit side by side at `5060/1` and `5060/2`.
 
 ## Theme detail
 
-### Persuasion — `1040/9d1`
+### Persuasion — `1060/1`
 
-Behind `1040/9d` Rhetoric.
+Behind `1060` Writing and rhetoric.
 
-Rhetoric is the spine; everything else in this theme is an application of it. Note that Rhetoric is one of the 37 duplicates — it also sits at 2060/24 under Linguistics. Make 1040/9d the live branch and cross-reference the other.
+Rhetoric is the spine, and the re-cut finally gave it a home of its own: 1060 Writing and rhetoric, the craft rather than the criticism. The outline listed rhetoric twice and the copy under literary theory maps to 1050 Literature — that is the reading of it, not the doing. Everything else here is an application: channel at 2080, influence at 5062, and selling at 5061, which the academy has no word for at all.
 
 **Craft**
 
-- `1040/9` — Literary theory
-- `1040/9c` — Poetics
-- `1040/4` — Creative writing
-- `1040/4f` — Literary journalism
-- `5080/3` — Narratology
-- `1010/6d` — Storytelling
+- `1050` Literature — Literary theory, Poetics
+- `1060` Writing and rhetoric — Creative writing, Literary journalism
+- `1080` Performing arts — Storytelling
+- `2080` Communication and media — Narratology
 
 **Channel**
 
-- `5080` — Journalism, media studies & communication
-- `5080/4` — Communication studies
-- `5080/4r` — Speech communication
-- `5080/4m` — Nonverbal communication
-- `5080/4s` — Technical writing
-- `5080/4c` — Communication design
+- `2080` Communication and media — Journalism, media studies & communication, Communication studies, Speech communication, Nonverbal communication, Technical writing, Communication design
 
 **Influence**
 
-- `5080/4a` — Advertising
-- `5080/4p` — Propaganda
-- `5080/4q` — Public relations
-- `2020/15` — Marketing
-- `5080/4k` — Marketing (dup)
-- `5080/4o` — Popular culture studies
+- `2080` Communication and media — Propaganda, Popular culture studies
+- `5062` Marketing and branding — Advertising, Public relations
 
 **Mechanism**
 
-- `2060/4` — Discourse analysis
-- `2060/22` — Pragmatics
-- `2060/26` — Semiotics
-- `2060/24` — Rhetoric (dup)
+- `1040` Language and linguistics — Discourse analysis, Pragmatics, Semiotics
+- `1060` Writing and rhetoric — Rhetoric
 
-### Organisations — `2103/11`
+### Organisations — `5060/1`
 
-Behind `2103` Organizational studies.
+Behind `5060` Business and management.
 
-You get lucky here — Organizational studies is its own division, so the hub sits directly behind the guide card. Management and HR are each doubled across 2020 and 2103; pick 2103 as the live branch since it is the dedicated division.
+The outline gave organizational studies its own node and then duplicated management, HR and industrial organization across two more. The re-cut folds all of it into 5060 Business and management, which dissolves this theme's duplicate problem outright: what needed two groups and a pick-the-live-branch note is now one guide card.
 
 **Core**
 
-- `2103/6` — Management
-- `2103/7` — Organizational behavior
-- `2103/8` — Organization theory
-- `2103/9` — Project management
-- `2103/4` — Human resources management
-- `2103/10` — Quality control
-
-**Business-side**
-
-- `2020/14` — Management (dup)
-- `2020/11b` — Human resources (dup)
-- `2020/11` — Industrial & labor relations
-- `2020/11a` — Collective bargaining
-- `2020/6` — Corporate governance
-- `2020/16` — Operations management
-- `2020/9` — Decision science
+- `5060` Business and management — Management, Organizational behavior, Organization theory, Project management, Human resources management, Quality control, Industrial & labor relations, Collective bargaining, Corporate governance, Operations management, Decision science
 
 **Behaviour & theory**
 
-- `2080/39` — Organizational psychology
-- `2090/44` — Organizational theory
-- `2090/13` — Critical management studies
-- `5080/4n` — Organizational communication
+- `2030` Sociology — Organizational theory, Critical management studies
+- `2040` Psychology — Organizational psychology
+- `2080` Communication and media — Organizational communication
 
 **Systems & leadership**
 
-- `5047/11` — Systems engineering
-- `5047/5c` — Management cybernetics
-- `5110/10` — Leadership
-- `5030/4` — Educational leadership
-- `5110/11b` — Supply chain management
+- `4070` Information and systems science — Systems engineering, Management cybernetics
+- `5030` Education and learning — Educational leadership
+- `5080` Military and security — Leadership, Supply chain management
 
-### Ventures — `2020/8a`
+### Ventures — `5060/2`
 
-Behind `2020/8` Entrepreneurship.
+Behind `5060` Business and management.
 
-Entrepreneurship is a single bullet in the outline with no children — which tells you the academy treats it thinly. Expect this branch to be almost entirely your own cards.
+Entrepreneurship was a single childless bullet in the outline, which tells you how thinly the academy treats it — expect this branch to be almost entirely your own cards. It shares 5060 with Organisations, so the two hubs sit side by side at 5060/1 and 5060/2. The money side reaches into 5063 Finance and investing, the product side into 5020 Architecture and design.
 
 **Venture core**
 
-- `2020` — Business (division)
-- `2020/2` — Business administration
-- `2020/3` — Business analysis
-- `2020/7` — E-Business
-- `2020/19` — Strategy / Strategic Management
-- `2030/22` — Entrepreneurial economics
+- `2050` Economics — Entrepreneurial economics
+- `5060` Business and management — Business administration, Business analysis, E-Business, Strategy / Strategic Management
 
 **Product**
 
-- `5020/9` — Industrial design (product design)
-- `5020/10` — User experience design
-- `5020/10a` — Interaction design
-- `5020/10b` — Information architecture
+- `5020` Architecture and design — Industrial design (product design), User experience design, Interaction design, Information architecture
 
 **Money**
 
-- `2020/10` — Finance
-- `2020/18` — Risk management & insurance
-- `4010/13c` — Computational finance
-- `2090/81` — Sociology of finance
-- `2030/55` — Public finance
+- `2030` Sociology — Sociology of finance
+- `2050` Economics — Public finance
+- `4040` Computer science — Computational finance
+- `5060` Business and management — Risk management & insurance
 
 **Market forces**
 
-- `2030/48` — Microeconomics
-- `2030/33` — Industrial organization
-- `2103/5` — Industrial organization (dup)
-- `2030/9` — Consumer economics
-- `2030/4` — Behavioural economics
-- `2020/13` — International trade
+- `2050` Economics — Microeconomics, Industrial organization, Consumer economics, Behavioural economics
+- `5060` Business and management — Industrial organization, International trade
 
-### Mind — `2080/62`
+### Mind — `2040/1`
 
-Behind `2080` Psychology.
+Behind `2040` Psychology.
 
-Psychology is the largest single branch in the index — 61 children. Your hub goes at the end of that run. Decision-making is genuinely split across four drawers, so the hub card earns its keep here more than anywhere else.
+Psychology was the largest single branch in the outline, 61 children, and the re-cut keeps it whole at 2040. Decision-making is still genuinely split — now across 2040, 2050 Economics, 4030 Statistics and probability and 1010 Philosophy — so the hub card earns its keep here more than anywhere else.
 
 **Psychology proper**
 
-- `2080/6` — Cognitive psychology
-- `2080/46` — Positive psychology
-- `2080/47` — Problem solving
-- `2080/43` — Personality psychology
-- `2080/19` — Evolutionary psychology
-- `2080/57` — Social psychology
-- `2080/51` — Psychometrics
+- `2040` Psychology — Cognitive psychology, Positive psychology, Problem solving, Personality psychology, Evolutionary psychology, Social psychology, Psychometrics
 
 **Substrate**
 
-- `3021/34` — Neuroscience
-- `3021/34a` — Behavioral neuroscience
-- `4010/4a` — Cognitive science
-- `2080/36` — Neuropsychology
+- `2040` Psychology — Neuropsychology
+- `3050` Biology — Neuroscience, Behavioral neuroscience
+- `4060` Artificial intelligence — Cognitive science
 
 **Decision-making**
 
-- `2020/9` — Decision science
-- `4032/9b` — Decision analysis
-- `4033/9a` — Decision theory
-- `2030/4` — Behavioural economics
+- `2050` Economics — Behavioural economics
+- `4020` Mathematics — Decision analysis
+- `4030` Statistics and probability — Decision theory
+- `5060` Business and management — Decision science
 
 **Learning & knowing**
 
-- `5030/6` — Educational psychology
-- `5030/3f` — Mastery learning
-- `5030/3g` — Cooperative learning
-- `1060/3` — Epistemology
-- `1060/7d` — Philosophy of mind
-- `1060/7d3` — Philosophy of perception
+- `1010` Philosophy — Epistemology, Philosophy of mind, Philosophy of perception
+- `5030` Education and learning — Educational psychology, Mastery learning, Cooperative learning
 
-### Metabolism — `5100/21a`
+### Metabolism — `5051/1`
 
-Behind `5100/21` Nutrition and dietetics.
+Behind `5051` Nutrition and metabolic health.
 
-Two candidate homes: 5100/21 (clinical practice) and 3021/39 Physiology (mechanism). Practice wins for the hub because keto and carnivore are protocols, not physiology — but link the hub to 3021/39 so the mechanism is one hop away.
+The one hub that sits behind the personal tier. 5051 Nutrition and metabolic health exists because cards like these had nowhere to go: 5050 Medicine and health is the clinic and 3050 Biology is the mechanism. Practice wins the hub because keto and fasting are protocols, not physiology — and the satellites keep 3050 one hop away, which is the whole point of the seam.
 
 **Clinical**
 
-- `5100` — Medicine and health (division)
-- `5100/17` — Internal medicine
-- `5100/17b` — Endocrinology
-- `5100/17c` — Gastroenterology
-- `5100/3a` — Clinical biochemistry
-- `5100/44` — Public health
+- `5050` Medicine and health — Internal medicine, Endocrinology, Gastroenterology, Clinical biochemistry, Public health
 
 **Mechanism**
 
-- `3021/39` — Physiology
-- `3021/39a` — Human physiology
-- `3021/16` — Endocrinology (dup)
-- `3021/3` — Biochemistry
-- `3014/5` — Biochemistry (chem side)
+- `3020` Chemistry — Biochemistry
+- `3050` Biology — Physiology, Human physiology, Endocrinology, Biochemistry
 
 **Performance**
 
-- `3021/39a1` — Exercise physiology
-- `5070/7` — Exercise physiology (dup)
-- `5070/8` — Kinesiology / Performance science
-- `5100/51` — Sports medicine
+- `3050` Biology — Exercise physiology
+- `5050` Medicine and health — Sports medicine
+- `5130` Sport and recreation — Exercise physiology, Kinesiology / Performance science
 
 **Food as system**
 
-- `3021/35` — Nutrition
-- `5060/4` — Nutrition (dup)
-- `5010/13` — Food science
-- `2010/5i` — Nutritional anthropology
-- `2090/82` — Sociology of food
-- `5130/10` — Food policy
+- `2010` Anthropology — Nutritional anthropology
+- `2030` Sociology — Sociology of food
+- `3050` Biology — Nutrition
+- `5010` Agriculture and food — Food science
+- `5110` Public administration and policy — Food policy
 
-### Formation — `1090/3c1`
+### Formation — `1020/1`
 
-Behind `1090/3c` Catholic theology.
+Behind `1020` Religion and theology.
 
-The widest-spanning theme — it touches all four Humanities divisions plus History. Catholic theology is the centre of gravity for formation specifically; ethics and philosophy hang off it as satellites rather than the reverse.
+The widest-spanning theme, and the one the re-cut helped most. The outline carried four adjacent religion nodes — religious studies, divinity, theology, religion — and they are now one discipline at 1020. Catholic theology is the centre of gravity for formation specifically; ethics and philosophy at 1010 hang off it as satellites rather than the reverse.
 
 **Theology**
 
-- `1090/3` — Christian theology
-- `1080` — Divinity (division)
-- `1080/6g` — Moral theology
-- `1080/6e` — Christian ethics
-- `1080/6d` — Systematic theology
-- `1080/6a` — Dogmatic theology
+- `1020` Religion and theology — Christian theology, Divinity, Moral theology, Christian ethics, Systematic theology, Dogmatic theology
 
 **Sources & practice**
 
-- `1080/4` — Hermeneutics
-- `1080/5c` — Biblical studies / Sacred Scripture
-- `1080/3e` — Liturgy
-- `1050/3` — Canon law
-- `1030/13` — Ecclesiastical history of the Catholic Church
+- `1020` Religion and theology — Hermeneutics, Biblical studies / Sacred Scripture, Liturgy
+- `1030` History — Ecclesiastical history of the Catholic Church
+- `5070` Law and jurisprudence — Canon law
 
 **Ethics & philosophy**
 
-- `1060` — Philosophy (division)
-- `1060/4` — Ethics
-- `1060/4d` — Normative ethics
-- `1060/4d1` — Virtue ethics
-- `1060/4a` — Applied ethics
-- `1060/9b` — Medieval philosophy
-- `1060/2j` — Philosophy of religion
+- `1010` Philosophy — Ethics, Normative ethics, Virtue ethics, Applied ethics, Medieval philosophy, Philosophy of religion
 
 **Letters & memory**
 
-- `1040/2` — Classics
-- `1040/7` — History of literature
-- `1040/3` — Comparative literature
-- `1030` — History (division)
-- `1030/16` — Intellectual history
+- `1030` History — Intellectual history
+- `1050` Literature — Classics, History of literature, Comparative literature
 
 ## The vocabulary gap
 
 Of 23 terms probed from the owner's keyword list, **22 have no entry in the source
-outline at all**. Only "storytelling" exists (`1010/6d`).
+outline at all**. Only "storytelling" exists — at source address `1010/6d`, which files at
+`1080` Performing arts.
 
-| Theme | Absent from the outline | File behind |
+| Theme | Absent from the outline | Files behind, today |
 |---|---|---|
-| Persuasion | sales, selling, copywriting, negotiation, branding, pricing | 2020/15 Marketing · 1040/9d Rhetoric |
-| Organisations | incentives, business process, people management | 2103/7 Organizational behavior · 2103/6 Management |
-| Ventures | startups, venture capital | 2020/8 Entrepreneurship |
-| Mind | productivity, attention, focus, habit, note-taking | 2080/6 Cognitive psychology |
-| Metabolism | keto, carnivore, fasting, metabolism | 5100/21 Nutrition and dietetics |
+| Persuasion | sales, selling, copywriting, negotiation, branding, pricing | 5061 Sales and negotiation · 5062 Marketing and branding |
+| Organisations | incentives, business process, people management | 5060 Business and management |
+| Ventures | startups, venture capital | 5063 Finance and investing · 5060 Business and management |
+| Mind | productivity, attention, focus, habit, note-taking | 2040 Psychology · 5031 Note-taking and knowledge systems |
+| Metabolism | keto, carnivore, fasting, metabolism | 5051 Nutrition and metabolic health |
 
 ### Why this matters
 
@@ -279,7 +213,7 @@ and pray. There is no chair of keto.
 **Consequence for the site and for the filing:** the 2,576 pre-numbered entries are a
 *skeleton of anchors*, not a set of slots to fill. The overwhelming majority of real cards will
 be original thinking branching off an anchor, not entries filled in. A card on carnivore
-adaptation is not a missing discipline; it is `5100/21a`'s descendant.
+adaptation is not a missing discipline; it is `5051/1`'s descendant.
 
 This is the argument for keeping the keyword index sparse and the hub cards fat: the numbers
 cannot find the owner's material, because the owner's material is not what was numbered.

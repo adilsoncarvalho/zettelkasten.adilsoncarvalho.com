@@ -1,35 +1,46 @@
 ---
 import Base from '../layouts/Base.astro';
+import { stats } from '../lib/divisions.ts';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+/**
+ * The worked example hangs off a real discipline of the core list, so the whole
+ * branch below it is the filer's own position. The derivation starts from the
+ * bare discipline on purpose — that is the case a filer meets first, where no
+ * branch exists yet.
+ */
+const ANCHOR = '1060';
 
 const written = [
-  ['1040/9d1', 'Persuasion — HUB', '1040/9d'],
-  ['1040/9d1a', 'Definition of a thesis', '1040/9d1'],
-  ['1040/9d1a1', 'Thesis vs. hypothesis', '1040/9d1a'],
-  ['1040/9d1b', 'Ethos, pathos, logos', '1040/9d1'],
-  ['1040/9d1b1', 'Aristotle, Rhetoric Bk I', '1040/9d1b'],
-  ['1040/9d1a2', 'A thesis must be contestable', '1040/9d1a'],
-  ['1040/9d2', 'Rhetoric ≠ sophistry', '1040/9d'],
+  ['1060/1', 'Persuasion — HUB', '1060'],
+  ['1060/1a', 'Definition of a thesis', '1060/1'],
+  ['1060/1a1', 'Thesis vs. hypothesis', '1060/1a'],
+  ['1060/1b', 'Ethos, pathos, logos', '1060/1'],
+  ['1060/1b1', 'Aristotle, Rhetoric Bk I', '1060/1b'],
+  ['1060/1a2', 'A thesis must be contestable', '1060/1a'],
+  ['1060/2', 'Rhetoric ≠ sophistry', '1060'],
 ];
 
 const drawer = [
-  ['1040/9d', 'Rhetoric — guide card', 1, false],
-  ['1040/9d1', 'Persuasion — HUB', 2, false],
-  ['1040/9d1a', 'Definition of a thesis', 3, false],
-  ['1040/9d1a1', 'Thesis vs. hypothesis', 4, false],
-  ['1040/9d1a2', 'A thesis must be contestable', 4, true],
-  ['1040/9d1b', 'Ethos, pathos, logos', 3, false],
-  ['1040/9d1b1', 'Aristotle, Rhetoric Bk I', 4, false],
-  ['1040/9d2', 'Rhetoric ≠ sophistry', 2, false],
+  ['1060', 'Writing and rhetoric — guide card', 1, false],
+  ['1060/1', 'Persuasion — HUB', 2, false],
+  ['1060/1a', 'Definition of a thesis', 3, false],
+  ['1060/1a1', 'Thesis vs. hypothesis', 4, false],
+  ['1060/1a2', 'A thesis must be contestable', 4, true],
+  ['1060/1b', 'Ethos, pathos, logos', 3, false],
+  ['1060/1b1', 'Aristotle, Rhetoric Bk I', 4, false],
+  ['1060/2', 'Rhetoric ≠ sophistry', 2, false],
 ] as const;
 
 const derivation = [
-  [1, '1040/9d', 'letter d', 'number → 1', '1040/9d1'],
-  [2, '1040/9d1', 'number 1', 'letter → a', '1040/9d1a'],
-  [3, '1040/9d1a', 'letter a', 'number → 1', '1040/9d1a1'],
-  [4, '1040/9d1', 'number 1', 'letter → b (a taken)', '1040/9d1b'],
-  [5, '1040/9d1b', 'letter b', 'number → 1', '1040/9d1b1'],
-  [6, '1040/9d1a', 'letter a', 'number → 2 (1 taken)', '1040/9d1a2'],
-  [7, '1040/9d', 'letter d', 'number → 2 (1 taken)', '1040/9d2'],
+  [1, '1060', 'the discipline — no branch yet', 'number → 1', '1060/1'],
+  [2, '1060/1', 'number 1', 'letter → a', '1060/1a'],
+  [3, '1060/1a', 'letter a', 'number → 1', '1060/1a1'],
+  [4, '1060/1', 'number 1', 'letter → b (a taken)', '1060/1b'],
+  [5, '1060/1b', 'letter b', 'number → 1', '1060/1b1'],
+  [6, '1060/1a', 'letter a', 'number → 2 (1 taken)', '1060/1a2'],
+  [7, '1060', 'the discipline', 'number → 2 (1 taken)', '1060/2'],
 ];
 
 const devices = [
@@ -41,9 +52,9 @@ const devices = [
 const nevers = [
   ['Never renumber a card', 'Other cards point at that address, and so does the keyword index. An address is a promise.'],
   ['Never use more than one slash', 'The alternation already marks every level. 1010/1d/1 collides with 1010/1d1, which is Choral conducting.'],
-  ['Never file at a drawer root', 'N000/1 is free in all five drawers and still wrong — 454 unrelated disciplines as neighbours, and neighbours are the point.'],
+  ['Never file at a drawer root', 'N000/1 is free in all five drawers and still wrong. A trunk card has every discipline in the drawer as its neighbour and none of them as its subject, and neighbours are the point.'],
   ['Never make the branch taxonomic', 'The outline reads that way only because it was seeded from a taxonomy. Your own cards will not. Forcing it is the Dewey trap one level down.'],
-  ['Never wait for the right category', 'There is no right category — only the card this one is talking back to. File behind the nearest anchor and let the hub find it.'],
+  ['Never wait for the right discipline', 'There is no perfect one — only the card this one is talking back to. File behind the nearest anchor and let the hub find it.'],
 ];
 ---
 
@@ -63,17 +74,21 @@ const nevers = [
   <h2>Anatomy of an address</h2>
   <div class="card anat">
     <div class="spec">
-      <i class="d" data-l="drawer">1</i><i class="d" data-l="discipline">04</i><i
+      <i class="d" data-l="drawer">1</i><i class="d" data-l="discipline">06</i><i
         class="d"
         data-l="sub-disc.">0</i
-      ><i class="sep">/</i><i class="b" data-l="branch">9d1a</i>
+      ><i class="sep">/</i><i class="b" data-l="branch">1a1</i>
     </div>
     <div class="two">
       <div>
         <h4 class="eyebrow">The four digits — meaning</h4>
         <p>
-          Fixed in advance. Sixty-five of them. This is the <em>only</em> place taxonomy lives:
-          <code>1040</code> is Languages and literature, and always will be. You never invent one.
+          The {stats.divisions} disciplines of
+          <a href={`${base}/core`}>the core list</a>, fixed in advance. This is the
+          <em>only</em> place taxonomy lives: <code>1060</code> is Writing and rhetoric, and
+          will not move. You never invent one with a card in your hand — a row of your own is
+          <a href={`${base}/extending`}>earned over months</a>, and earning one never moves a
+          row that already exists.
         </p>
       </div>
       <div>
@@ -112,18 +127,18 @@ const nevers = [
   <div class="tbl">
     <table>
       <thead>
-        <tr><th>You want</th><th>Parent is</th><th>From <code>1040/9d1a</code></th></tr>
+        <tr><th>You want</th><th>Parent is</th><th>From <code>1060/1a</code></th></tr>
       </thead>
       <tbody>
         <tr>
           <td><span class="pill c">Child</span> digs into the card</td>
           <td>the card itself</td>
-          <td><span class="ad">1040/9d1a1</span></td>
+          <td><span class="ad">1060/1a1</span></td>
         </tr>
         <tr>
           <td><span class="pill s">Sibling</span> continues past it</td>
           <td>the card’s parent — drop the last segment</td>
-          <td><span class="ad">1040/9d1b</span></td>
+          <td><span class="ad">1060/1b</span></td>
         </tr>
       </tbody>
     </table>
@@ -136,7 +151,10 @@ const nevers = [
   </div>
 
   <h2>A worked sequence</h2>
-  <p>Seven cards filed behind Rhetoric <code>1040/9d</code>, in the order they were written. Watch card 6.</p>
+  <p>
+    Seven cards filed behind <a href={`${base}/core#1060`}>{ANCHOR} Writing and rhetoric</a>, in
+    the order they were written. Watch card 6.
+  </p>
   <div class="work">
     <div class="card">
       <h4 class="eyebrow">Order written</h4>
@@ -208,7 +226,7 @@ const nevers = [
   <p>
     The one genuine limit: nothing can sit between a card and its own <em>first</em> child.
     That gap is closed, and you will never need it, because sibling order carries no meaning —
-    <code>9d2</code> is not “prior to” <code>9d3</code>. When sequence genuinely matters, that is
+    <code>1060/1b</code> is not “prior to” <code>1060/1c</code>. When sequence genuinely matters, that is
     a hub card’s job, not the number’s.
   </p>
 
@@ -239,9 +257,9 @@ const nevers = [
   <p>
     A hub is the one card you are <em>allowed</em> to rewrite, because it holds no thinking —
     only pointers. That licence is what lets it collapse the drawer separation the four-digit
-    numbers impose: a Persuasion hub can point at <code>1040/9d</code>, <code>5080/4p</code> and
-    <code>2020/15</code> on the same line, and no filing scheme could have put those three
-    together. Keep it a list. The moment a hub contains arguments, it has become a card that
+    numbers impose: a Persuasion hub can point into <code>1060</code> Writing and rhetoric,
+    <code>2080</code> Communication and media and <code>5062</code> Marketing and branding on
+    the same line, and no filing scheme could have put those three together. Keep it a list. The moment a hub contains arguments, it has become a card that
     belongs somewhere and you have lost your index.
   </p>
 

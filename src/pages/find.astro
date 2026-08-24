@@ -1,0 +1,569 @@
+---
+import Base from '../layouts/Base.astro';
+import { divisions, core, personal, pageOf, stats } from '../lib/divisions.ts';
+import { index, ambiguous } from '../lib/lookup.ts';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const terms = index();
+const ambiguousCount = new Set([...ambiguous().keys()].map((t) => t.toLowerCase())).size;
+
+/**
+ * Codes and scopes the client needs to render a result.
+ *
+ * `p` is the route publishing the row: the two tiers are separate pages, so a
+ * result cannot assume the anchor is on the discipline list. `m` marks a row as
+ * one filer's own, because a stranger searching this box should be able to see
+ * which answers are canonical and which are borrowed from someone's interests.
+ */
+const table = Object.fromEntries(
+  divisions.map((d) => [
+    d.code,
+    { n: d.name, s: d.scope, p: `${base}${pageOf(d.code)}`, m: d.tier === 'personal' },
+  ]),
+);
+
+/**
+ * The seams — pairs where the same subject noun has two correct homes, split
+ * by whether the card explains a mechanism or guides an action. This is one
+ * rule, not eleven, and it resolves most of the hard calls.
+ */
+const seams = [
+  ['2050', '5060', 'why markets behave that way', 'what to do on Monday'],
+  ['3050', '5051', 'how a metabolism works', 'what to eat'],
+  ['3060', '5090', 'how an ecosystem works', 'how to manage the land'],
+  ['2040', '5150', 'why attention fails', 'how to structure your week'],
+  ['4040', '4050', 'what is computable', 'how to ship it'],
+  ['2060', '5110', 'what legitimacy is', 'how the agency delivers'],
+  ['1050', '1060', 'reading the sentence', 'writing the sentence'],
+  ['4010', '1060', 'whether the argument is valid', 'whether it persuades'],
+  ['4070', '5031', 'the theory of information', 'the practice of keeping notes'],
+  ['2080', '5062', 'how media shapes a public', 'how to reach a customer'],
+  ['3010', '5040', 'why the beam bends', 'how to build the bridge'],
+] as const;
+
+/**
+ * Seam rows resolving to a personal sub-discipline.
+ *
+ * The seam table is the printed sheet, so it has to be honest about which of
+ * its answers a stranger's box will not contain.
+ */
+const seamsMine = [...new Set(seams.flatMap(([a, b]) => [a, b]))]
+  .filter((code) => personal.some((d) => d.code === code))
+  .sort();
+
+const row = (d: { code: string; name: string; scope: string }) =>
+  `${d.code}  ${d.name} — ${d.scope}`;
+
+const promptText = [
+  'You help me file index cards into an Antinet Zettelkasten.',
+  '',
+  'When I describe a card, reply with exactly:',
+  '  1. the four-digit code and its name',
+  '  2. one sentence saying why, in terms of the scope note',
+  '  3. the runner-up discipline, if a second one genuinely fits',
+  '',
+  'Rules:',
+  '- Choose by what the card is FOR, not by the nouns it contains. A card that',
+  '  explains a mechanism goes to the science discipline; a card that guides an',
+  '  action goes to the practice discipline, even when both are about the same',
+  '  subject.',
+  '- Never invent a code outside the table below. If nothing fits well, say so',
+  '  and name the closest two, so I can decide whether a pattern of cards has',
+  '  earned a new sub-discipline yet.',
+  '- A code ending in a non-zero digit is a sub-discipline of the code above',
+  '  it ending in zero.',
+  '- Do not suggest anything after the four digits. Position beneath a discipline',
+  '  is mine to assign, and it carries no meaning.',
+  '',
+  'The core table — the canonical list, adopt it as it is:',
+  '',
+  ...core.filter((d) => d.kind !== 'drawer').map(row),
+  '',
+  'My own sub-disciplines. These are not canonical: they are rows my own cards',
+  'paid for. Keep any that suit you, drop the rest, and add your own as you',
+  'earn them.',
+  '',
+  ...personal.map(row),
+].join('\n');
+---
+
+<Base
+  title="Find the discipline"
+  description="A decision procedure for filing a card: four questions, the theory–practice seam that resolves most ties, and a lookup over 2,576 discipline names."
+  derived
+>
+  <section class="hero">
+    <p class="eyebrow">Filing aid</p>
+    <h1>Find the discipline</h1>
+    <p class="lede">
+      Choosing a discipline is the only decision the scheme asks you to make, and it is meant to
+      take seconds. Four questions settle most cards; one rule settles most of the rest.
+    </p>
+  </section>
+
+  <section class="sheet">
+    <h2 id="questions">Four questions</h2>
+    <ol class="steps">
+      <li>
+        <strong>Say what the card is about in one noun phrase.</strong>
+        If you need <em>and</em> to say it, you are holding two cards. Split them first — this
+        is the single most common reason filing feels hard.
+      </li>
+      <li>
+        <strong>Is it about doing something in the world?</strong>
+        A trade, a profession, a protocol, a method you would actually carry out — that is
+        drawer <a href={`${base}${pageOf('5000')}#5000`}>5000</a>, and it is the largest drawer for a
+        reason. Most cards a working adult writes are practice cards.
+      </li>
+      <li>
+        <strong>If not: which kind of thing is it?</strong>
+        What people made and meant → <a href={`${base}${pageOf('1000')}#1000`}>1000</a>. How people
+        behave together → <a href={`${base}${pageOf('2000')}#2000`}>2000</a>. The physical world →
+        <a href={`${base}${pageOf('3000')}#3000`}>3000</a>. Structure that would hold in any world →
+        <a href={`${base}${pageOf('4000')}#4000`}>4000</a>.
+      </li>
+      <li>
+        <strong>Read the scope notes in that drawer and take the first that fits.</strong>
+        Not the best one — the first. The scope note is written to be scanned, and a card in a
+        defensible discipline beats a card in the perfect discipline twenty minutes later.
+      </li>
+    </ol>
+
+    <h2 id="seam">When two disciplines both fit</h2>
+    <p>
+      Almost every hard call is the same call, wearing a different subject. Two disciplines fit
+      because one explains <em>how the thing works</em> and the other tells you
+      <em>what to do</em>. File by which of those your card is.
+    </p>
+    <p class="rule-line">
+      <strong>Mechanism files with the science. Action files with the practice.</strong>
+    </p>
+    <table class="seams">
+      <thead>
+        <tr>
+          <th colspan="2">If the card is…</th>
+          <th colspan="2">…rather than</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          seams.map(([a, b, why, what]) => (
+            <tr>
+              <td class="ad">
+                <a href={`${base}${pageOf(a)}#${a}`}>{a}</a>
+              </td>
+              <td>{why}</td>
+              <td class="ad">
+                <a href={`${base}${pageOf(b)}#${b}`}>{b}</a>
+              </td>
+              <td>{what}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+    <p class="meta">
+      Some of these seams end in a sub-discipline of mine —{' '}
+      {seamsMine.join(', ')}. The rule is the same either way, but those rows are not on the
+      core list, and yours will land somewhere else.
+    </p>
+    <p>
+      If it is genuinely both, <strong>pick either and move on.</strong> Write a cross-reference
+      card in the loser pointing at the address you chose. That is not a failure of the scheme;
+      it is the scheme working. {ambiguousCount.toLocaleString('en')} of the discipline names below
+      have two defensible homes, and no amount of taxonomy design removes them.
+    </p>
+    <p>
+      <strong>Do not invent a discipline while holding a card.</strong> Note the near-miss on the
+      card itself and file it in the closest existing row. When three or four cards have made
+      the same complaint, that pattern has earned a sub-discipline — take the next free units
+      digit and cut a tab. A new tab should be paid for by cards, never by anticipation.
+    </p>
+  </section>
+
+  <section class="screen">
+    <h2 id="lookup">Look up a discipline</h2>
+    <p>
+    {terms.length.toLocaleString('en')} names from the academic outline, each mapped to the discipline
+    a card on that subject belongs in. Use it when you know the field's name but not where it
+    sits — or to check that your instinct matches the map.
+  </p>
+  <p class="meta">
+    It searches <strong>both tiers</strong> — the {stats.divisions} core disciplines and the
+    {' '}{stats.personal} sub-disciplines of mine — because when you are holding a card you want
+    every row that exists, not only the canonical ones. Results from
+    {' '}<a href={`${base}/extensions`}>my tier</a> are tagged
+    {' '}<span class="mine">mine</span>, and you can tell the finder is doing its job when
+    searching <em>venture capital</em> or <em>zettelkasten</em> returns something: the academic
+    outline has no entry for either.
+  </p>
+
+  <div class="finder">
+    <label class="sr-only" for="q">Search discipline names</label>
+    <input
+      id="q"
+      type="search"
+      placeholder="glaciology, semiotics, venture capital…"
+      autocomplete="off"
+      spellcheck="false"
+    />
+    <p id="status" class="meta" aria-live="polite"></p>
+    <ul id="results"></ul>
+  </div>
+
+  <h2 id="prompt">Build your own filing assistant</h2>
+  <p>
+    The table is small enough to hand to any assistant as a prompt. Copy the block below into
+    Claude, a custom GPT, a local model, or a Claude Code skill file — it carries the whole
+    taxonomy and the tiebreak rule with it, and it works without this site.
+  </p>
+  <p class="meta">
+    It comes in two blocks. The first is the core list, which you can use unchanged; the second
+    is my own sub-disciplines, clearly marked — keep the ones that suit your box and replace the
+    rest with yours as you earn them. Edit the rows, keep the rules.
+    <a href={`${base}/extending`}>How a row is earned →</a>
+  </p>
+  <div class="promptbox">
+    <button id="copy" type="button">Copy</button>
+    <pre>{promptText}</pre>
+  </div>
+
+  <h2>Take it to the box</h2>
+  <p>
+    The four questions and the seam table are the part you want beside the card box rather than
+    on a screen. <button id="print" type="button" class="linkish">Print this page</button> — the
+      print stylesheet drops everything except the decision sheet, which fits on one side of A4.
+      Put it in the front of the first drawer.
+    </p>
+  </section>
+
+  <script is:inline type="application/json" id="terms" set:html={JSON.stringify(terms)} />
+  <script is:inline type="application/json" id="table" set:html={JSON.stringify(table)} />
+
+  <script is:inline>
+    (() => {
+      const read = (id) => JSON.parse(document.getElementById(id).textContent);
+      const terms = read('terms');
+      const table = read('table');
+      const q = document.getElementById('q');
+      const out = document.getElementById('results');
+      const status = document.getElementById('status');
+      const LIMIT = 40;
+
+      // Exact, then prefix, then word-start, then anywhere. Enough structure
+      // that "art" surfaces Art history before Bioinformatics.
+      const rank = (hay, needle) => {
+        if (hay === needle) return 0;
+        if (hay.startsWith(needle)) return 1;
+        if (hay.includes(' ' + needle)) return 2;
+        return hay.includes(needle) ? 3 : -1;
+      };
+
+      // The scope notes name the practices the academic outline has no word
+      // for — venture capital, note-taking, fasting. Searching them as well as
+      // the corpus is what stops those returning nothing.
+      const scopeIndex = Object.entries(table).map(([code, m]) => ({
+        code,
+        name: m.n.toLowerCase(),
+        scope: m.s.toLowerCase(),
+      }));
+
+      const row = (code, names, why) => {
+        const meta = table[code];
+        const li = document.createElement('li');
+        // meta.p is the route publishing this tier, built from BASE_URL
+        // server-side: the page is served at /find/, so a relative
+        // "core#..." would resolve to /find/core.
+        li.innerHTML =
+          '<a class="ad" href="' +
+          meta.p +
+          '#' +
+          code +
+          '">' +
+          code +
+          '</a><div><p class="dn"></p><p class="ds"></p><p class="hits"></p></div>';
+        li.querySelector('.dn').textContent = meta.n;
+        if (meta.m) {
+          const tag = document.createElement('span');
+          tag.className = 'mine';
+          tag.textContent = 'mine';
+          tag.title = 'A sub-discipline of the author\u2019s, not on the core list';
+          li.querySelector('.dn').append(' ', tag);
+        }
+        li.querySelector('.ds').textContent = meta.s;
+        const hits = li.querySelector('.hits');
+        if (why) {
+          hits.textContent = why;
+          hits.classList.add('why');
+        } else {
+          const shown = names.slice(0, 8);
+          hits.textContent =
+            shown.join(' · ') + (names.length > shown.length ? ' · +' + (names.length - shown.length) : '');
+        }
+        out.appendChild(li);
+      };
+
+      const render = (direct, list) => {
+        out.innerHTML = '';
+        for (const d of direct) {
+          row(d.code, [], d.inName ? 'named discipline' : 'named in this scope note');
+        }
+        // Group the corpus by discipline so the answer reads "these live at 3040".
+        const groups = new Map();
+        for (const r of list) {
+          if (direct.some((d) => d.code === r.d)) continue;
+          const bucket = groups.get(r.d) ?? [];
+          bucket.push(r.t);
+          groups.set(r.d, bucket);
+        }
+        for (const [code, names] of groups) row(code, names, null);
+
+        const hitCount = direct.length + groups.size;
+        status.textContent =
+          hitCount === 0
+            ? 'Nothing by that name. File it in the closest scope note you can defend, and write the near-miss on the card itself.'
+            : list.length +
+              (list.length === 1 ? ' name in ' : ' names in ') +
+              hitCount +
+              (hitCount === 1 ? ' discipline' : ' disciplines');
+      };
+
+      let timer;
+      q.addEventListener('input', () => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          const needle = q.value.trim().toLowerCase();
+          if (needle.length < 2) {
+            out.innerHTML = '';
+            status.textContent = '';
+            return;
+          }
+          const direct = [];
+          for (const d of scopeIndex) {
+            const byName = rank(d.name, needle);
+            if (byName >= 0) direct.push({ code: d.code, r: byName, inName: true });
+            else if (d.scope.includes(needle)) direct.push({ code: d.code, r: 4, inName: false });
+          }
+          direct.sort((a, b) => a.r - b.r);
+
+          const hits = [];
+          for (const r of terms) {
+            const score = rank(r.q, needle);
+            if (score >= 0) hits.push({ r: score, ...r });
+          }
+          hits.sort((a, b) => a.r - b.r || a.t.length - b.t.length);
+          render(direct, hits.slice(0, LIMIT));
+        }, 90);
+      });
+
+      document.getElementById('copy').addEventListener('click', async (e) => {
+        const text = document.querySelector('.promptbox pre').textContent;
+        try {
+          await navigator.clipboard.writeText(text);
+          e.target.textContent = 'Copied';
+        } catch {
+          e.target.textContent = 'Select and copy';
+        }
+        setTimeout(() => (e.target.textContent = 'Copy'), 2000);
+      });
+
+      document.getElementById('print').addEventListener('click', () => window.print());
+    })();
+  </script>
+</Base>
+
+<style>
+  .hero {
+    padding: 3.5rem 0 0;
+  }
+  .hero h1 {
+    margin: 0.5rem 0 1rem;
+  }
+  .steps {
+    padding-left: 1.2rem;
+  }
+  .steps li {
+    margin-bottom: 0.9rem;
+  }
+  .rule-line {
+    border-left: 3px solid var(--brass);
+    padding: 0.35rem 0 0.35rem 0.9rem;
+    font-family: var(--serif);
+    font-size: 1.02rem;
+  }
+  .seams {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.86rem;
+    margin: 1.2rem 0 1.6rem;
+  }
+  .seams th {
+    text-align: left;
+    font: 600 0.72rem/1 var(--sans);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .seams td {
+    padding: 0.4rem 0.7rem 0.4rem 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: baseline;
+  }
+  .seams td.ad {
+    width: 3.4rem;
+    font-size: 0.82rem;
+  }
+
+  .finder input {
+    width: 100%;
+    font: 1rem var(--sans);
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 0.6rem 0.8rem;
+  }
+  .finder input:focus-visible {
+    outline: 2px solid var(--brass);
+    outline-offset: 1px;
+  }
+  .finder .meta {
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+    min-height: 1.2em;
+  }
+  #results {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1px;
+    background: var(--rule);
+  }
+  #results:not(:empty) {
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  /*
+   * Result rows are built in JS, so they never carry Astro's scoping
+   * attribute. Scope the container and leave the descendants global, or every
+   * rule below silently matches nothing.
+   */
+  #results :global(li) {
+    display: flex;
+    gap: 1rem;
+    background: var(--surface);
+    padding: 0.6rem 0.9rem;
+    max-width: none;
+  }
+  #results :global(.ad) {
+    flex: 0 0 3.2rem;
+    font-weight: 600;
+    font-size: 0.84rem;
+  }
+  #results :global(p) {
+    margin: 0;
+    max-width: none;
+  }
+  #results :global(.dn) {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  #results :global(.ds) {
+    font: 0.8rem/1.45 var(--serif);
+    color: var(--muted);
+  }
+  #results :global(.hits) {
+    font: 0.76rem/1.5 var(--mono);
+    color: var(--brass-dim);
+    margin-top: 0.25rem;
+    overflow-wrap: anywhere;
+  }
+  #results :global(.hits.why) {
+    font: 600 0.68rem var(--sans);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--brass);
+  }
+  /* Also set on rows rendered in the template, hence the pair. */
+  .mine,
+  #results :global(.mine) {
+    display: inline-block;
+    font: 600 0.62rem/1.5 var(--sans);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--brass);
+    border: 1px solid var(--brass-dim);
+    border-radius: 2px;
+    padding: 0 0.3rem;
+    vertical-align: 0.08em;
+  }
+
+  .promptbox {
+    position: relative;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    background: var(--tint);
+  }
+  .promptbox pre {
+    margin: 0;
+    padding: 0.9rem;
+    max-height: 22rem;
+    overflow: auto;
+    font: 0.76rem/1.5 var(--mono);
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  .promptbox button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font: 600 0.72rem var(--sans);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+  }
+  .linkish {
+    font: inherit;
+    color: var(--brass);
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+
+  /* The printed sheet: the decision procedure only, one side of A4. */
+  @media print {
+    .hero,
+    .screen {
+      display: none;
+    }
+    .sheet h2 {
+      margin-top: 0.8rem;
+    }
+    .seams {
+      font-size: 0.78rem;
+    }
+    .seams td {
+      break-inside: avoid;
+    }
+  }
+</style>

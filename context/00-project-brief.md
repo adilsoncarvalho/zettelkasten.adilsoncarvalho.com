@@ -53,7 +53,7 @@ authoritative map. Three licences apply:
 | Material | Licence |
 |---|---|
 | Code — `src/`, `context/scripts/`, config | MIT (`LICENSE`) |
-| Prose and the numbering scheme | CC BY-NC-SA 4.0 (`LICENSE-CONTENT`) |
+| Prose, the numbering scheme, and the curated division table | CC BY-NC-SA 4.0 (`LICENSE-CONTENT`) |
 | Outline-derived data — `context/data/`, `context/content/` | CC BY-SA 4.0 (`context/data/LICENSE`) |
 
 The outline is from
@@ -79,9 +79,21 @@ a BY-SA table inside BY-NC-SA prose without the prose being infected.
 `Base.astro` takes a `derived` prop. Every page gets the BY-NC-SA copyright line; pages passing
 `derived` additionally get the BY-SA attribution scoped **to the listings, not the page**.
 
-Currently `derived`: `/outline`, `/divisions`, `/hubs`.
-Not `derived`: `/`, `/rules` (3 names as examples — de minimis), `/colophon` (states its own
-attribution in the Licensing section).
+Currently `derived`: `/outline`, `/find`, `/hubs`.
+Not `derived`: `/`, `/rules` (3 names as examples — de minimis), `/core`, `/extending`,
+`/extensions`, `/colophon` (states its own attribution in the Licensing section).
+
+**`/extensions` is not `derived` either**, and the reason is worth stating because the page
+does cite the mapping: it reports how many source terms reach each of its rows. A count is a
+fact about the mapping, not the mapping's expression, and the page reproduces no source
+listing at all. `/find` and `/outline`, which render the term names themselves, stay `derived`.
+
+**`/core` is deliberately not `derived`, and this is load-bearing.** The published table
+is a re-cut arrangement with scope notes written here — four religion divisions collapsed to
+one, law moved drawers, the Physical Science wrapper flattened. Names alone carry no
+copyright and the arrangement is no longer the source's, so the table is BY-NC-SA like the
+prose. What stays adapted is the *mapping* from source address to division, and that is
+rendered on `/outline` and `/find`, which are `derived`. See `07-decisions.md` §9 and §12.
 
 **Do not write "this page is a derivative work."** That is an overclaim — the page is a
 Collection; the listings are the adapted part.
@@ -90,3 +102,6 @@ Collection; the listings are the adapted part.
 
 A manual covering only the scheme, rules and original examples contains no BY-SA material and
 is entirely under the author's control. Keep the numbered outline out of it.
+
+**The curated division table can go in.** That was the point of re-cutting it — see
+`07-decisions.md` §9. The source-to-division mapping cannot.

@@ -112,33 +112,33 @@ HTML = f"""<title>Antinet Filing Rules</title>
 <h2>Child or sibling</h2>
 <p class="lede">These are not two operations. They are the same operation with a different parent &mdash; which is what makes the system easy to run at 2am with a card in your hand.</p>
 <div class="tbl"><table>
-<tr><th>You want</th><th>Parent is</th><th>From <code>1040/9d1a</code> you get</th></tr>
-<tr><td><span class="pill c">Child</span> digs into the card</td><td>the card itself</td><td class="ad">1040/9d1a1</td></tr>
-<tr><td><span class="pill s">Sibling</span> continues past it</td><td>the card&rsquo;s parent &mdash; drop the last segment</td><td class="ad">1040/9d1b</td></tr>
+<tr><th>You want</th><th>Parent is</th><th>From <code>1060/1a</code> you get</th></tr>
+<tr><td><span class="pill c">Child</span> digs into the card</td><td>the card itself</td><td class="ad">1060/1a1</td></tr>
+<tr><td><span class="pill s">Sibling</span> continues past it</td><td>the card&rsquo;s parent &mdash; drop the last segment</td><td class="ad">1060/1b</td></tr>
 </table></div>
 <div class="rule"><p>The question to ask at the drawer: <b>does this continue the card in my hand, or dig into it?</b> Continue &rarr; step back one segment and append. Dig in &rarr; append directly.</p></div>
 
 <h2>A worked sequence</h2>
-<p class="lede">Seven cards filed behind Rhetoric <code>1040/9d</code>, in the order they were written. Watch card&nbsp;6.</p>
+<p class="lede">Seven cards filed behind <code>1060</code> Writing and rhetoric, in the order they were written. Watch card&nbsp;6.</p>
 <div class="work">
 <div><h4>Order written</h4><ol>
-<li><span class="n"></span><span class="a">1040/9d1</span><span class="t">Persuasion &mdash; HUB</span></li>
-<li><span class="n"></span><span class="a">1040/9d1a</span><span class="t">Definition of a thesis</span></li>
-<li><span class="n"></span><span class="a">1040/9d1a1</span><span class="t">Thesis vs. hypothesis</span></li>
-<li><span class="n"></span><span class="a">1040/9d1b</span><span class="t">Ethos, pathos, logos</span></li>
-<li><span class="n"></span><span class="a">1040/9d1b1</span><span class="t">Aristotle, <i>Rhetoric</i> Bk I</span></li>
-<li class="hi"><span class="n"></span><span class="a">1040/9d1a2</span><span class="t">A thesis must be contestable</span></li>
-<li><span class="n"></span><span class="a">1040/9d2</span><span class="t">Rhetoric &ne; sophistry</span></li>
+<li><span class="n"></span><span class="a">1060/1</span><span class="t">Persuasion &mdash; HUB</span></li>
+<li><span class="n"></span><span class="a">1060/1a</span><span class="t">Definition of a thesis</span></li>
+<li><span class="n"></span><span class="a">1060/1a1</span><span class="t">Thesis vs. hypothesis</span></li>
+<li><span class="n"></span><span class="a">1060/1b</span><span class="t">Ethos, pathos, logos</span></li>
+<li><span class="n"></span><span class="a">1060/1b1</span><span class="t">Aristotle, <i>Rhetoric</i> Bk I</span></li>
+<li class="hi"><span class="n"></span><span class="a">1060/1a2</span><span class="t">A thesis must be contestable</span></li>
+<li><span class="n"></span><span class="a">1060/2</span><span class="t">Rhetoric &ne; sophistry</span></li>
 </ol></div>
 <div class="drawer"><h4>Order in the drawer</h4><ol style="counter-reset:none">
-<li><span class="a gd">1040/9d</span><span class="t gd">Rhetoric &mdash; guide card</span></li>
-<li><span class="a">1040/9d1</span><span class="t">Persuasion &mdash; HUB</span></li>
-<li><span class="a">1040/9d1a</span><span class="t">Definition of a thesis</span></li>
-<li><span class="a">1040/9d1a1</span><span class="t">Thesis vs. hypothesis</span></li>
-<li class="hi"><span class="a">1040/9d1a2</span><span class="t">A thesis must be contestable</span></li>
-<li><span class="a">1040/9d1b</span><span class="t">Ethos, pathos, logos</span></li>
-<li><span class="a">1040/9d1b1</span><span class="t">Aristotle, <i>Rhetoric</i> Bk I</span></li>
-<li><span class="a">1040/9d2</span><span class="t">Rhetoric &ne; sophistry</span></li>
+<li><span class="a gd">1060</span><span class="t gd">Writing and rhetoric &mdash; guide card</span></li>
+<li><span class="a">1060/1</span><span class="t">Persuasion &mdash; HUB</span></li>
+<li><span class="a">1060/1a</span><span class="t">Definition of a thesis</span></li>
+<li><span class="a">1060/1a1</span><span class="t">Thesis vs. hypothesis</span></li>
+<li class="hi"><span class="a">1060/1a2</span><span class="t">A thesis must be contestable</span></li>
+<li><span class="a">1060/1b</span><span class="t">Ethos, pathos, logos</span></li>
+<li><span class="a">1060/1b1</span><span class="t">Aristotle, <i>Rhetoric</i> Bk I</span></li>
+<li><span class="a">1060/2</span><span class="t">Rhetoric &ne; sophistry</span></li>
 </ol></div>
 </div>
 <p>Card 6 was written sixth and sits fourth. It slid between two cards that already existed, and nothing moved to accommodate it. That is the entire payoff of the alternating scheme &mdash; and the reason you must never renumber: a card&rsquo;s address is the only stable thing other cards can point at.</p>
@@ -146,13 +146,13 @@ HTML = f"""<title>Antinet Filing Rules</title>
 <h3>How each address was derived</h3>
 <div class="tbl"><table>
 <tr><th>#</th><th>Parent</th><th>Ends in</th><th>So append</th><th>Address</th></tr>
-<tr><td>1</td><td><code>1040/9d</code></td><td>letter <code>d</code></td><td>number &rarr; <code>1</code></td><td class="ad">1040/9d1</td></tr>
-<tr><td>2</td><td><code>1040/9d1</code></td><td>number <code>1</code></td><td>letter &rarr; <code>a</code></td><td class="ad">1040/9d1a</td></tr>
-<tr><td>3</td><td><code>1040/9d1a</code></td><td>letter <code>a</code></td><td>number &rarr; <code>1</code></td><td class="ad">1040/9d1a1</td></tr>
-<tr><td>4</td><td><code>1040/9d1</code></td><td>number <code>1</code></td><td>letter &rarr; <code>b</code> (<code>a</code> taken)</td><td class="ad">1040/9d1b</td></tr>
-<tr><td>5</td><td><code>1040/9d1b</code></td><td>letter <code>b</code></td><td>number &rarr; <code>1</code></td><td class="ad">1040/9d1b1</td></tr>
-<tr><td>6</td><td><code>1040/9d1a</code></td><td>letter <code>a</code></td><td>number &rarr; <code>2</code> (<code>1</code> taken)</td><td class="ad">1040/9d1a2</td></tr>
-<tr><td>7</td><td><code>1040/9d</code></td><td>letter <code>d</code></td><td>number &rarr; <code>2</code> (<code>1</code> taken)</td><td class="ad">1040/9d2</td></tr>
+<tr><td>1</td><td><code>1060</code></td><td>the discipline &mdash; no branch yet</td><td>number &rarr; <code>1</code></td><td class="ad">1060/1</td></tr>
+<tr><td>2</td><td><code>1060/1</code></td><td>number <code>1</code></td><td>letter &rarr; <code>a</code></td><td class="ad">1060/1a</td></tr>
+<tr><td>3</td><td><code>1060/1a</code></td><td>letter <code>a</code></td><td>number &rarr; <code>1</code></td><td class="ad">1060/1a1</td></tr>
+<tr><td>4</td><td><code>1060/1</code></td><td>number <code>1</code></td><td>letter &rarr; <code>b</code> (<code>a</code> taken)</td><td class="ad">1060/1b</td></tr>
+<tr><td>5</td><td><code>1060/1b</code></td><td>letter <code>b</code></td><td>number &rarr; <code>1</code></td><td class="ad">1060/1b1</td></tr>
+<tr><td>6</td><td><code>1060/1a</code></td><td>letter <code>a</code></td><td>number &rarr; <code>2</code> (<code>1</code> taken)</td><td class="ad">1060/1a2</td></tr>
+<tr><td>7</td><td><code>1060</code></td><td>the discipline</td><td>number &rarr; <code>2</code> (<code>1</code> taken)</td><td class="ad">1060/2</td></tr>
 </table></div>
 
 <h2>Inserting between two cards</h2>
@@ -169,7 +169,7 @@ HTML = f"""<title>Antinet Filing Rules</title>
 <tr><td><b>Bibliographic card</b></td><td>One source, its details, and the cards drawn from it</td><td>Its own drawer, by author</td><td>Never &mdash; append only</td></tr>
 </table></div>
 <h3>What makes a hub card work</h3>
-<p>A hub is the one card in the system you are <em>allowed</em> to rewrite, because it holds no thinking &mdash; only pointers. That licence is what lets it do its job: it collapses the drawer separation that the four-digit numbers impose. Your Persuasion hub can point at <code>1040/9d</code>, <code>5080/4p</code> and <code>2020/15</code> on the same line, and no filing scheme could have put those three together.</p>
+<p>A hub is the one card in the system you are <em>allowed</em> to rewrite, because it holds no thinking &mdash; only pointers. That licence is what lets it do its job: it collapses the drawer separation that the four-digit numbers impose. Your Persuasion hub can point at <code>1060</code>, <code>5080/4p</code> and <code>2020/15</code> on the same line, and no filing scheme could have put those three together.</p>
 <p>Keep it a list. The moment a hub starts containing arguments, it has become a card that belongs somewhere and you have lost your index.</p>
 <div class="callout">
 <p><b>Where a hub goes.</b> At its theme&rsquo;s centre of gravity &mdash; the anchor most of its material hangs off &mdash; not at the drawer root. <code>1000/1</code> is unoccupied and legal, but a card there has 454 unrelated disciplines as neighbours, and neighbours are the point.</p>

@@ -13,5 +13,8 @@ export default defineConfig({
   // 404s on the trailing-slash form — bad for inbound links we do not control.
   build: { format: 'directory' },
   trailingSlash: 'ignore',
+  // /divisions was the canonical table before it split into core and personal
+  // tiers. Static output emits a meta-refresh page, so old links still land.
+  redirects: { '/divisions': '/core' },
   integrations: [sitemap()],
 });

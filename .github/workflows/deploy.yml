@@ -38,23 +38,30 @@ jobs:
       - name: Install
         run: pnpm install --frozen-lockfile
 
-      - name: Address grammar tests
-        run: node --test "src/lib/*.test.ts"
-
       # The generator asserts every address is unique. Re-running it here means a
       # source-outline edit that introduces a collision fails CI instead of shipping.
+      #
+      # 07-map-legacy.py must run here too: it is the only thing that joins the
+      # hand-authored division table to the outline, so an edit to divisions.json
+      # that renames or drops a code leaves lookup.json pointing at a code that no
+      # longer exists. Regenerating before the tests means they run on fresh data
+      # rather than confirming a stale file agrees with itself.
       - name: Regenerate addresses and check for drift
         run: |
           cd context/scripts
           python3 01-number.py
           python3 05-emit-markdown.py
           python3 06-emit-hubs-json.py
+          python3 07-map-legacy.py
           cd ../..
           if ! git diff --quiet -- context/data context/content; then
             echo "::error::Generated data is out of date. Run 'pnpm data' and commit the result."
             git diff --stat -- context/data context/content
             exit 1
           fi
+
+      - name: Address grammar and division table tests
+        run: node --test "src/lib/*.test.ts"
 
   build:
     name: Build

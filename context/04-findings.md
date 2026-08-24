@@ -1,15 +1,55 @@
 # Verified Findings
 
 Everything here was checked against the data, not asserted. Re-running
-`scripts/01-number.py` re-verifies the collision assertion.
+`scripts/01-number.py` re-verifies the collision assertion; `scripts/07-map-legacy.py`
+re-verifies the mapping onto the curated index.
 
-## Scale
+## The curated index
+
+| Metric | Value |
+|---|---|
+| Published rows | **56** — 5 drawers, 46 divisions, 5 sub-divisions |
+| Core tier (`/core`) | 51 — the drawers and every division, all ending in zero |
+| Personal tier (`/extensions`) | 5 — the sub-divisions, none canonical |
+| Source terms mapped onto them | 2,576 |
+| Divisions reached by at least one source term | 54 of 56 |
+| Divisions no source term reaches | `5031` note-taking, `5061` sales |
+| Source terms with two defensible homes | 228 |
+
+**The two unreached rows are both on the personal tier, and every core division is reached.**
+That is what makes the tier split defensible on evidence rather than on taste: the canonical
+tier is exactly the tier the academy can account for. `src/lib/divisions.test.ts` asserts both
+halves, so a future edit that moves a row across the line fails the suite.
+
+The two unreached rows are the finding, not a defect. The academic outline has no entry for
+note-taking or for selling — nor for zettelkasten, branding, fasting, or venture capital,
+all of which the scope notes name and the finder resolves. A card box built only from the
+academy has nowhere to put a working adult's cards.
+
+Coverage of the previously-absent keyword list, via scope-note search:
+
+| Probe | Resolves to |
+|---|---|
+| note-taking, zettelkasten | `5031` Note-taking and knowledge systems |
+| sales, negotiation, pricing | `5061` Sales and negotiation |
+| copywriting, branding | `5062` Marketing and branding |
+| venture capital | `5063` Finance and investing |
+| keto, fasting | `5051` Nutrition and metabolic health |
+| metabolism | `3050` Biology and `5051` — the seam, shown working |
+| productivity, focus | `5150` Home and personal management |
+| habit, attention | `2040` Psychology |
+
+Checked by running the finder's own ranking over `divisions.json`, not by reading the notes.
+Three probes — `keto`, `metabolism`, `focus` — failed on the first pass and the scope notes
+were amended; the table above is the post-fix state.
+
+## Scale of the source outline
 
 | Metric | Value |
 |---|---|
 | Total addresses | **2,576** (65 headings + 2,511 list items) |
 | Unique addresses | 2,576 — **no collisions** (asserted in `01-number.py`) |
-| Four-digit divisions | 65 |
+| Four-digit divisions in the source cut | 65 |
 | Longest address | `1020/1b2a` (9 characters) |
 | Max depth | 7 levels |
 | Source file | 2,719 lines |

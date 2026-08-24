@@ -1,0 +1,209 @@
+---
+import Base from '../layouts/Base.astro';
+import { byDrawer, pageOf, referencesIn, stats } from '../lib/divisions.ts';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const groups = byDrawer('core');
+
+/** Split a scope note so referenced codes render as links to their row. */
+function segments(scope: string) {
+  const codes = referencesIn(scope);
+  if (codes.length === 0) return [{ text: scope, code: null }];
+  return scope
+    .split(/\b([1-5]\d{3})\b/)
+    .filter((s) => s !== '')
+    .map((s) => ({ text: s, code: /^[1-5]\d{3}$/.test(s) ? s : null }));
+}
+
+/** A cross-reference is local while it stays inside the tier this page publishes. */
+function href(code: string) {
+  const page = pageOf(code);
+  return page === '/core' ? `#${code}` : `${base}${page}#${code}`;
+}
+---
+
+<Base
+  title="The core disciplines"
+  description="The canonical four-digit index — five drawers and 46 disciplines, each with a scope note saying what files there and which discipline wins when two compete."
+>
+  <section class="hero">
+    <p class="eyebrow">Guide cards · the canonical list</p>
+    <h1>The core disciplines</h1>
+    <p class="lede">
+      {stats.divisions} disciplines across {stats.drawers} drawers, every code ending in zero.
+      This is the tier meant to be adopted whole: nothing in it depends on whose card box it
+      is, and nothing in it is here because of one filer's interests. Cut a tab for each row
+      and you have a working skeleton.
+    </p>
+  </section>
+
+  <div class="callout">
+    <p>
+      Read a code as <span class="ad">drawer</span> + <span class="ad">discipline</span> +
+      <span class="ad">sub-discipline</span> — one digit, then two, then one. Two digits for the
+      discipline leaves 99 slots per drawer, so a drawer you work in daily can keep sprouting
+      for decades without a renumber.
+    </p>
+    <p>
+      <strong>Which is the whole reason this page can stay canonical.</strong> Every row here
+      ends in zero, so every discipline carries nine unused units digits. Your own
+      sub-disciplines go there — and a table you extend only in the fourth digit is a table
+      whose codes never move.
+      <a href={`${base}/extending`}>How to extend it →</a>
+    </p>
+  </div>
+
+  <p>
+    The second column is the one that does the work. It answers <em
+      >does this card go here?</em
+    > rather than naming a field, and where two disciplines genuinely compete it says which one
+    wins and sends you to the other.
+    <a href={`${base}/find`}>Not sure which row? →</a>
+  </p>
+
+  {
+    groups.map(({ drawer, rows }) => (
+      <section class="drawer">
+        <h2 id={drawer.code}>
+          <span class="ad">{drawer.code}</span> {drawer.name}
+        </h2>
+        <p class="meta">{drawer.scope}</p>
+        <ul class="divs">
+          {rows.map((d) => (
+            <li class={d.kind} id={d.code}>
+              <span class="ad">{d.code}</span>
+              <span class="t">
+                <span class="name">{d.name}</span>
+                <span class="scope">
+                  {segments(d.scope).map((s) =>
+                    s.code ? <a href={href(s.code)}>{s.text}</a> : s.text,
+                  )}
+                </span>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+
+  <h2>What is deliberately not here</h2>
+  <p>
+    No sub-disciplines. Not because they are unimportant — the opposite: they are the rows most
+    worth having and the rows least possible to write for someone else. Nutrition under
+    medicine, sales under business, note-taking under education are all defensible, and none of
+    them is canon. They are anchors a particular person's cards asked for.
+  </p>
+  <p>
+    So they are published separately, as one filer's worked example rather than as part of the
+    list. Take this page as your skeleton, and let your own fourth digits arrive when cards ask
+    for them.
+    <a href={`${base}/extending`}>When a row is earned →</a>
+    <a href={`${base}/extensions`}>See the author's {stats.personal} →</a>
+  </p>
+  <p>
+    That the split is even possible is a finding, not a preference. Mapping the 2,576-entry
+    academic outline onto this table reaches every one of the {stats.divisions} disciplines
+    above — and misses two of the author's sub-disciplines entirely, because the academy has no
+    entry for note-taking or for selling. The canonical tier is exactly the tier the academy
+    can account for.
+    <a href={`${base}/outline`}>The full mapping →</a>
+  </p>
+
+  <h2>Why the numbers stop at four digits</h2>
+  <p>
+    A positional scheme — one digit per level, all the way down — would need about eleven
+    digits, because one level of the source outline fans out to 130 siblings. A Dewey-style
+    block allocation fares no better: nine slots per level, and it fails at the second level
+    immediately.
+  </p>
+  <p>
+    So the digits stop at the discipline, and depth is carried by an unbounded alternating
+    suffix instead. That is the trade the scheme makes, and everything else follows from it —
+    including the fact that you will never renumber.
+    <a href={`${base}/rules`}>How an address is computed →</a>
+  </p>
+</Base>
+
+<style>
+  .hero {
+    padding: 3.5rem 0 0;
+  }
+  .hero h1 {
+    margin: 0.5rem 0 1rem;
+  }
+  .drawer h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    scroll-margin-top: 5rem;
+  }
+  .drawer h2 .ad {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.82rem;
+    margin: 0 0 0.9rem;
+  }
+  .divs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .divs li {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    background: var(--surface);
+    padding: 0.6rem 0.9rem;
+    max-width: none;
+    scroll-margin-top: 5rem;
+  }
+  .divs li:target {
+    background: var(--tint);
+  }
+  .divs .ad {
+    font-size: 0.84rem;
+    font-weight: 600;
+    flex: 0 0 3.2rem;
+  }
+  .divs .t {
+    flex: 1;
+    min-width: 0;
+  }
+  .subdivision .t {
+    padding-left: 1.1rem;
+  }
+  .subdivision .name::before {
+    content: '└ ';
+    color: var(--muted);
+  }
+  .name {
+    display: block;
+  }
+  .scope {
+    display: block;
+    font: 0.82rem/1.45 var(--serif);
+    color: var(--muted);
+    margin-top: 0.1rem;
+  }
+  .scope a {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  @media print {
+    .divs li {
+      break-inside: avoid;
+    }
+  }
+</style>

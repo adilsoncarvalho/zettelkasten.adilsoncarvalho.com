@@ -1,0 +1,411 @@
+---
+import Base from '../layouts/Base.astro';
+import { byDrawer, personal, stats } from '../lib/divisions.ts';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+/** Disciplines a drawer can hold. Each of those holds nine sub-disciplines. */
+const PER_DRAWER = 99;
+
+/**
+ * The room each drawer still has, counted rather than claimed.
+ *
+ * Two digits for the discipline is the scheme's central trade, and the only
+ * honest way to argue it is to show what is still unspent after a full
+ * canonical cut has been made.
+ *
+ * Deliberately counts disciplines only. A drawer-wide sub-discipline capacity
+ * runs to hundreds and reads as reassuring, but no filer can reach it: the nine
+ * you can actually use sit under a discipline you already have. It flatters the
+ * scheme instead of informing the reader, so the section states the nine and
+ * leaves the product out.
+ */
+const room = byDrawer('core').map(({ drawer, rows }) => ({
+  code: drawer.code,
+  name: drawer.name,
+  used: rows.length,
+  free: PER_DRAWER - rows.length,
+}));
+
+const totalFree = room.reduce((n, r) => n + r.free, 0);
+const spentShare = Math.round((stats.divisions / (room.length * PER_DRAWER)) * 100);
+---
+
+<Base
+  title="Extending the core"
+  description="How to adopt the core list as it is, and how to earn a row of your own — the units digit, the three-card test, the scope-note recipe, and what never to renumber."
+>
+  <section class="hero">
+    <p class="eyebrow">The method</p>
+    <h1>Extending the core</h1>
+    <p class="lede">
+      The <a href={`${base}/core`}>core list</a> is {stats.divisions} disciplines chosen to be
+      defensible to a stranger. Your box will need rows that are defensible only to you — and
+      the scheme is built so those two facts never have to fight. This is how to add yours
+      without moving anything canonical.
+    </p>
+  </section>
+
+  <div class="callout">
+    <p><strong>The whole method, in four lines.</strong></p>
+    <ol class="tldr">
+      <li>Cut the {stats.divisions} core tabs and file against them for a few hundred cards.</li>
+      <li>When a card does not fit, write the near-miss <em>on the card</em> and file it anyway.</li>
+      <li>When three or four cards carry the same complaint, that is a row you have earned.</li>
+      <li>Take the next free units digit under its parent. Never touch the first three.</li>
+    </ol>
+  </div>
+
+  <h2 id="as-is">First, use it exactly as it is</h2>
+  <p>
+    The strong temptation on day one is to personalise the table before a single card is in the
+    box — to delete the disciplines you will never write about, and to add the ones you know you
+    care about. Resist both halves.
+  </p>
+  <p>
+    <strong>Deleting costs you nothing and gains you nothing.</strong> An unused discipline is a
+    code you never type. It occupies no drawer space, because guide cards are cut for rows you
+    actually file into, not for rows that exist in a table. Leaving <span class="ad">3030</span>
+    in the list costs you exactly one line of a web page; deleting it costs you the day, two
+    years from now, when you read something about Saturn's rings.
+  </p>
+  <p>
+    <strong>Adding early costs you a great deal.</strong> A tab you cut in advance is a
+    prediction about which subjects will accumulate cards, and predictions about your own future
+    interests are reliably wrong. What you get is a box of confident-looking tabs with two cards
+    behind each, and the real filing decision — which of these near-identical rows — made harder
+    rather than easier.
+  </p>
+  <p>
+    So: cut the core tabs, file for a few weeks, and let the table be wrong at you. The
+    complaints it generates are the data you need, and you cannot get them any other way.
+  </p>
+
+  <h2 id="hub">Then check that you want a discipline at all</h2>
+  <p>
+    Most of the time the feeling <em>there is no row for what I care about</em> is correct and
+    the conclusion is wrong. A discipline is a field of study; what people actually care about
+    is usually a practice, and a practice cuts across four or five fields at once.
+  </p>
+  <p>
+    Persuasion is not a discipline — it is rhetoric and psychology and advertising and negotiation,
+    and no single row can hold it without becoming a second card box. The answer there is a
+    <a href={`${base}/hubs`}>hub card</a>: one card, filed at the theme's centre of gravity,
+    listing the addresses its material actually sits at. A hub costs one card and no taxonomy.
+  </p>
+  <div class="test">
+    <p>
+      <strong>The test:</strong> write down what you would file in the new discipline. If the
+      list reads like one subject seen from one angle, it is a discipline. If it reads like a
+      project —
+      several subjects pulled together because <em>you</em> are working on something — it is a
+      hub.
+    </p>
+  </div>
+
+  <h2 id="earned">When a row is earned</h2>
+  <p>
+    A new tab should be paid for by cards that already exist, never by anticipation. Concretely:
+  </p>
+  <ul class="rules">
+    <li>
+      <strong>Three or four cards have made the same complaint.</strong> Not one card that fits
+      badly — a repeated near-miss, in the same direction, over weeks. One awkward card is a
+      card. Four are a pattern.
+    </li>
+    <li>
+      <strong>You can name the discipline it keeps colliding with.</strong> If you cannot say
+      which existing row nearly worked, you have not found a gap; you have found a card you have
+      not thought about hard enough yet.
+    </li>
+    <li>
+      <strong>The new row and the old row split on a real question.</strong> Ideally the
+      mechanism-or-action question that
+      <a href={`${base}/find`}>settles most ties</a> — that split holds up for decades, where a
+      split on vocabulary does not.
+    </li>
+    <li>
+      <strong>You would cut a physical tab for it today.</strong> If the answer is "not yet,
+      there are only two cards", then it is not yet. Note it and carry on.
+    </li>
+  </ul>
+  <p>
+    Until then, the near-miss goes <em>on the card</em>: file it in the closest row you can
+    defend and write what did not fit in the margin. That margin note is the only record of the
+    complaint, and it is what turns four vague frustrations into one obvious new row.
+  </p>
+
+  <h2 id="room">The room you have</h2>
+  <p>
+    A code is <span class="ad">drawer</span> + <span class="ad">discipline</span> +
+    <span class="ad">sub-discipline</span> — one digit, then two, then one. Two digits for the
+    discipline is the scheme's central trade, and this is what it bought: a drawer holds{' '}
+    {PER_DRAWER} disciplines, and the canonical cut spends {spentShare}% of them.
+  </p>
+  <table class="room">
+    <thead>
+      <tr>
+        <th>Drawer</th>
+        <th class="n">Disciplines used</th>
+        <th class="n">Disciplines free</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        room.map((r) => (
+          <tr>
+            <td>
+              <span class="ad">{r.code}</span> {r.name}
+            </td>
+            <td class="n">{r.used}</td>
+            <td class="n">{r.free}</td>
+          </tr>
+        ))
+      }
+      <tr class="tot">
+        <td>Total</td>
+        <td class="n">{stats.divisions}</td>
+        <td class="n">{totalFree.toLocaleString('en')}</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>Every discipline gets nine sub-disciplines.</strong></p>
+
+  <p class="meta">
+    There are also four unused drawers, <span class="ad">6000</span> to
+    {' '}<span class="ad">9000</span>, which you will almost certainly never need, for reasons
+    further down.
+  </p>
+
+  <h2 id="how">Three ways to add a row, in order of preference</h2>
+
+  <h3>1. A sub-discipline under an existing discipline</h3>
+  <p>
+    Take the next free units digit under the discipline it belongs to.
+    <span class="ad">5050</span> Medicine and health becomes the parent of
+    <span class="ad">5051</span>, <span class="ad">5052</span>, and so on up to nine. This is
+    the move you want, nearly always:
+  </p>
+  <ul class="rules">
+    <li>It cannot collide with anything canonical, because the core list leaves every units digit empty.</li>
+    <li>It sharpens a tiebreak that already exists rather than inventing a new one — the parent's scope note already told you what competes with it.</li>
+    <li>It survives a change to the core list, because the first three digits are not yours and you did not touch them.</li>
+    <li>It reads correctly to anyone who knows the scheme: a non-zero fourth digit <em>is</em> the notation for "a sub-discipline of the row above me".</li>
+  </ul>
+
+  <h3>2. A new discipline in a free tens slot</h3>
+  <p>
+    Legal, and there are {totalFree} slots free, so you will not run out. But understand what
+    you are doing: a discipline is a claim about how the field is cut, and you are now making one
+    inside the numbering space the canonical list uses. Two consequences worth accepting on
+    purpose:
+  </p>
+  <ul class="rules">
+    <li>
+      <strong>Mark it as yours.</strong> A dot in the corner of the guide card is enough. When
+      you compare your box against the published list a year from now, you want to know
+      instantly which tabs you invented.
+    </li>
+    <li>
+      <strong>Leave a gap.</strong> Number yours from the end of the drawer's used range with a
+      few tens to spare, so a later core addition and your row do not want the same code.
+    </li>
+  </ul>
+  <p>
+    And before you do it: check that what you have is not a sub-discipline of something. Most
+    candidates for a new discipline turn out to be the fourth digit of an existing one, which is
+    the same row with less risk.
+  </p>
+
+  <h3>3. A new drawer</h3>
+  <p>
+    Four first digits are unused, so this is possible. It is also almost always a mistake. The
+    five drawers are not subject areas — they are five <em>kinds of knowing</em>: what people
+    made, how people behave together, how the physical world works, what holds in any world, and
+    what to do on Monday. A sixth kind is a genuine philosophical claim, and if you have one, you
+    disagree with the core cut rather than extending it.
+  </p>
+  <p>
+    The one honest use is a drawer that is not knowledge at all — a personal archive, papers,
+    correspondence. Those are not cards in the same box and giving them
+    <span class="ad">9000</span> is reasonable. Keep them out of the taxonomy either way.
+  </p>
+
+  <h2 id="scope">Write the scope note in two halves</h2>
+  <p>
+    A row without a scope note is just a word, and a word does not settle anything at two in the
+    afternoon with a card in your hand. Every row on the core list has a note in the same shape,
+    and yours should too:
+  </p>
+  <div class="recipe">
+    <p class="half"><span>First half</span> the nouns that file here — enough of them to be recognisable, not a definition.</p>
+    <p class="half"><span>Second half</span> the tiebreak: name the discipline that competes, and say which side of the line each is on.</p>
+    <p class="eg">
+      <span class="ad">5051</span> Nutrition and metabolic health — <em>Diet, fasting, keto,
+      macronutrients, and metabolic protocols as practice. How a metabolism works is 3050.</em>
+    </p>
+  </div>
+  <p>
+    The second half is the half that does the work, and it is the half people skip. Writing it
+    forces you to answer the question you will actually face — not <em>what is this row</em> but
+    <em>why this row and not that one</em> — and it is why the table can be read at a glance
+    instead of studied.
+  </p>
+  <p>
+    Name the competing code explicitly. A note that says "not the theoretical side" ages badly;
+    a note that says "the theory is <span class="ad">4070</span>" is a pointer you can follow
+    when you have forgotten your own reasoning.
+  </p>
+
+  <h2 id="never">What not to do</h2>
+  <ul class="rules dont">
+    <li>
+      <strong>Do not renumber a core code.</strong> Not to make room, not to close a gap, not
+      for tidiness. Every card that points at a discipline points at the number, and the whole
+      value of the scheme is that a pointer stays true forever. Gaps cost nothing; renumbering
+      costs everything.
+    </li>
+    <li>
+      <strong>Do not push meaning past the fourth digit.</strong> Everything after the slash is
+      position, not classification. If you find yourself deciding that
+      <span class="ad">5051/3</span> should mean fasting specifically, stop — you are rebuilding
+      the taxonomy inside the branch, and the branch cannot bear it.
+      <a href={`${base}/rules`}>Why →</a>
+    </li>
+    <li>
+      <strong>Do not divide by project, source, or date.</strong> Those are true of a card for a
+      year and useless for the next thirty. A card's discipline should be the last thing about it
+      that changes.
+    </li>
+    <li>
+      <strong>Do not add a row for one card.</strong> The card is not homeless; it is
+      inconvenient. File it in the nearest defensible row, note the near-miss, and let it wait
+      for company.
+    </li>
+    <li>
+      <strong>Do not fork the whole table.</strong> If you re-cut the drawers you lose the
+      ability to compare notes with anyone using the published list, and you gain nothing that a
+      fourth digit would not have given you.
+    </li>
+  </ul>
+
+  <h2 id="separate">Keep yours visibly separate</h2>
+  <p>
+    Two tiers, on purpose: the core list can be handed to a stranger, and additions can arrive
+    for years without a canonical code moving. That property is worth maintaining in your own
+    box too — mark your guide cards, and keep a list of what you added and what earned it.
+  </p>
+  <p>
+    This site does it by tagging every row in one file as core or personal, which is why
+    {' '}<a href={`${base}/core`}>one page</a> can be canonical while
+    {' '}<a href={`${base}/extensions`}>another</a> is openly one person's. The
+    {' '}<a href={`${base}/find`}>finder searches both</a>, because when you are holding a card
+    you want every row you have, not only the respectable ones.
+  </p>
+  <div class="test">
+    <p>
+      <strong>Then go and read the worked example.</strong> {personal.length} sub-disciplines,
+      each with the card that would not file anywhere else and the discipline it kept colliding
+      with. The rows will not be yours; the reasoning is the part to copy.
+      <a href={`${base}/extensions`}>My extensions →</a>
+    </p>
+  </div>
+</Base>
+
+<style>
+  .hero {
+    padding: 3.5rem 0 0;
+  }
+  .hero h1 {
+    margin: 0.5rem 0 1rem;
+  }
+  .tldr {
+    margin: 0.6rem 0 0;
+    padding-left: 1.2rem;
+    font-size: 0.93rem;
+  }
+  .tldr li {
+    margin-bottom: 0.3rem;
+  }
+  .rules {
+    padding-left: 1.2rem;
+  }
+  .rules li {
+    margin-bottom: 0.7rem;
+  }
+  .dont li strong {
+    color: var(--ink);
+  }
+  .test,
+  .recipe {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--brass);
+    border-radius: 3px;
+    padding: 0.9rem 1.1rem;
+    margin: 1.2rem 0;
+  }
+  .test p,
+  .recipe p {
+    margin: 0;
+    max-width: none;
+  }
+  .recipe .half {
+    font-size: 0.92rem;
+    margin-bottom: 0.5rem;
+  }
+  .recipe .half span {
+    display: inline-block;
+    min-width: 6.6rem;
+    font: 600 0.7rem/1.6 var(--sans);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--brass);
+  }
+  .recipe .eg {
+    margin-top: 0.8rem;
+    padding-top: 0.7rem;
+    border-top: 1px solid var(--rule);
+    font: 0.86rem/1.5 var(--serif);
+    color: var(--muted);
+  }
+  .room {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.87rem;
+    margin: 1.1rem 0;
+  }
+  .room th {
+    text-align: left;
+    font: 600 0.7rem/1.4 var(--sans);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .room td {
+    padding: 0.4rem 0.6rem 0.4rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .room .n {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    font-family: var(--mono);
+    padding-right: 0;
+  }
+  .room th.n {
+    text-align: right;
+  }
+  .room .tot td {
+    font-weight: 600;
+    border-bottom: 0;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  h3 {
+    margin-top: 1.6rem;
+  }
+</style>

@@ -1,9 +1,15 @@
 ---
 import Base from '../layouts/Base.astro';
 import hubs from '../../context/data/hubs.json';
+import { divisions, pageOf } from '../lib/divisions.ts';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const { themes, gaps } = hubs;
+
+const named = new Map(divisions.map((d) => [d.code, d.name]));
+
+/** A satellite cell links to whichever tier publishes that discipline. */
+const href = (code: string) => `${base}${pageOf(code)}#${code}`;
 ---
 
 <Base
@@ -15,7 +21,7 @@ const { themes, gaps } = hubs;
     <p class="eyebrow">Worked example</p>
     <h1>Hub cards</h1>
     <p class="lede">
-      Six standing interests, mapped onto the numbering. None of them fit in one division —
+      Six standing interests, mapped onto the numbering. None of them fit in one discipline —
       which is the normal case, not the awkward one, and exactly what a hub card exists to fix.
     </p>
   </section>
@@ -43,9 +49,23 @@ const { themes, gaps } = hubs;
     }
   </div>
   <p class="note-line">
-    Each hub sits at its theme’s centre of gravity — the anchor most of its material hangs off
-    — not at a drawer root. A drawer root is free and legal, and still wrong: a card there has
-    hundreds of unrelated disciplines as neighbours, and neighbours are the point.
+    Each hub sits at its theme’s centre of gravity — the discipline most of its material hangs
+    off — and takes the first free position behind it. Not at a drawer root: <span class="ad"
+      >N000/1</span
+    > is free and legal in all five drawers and still wrong, because a trunk card's neighbours are
+    every discipline in the drawer and none of them is its subject.
+  </p>
+  <p class="note-line">
+    Two of them share an anchor. Organisations and Ventures both centre on
+    {' '}<a href={`${base}/core#5060`}>5060 Business and management</a>, so they sit side by side
+    at <span class="ad">5060/1</span> and <span class="ad">5060/2</span> — which is what a
+    two-digit discipline tier costs and pays for at the same time: fewer, broader rows, and the
+    hub doing the separating instead of the number.
+  </p>
+  <p class="note-line">
+    Each satellite row below is one discipline of the index and the subjects of this theme that
+    file there — grouped by the role they play, never by drawer. Grouping satellites by number
+    would defeat the whole point of a hub.
   </p>
 
   {
@@ -56,7 +76,7 @@ const { themes, gaps } = hubs;
           <span class="eyebrow">Hub card</span>
           <b class="ad">{t.hub}</b>
           <span class="eyebrow">behind</span>
-          <b class="ad">{t.anchor}</b>
+          <a class="ad anch" href={href(t.anchor)}>{t.anchor}</a>
           <span class="at">{t.anchorTitle}</span>
         </div>
         <p class="why">{t.why}</p>
@@ -64,10 +84,16 @@ const { themes, gaps } = hubs;
           <div class="grp">
             <h4 class="eyebrow">{g.name}</h4>
             <ul>
-              {g.items.map((i) => (
+              {g.cells.map((c) => (
                 <li>
-                  <span class="ad">{i.address}</span>
-                  <span>{i.title}</span>
+                  <a class="ad" href={href(c.division)}>
+                    {c.division}
+                  </a>
+                  <span>
+                    <b>{named.get(c.division)}</b>
+                    {' — '}
+                    {c.subjects.join(', ')}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -83,10 +109,16 @@ const { themes, gaps } = hubs;
     all.</strong> Sales, startups, keto, productivity, attention, habit, negotiation, branding —
     none of them appear. Only “storytelling” does.
   </p>
+  <p>
+    They do have homes now, and that is the whole argument for the personal tier: four of the
+    five rows in the last column below are sub-disciplines one filer's cards paid for, because
+    the academy had no word for what those cards were about.
+    <a href={`${base}/extensions`}>The personal tier →</a>
+  </p>
   <div class="tbl">
     <table>
       <thead>
-        <tr><th>Theme</th><th>Absent from the outline</th><th>File behind</th></tr>
+        <tr><th>Theme</th><th>Absent from the outline</th><th>Files behind, today</th></tr>
       </thead>
       <tbody>
         {
@@ -112,7 +144,7 @@ const { themes, gaps } = hubs;
       <strong>skeleton of anchors</strong>, not a catalogue to complete. The overwhelming
       majority of your cards will be your own thinking branching off an anchor. A card on
       carnivore adaptation is not a missing discipline; it is a descendant of
-      <span class="ad">5100/21a</span>, and it will sit among siblings no encyclopedia imagined.
+      <span class="ad">5051/1</span>, and it will sit among siblings no encyclopedia imagined.
     </p>
     <p>
       Which is the argument for keeping the keyword index sparse and the hub cards fat: the
@@ -185,6 +217,10 @@ const { themes, gaps } = hubs;
     background: var(--tint);
     border-left: 3px solid var(--brass);
     border-radius: 2px;
+  }
+  .anchor .anch {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
   }
   .anchor b {
     font-size: 1.02rem;

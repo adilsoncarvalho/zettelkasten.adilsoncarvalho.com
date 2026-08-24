@@ -1,0 +1,263 @@
+---
+import Base from '../layouts/Base.astro';
+import { underParent, freeUnits, pageOf, referencesIn, stats } from '../lib/divisions.ts';
+import { termCounts } from '../lib/lookup.ts';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const groups = underParent();
+const counts = termCounts();
+
+/**
+ * What paid for each row.
+ *
+ * The rows themselves are the least interesting thing on this page — a stranger
+ * cannot use them. The reasoning is transferable, so each row states the card
+ * that would not file anywhere and the discipline it kept colliding with.
+ */
+const because: Record<string, string> = {
+  '5031':
+    'Cards about running this box had nowhere to go. Information and systems science (4070) is the theory of organising knowledge; a card on how to number a branch is not theory, it is a procedure I follow on a Tuesday.',
+  '5051':
+    'Fasting and keto are protocols, not mechanisms. How a metabolism works belongs to Biology (3050) and always did — but "eat before noon" is not a fact about metabolism, it is an instruction.',
+  '5061':
+    'A card on handling an objection is not rhetoric and not management. Writing and rhetoric (1060) covers whether an argument persuades; this covers whether the deal closes, which turns out to be a different craft.',
+  '5062':
+    'Positioning and copy kept colliding with Communication and media (2080). That discipline studies how media shapes a public; almost every card I write is about reaching one customer, which is the other side of the same street.',
+  '5063':
+    'Valuation and capital are not economic theory. Economics (2050) explains why capital is priced the way it is; these cards are about what to do with a term sheet.',
+};
+
+/** Split a scope note so referenced codes render as links to their row. */
+function segments(scope: string) {
+  if (referencesIn(scope).length === 0) return [{ text: scope, code: null }];
+  return scope
+    .split(/\b([1-5]\d{3})\b/)
+    .filter((s) => s !== '')
+    .map((s) => ({ text: s, code: /^[1-5]\d{3}$/.test(s) ? s : null }));
+}
+
+/** A cross-reference is local while it stays inside the tier this page publishes. */
+function href(code: string) {
+  const page = pageOf(code);
+  return page === '/extensions' ? `#${code}` : `${base}${page}#${code}`;
+}
+
+/**
+ * Rows the source outline never reaches, counted rather than asserted.
+ *
+ * The prose below states how many there are, so it reads the data instead of
+ * repeating it — a sixth extension must not leave the page claiming two.
+ */
+const unreached = groups
+  .flatMap((g) => g.rows)
+  .filter((d) => (counts.get(d.code) ?? 0) === 0)
+  .map((d) => d.code);
+
+const WORDS = ['none', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+const spell = (n: number) => WORDS[n] ?? String(n);
+const Spell = (n: number) => spell(n).replace(/^./, (c) => c.toUpperCase());
+---
+
+<Base
+  title="My extensions"
+  description="The five sub-disciplines one filer's own cards paid for, each with the card that would not file anywhere else — a worked example of extending the core, not an addition to it."
+>
+  <section class="hero">
+    <p class="eyebrow">One filer's tier</p>
+    <h1>My extensions</h1>
+    <p class="lede">
+      {stats.personal} sub-disciplines that my own cards paid for. None of them is canon and
+      none is on <a href={`${base}/core`}>the core list</a> — so use the ones that suit your box
+      as they are, or take them as examples for cutting your own, shaped by what you are
+      actually interested in and where you are heading. The reasoning carries either way.
+    </p>
+  </section>
+
+  <div class="callout">
+    <p>
+      <strong>Read the indented line, not the scope note.</strong>
+    </p>
+    <p>
+      The scope note says what I file where — useful if your interests overlap mine, easy to
+      rewrite where they do not. The indented line beneath it is the part that travels: it names
+      the card that would not file anywhere and the discipline it kept colliding with, which is
+      the shape of evidence to look for in your own box.
+      <a href={`${base}/extending`}>The method →</a>
+    </p>
+  </div>
+
+  {
+    groups.map(({ parent, rows }) => (
+      <section class="parent">
+        <h2>
+          <a class="ad" href={`${base}/core#${parent.code}`}>
+            {parent.code}
+          </a>
+          {parent.name}
+        </h2>
+        <p class="meta">
+          Core discipline. {rows.length} of its nine units digits used, {freeUnits(parent.code)} still
+          free.
+        </p>
+        <ul class="divs">
+          {rows.map((d) => (
+            <li id={d.code}>
+              <span class="ad">{d.code}</span>
+              <div class="t">
+                <p class="name">{d.name}</p>
+                <p class="scope">
+                  {segments(d.scope).map((s) =>
+                    s.code ? <a href={href(s.code)}>{s.text}</a> : s.text,
+                  )}
+                </p>
+                <p class="why">{because[d.code]}</p>
+                <p class="ev">
+                  {counts.get(d.code) ?? 0} of the 2,576 source terms reach this row
+                  {(counts.get(d.code) ?? 0) === 0 && ' — the academy has no word for it'}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+
+  <h2>What this tier costs</h2>
+  <p>
+    Nothing, in addresses. Every row above took a units digit that the core list leaves empty by
+    construction, so not one canonical code moved to make room, and none ever will. That is the
+    single practical reason the tiers are split this way rather than by taste.
+  </p>
+  <p>
+    What it costs is the claim to be canonical, which is why these are not on the other page.
+    {' '}{Spell(unreached.length)} of the {spell(stats.personal)} —{' '}
+    {unreached.map((code, i) => (
+      <>
+        {i > 0 && ', '}
+        <a class="ad" href={`#${code}`}>
+          {code}
+        </a>
+      </>
+    ))}
+    {' '}— are reached by no source term at all. The academic outline has 2,576 entries and no
+    entry for any of them. I am not going to hand a stranger my interests wearing the authority
+    of a discipline list.
+    <a href={`${base}/outline`}>The mapping →</a>
+  </p>
+
+  <h2>Where these came from</h2>
+  <p>
+    Not from planning. Each of these rows existed as a complaint written on three or four cards
+    first — the near-miss noted on the card itself, in the closest discipline I could defend — and
+    only became a tab once the same complaint had been made often enough to be a pattern rather
+    than a mood.
+  </p>
+  <p>
+    Three of them trace to standing interests that cut across the numbering: selling and
+    marketing to persuasion work, finance to ventures, nutrition to metabolism. That is the
+    normal case, not a special one. An interest is a practice and the table is made of fields of
+    study, so an interest almost never lands on one row.
+    <a href={`${base}/hubs`}>How hub cards handle that →</a>
+  </p>
+
+  <h2>Yours will end up somewhere else</h2>
+  <p>
+    Which is the point of publishing them. Take any row here that already matches how you work —
+    a card box is not a purity test, and a tab that saves you a decision has earned its place.
+    But the rows worth most to you are the ones your own cards ask for, and those will land in
+    places I have no reason to number.
+    <a href={`${base}/extending`}>Extending the core →</a>
+  </p>
+</Base>
+
+<style>
+  .hero {
+    padding: 3.5rem 0 0;
+  }
+  .hero h1 {
+    margin: 0.5rem 0 1rem;
+  }
+  .parent h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    scroll-margin-top: 5rem;
+  }
+  .parent h2 .ad {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.82rem;
+    margin: 0 0 0.9rem;
+  }
+  .divs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--brass);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .divs li {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    background: var(--surface);
+    padding: 0.7rem 0.9rem;
+    max-width: none;
+    scroll-margin-top: 5rem;
+  }
+  .divs li:target {
+    background: var(--tint);
+  }
+  .divs .ad {
+    font-size: 0.84rem;
+    font-weight: 600;
+    flex: 0 0 3.2rem;
+  }
+  .divs .t {
+    flex: 1;
+    min-width: 0;
+  }
+  .divs p {
+    margin: 0;
+    max-width: none;
+  }
+  .name {
+    font-weight: 600;
+  }
+  .scope {
+    font: 0.82rem/1.45 var(--serif);
+    color: var(--muted);
+    margin-top: 0.1rem;
+  }
+  .scope a {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .why {
+    font: 0.86rem/1.5 var(--serif);
+    margin-top: 0.5rem;
+    padding-left: 0.7rem;
+    border-left: 2px solid var(--rule);
+  }
+  .ev {
+    font: 0.72rem/1.4 var(--mono);
+    color: var(--brass-dim);
+    margin-top: 0.45rem;
+  }
+
+  @media print {
+    .divs li {
+      break-inside: avoid;
+    }
+  }
+</style>
