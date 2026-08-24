@@ -77,7 +77,7 @@ const nevers = [
       <i class="d" data-l="drawer">1</i><i class="d" data-l="discipline">06</i><i
         class="d"
         data-l="sub-disc.">0</i
-      ><i class="sep">/</i><i class="b" data-l="branch">1a1</i>
+      ><i class="sep" data-l="separator">/</i><i class="b" data-l="branch">1a1</i>
     </div>
     <div class="two">
       <div>
@@ -293,27 +293,33 @@ const nevers = [
     justify-content: center;
     margin-bottom: 2.2rem;
   }
+  /* Each segment is its own column: the bracket and the label sit in normal
+     flow, so a column is as wide as its widest part and labels can never
+     overlap a neighbour's, at any font size or viewport width. */
   .spec i {
     font-style: normal;
-    position: relative;
-    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .spec i::before {
     content: '';
-    position: absolute;
-    left: 8%;
-    right: 8%;
-    top: 1.25em;
+    /* Ordered between the digits and the label, so the bracket cups the
+       digits it names. */
+    order: 1;
+    align-self: stretch;
+    margin: 0.3rem 0.25rem 0;
     height: 0.5rem;
     border: 1px solid var(--brass-dim);
     border-top: 0;
   }
   .spec i::after {
     content: attr(data-l);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0.3rem;
+    order: 2;
+    margin-top: 0.45rem;
+    /* Side padding keeps neighbouring labels apart: the columns themselves are
+       flush, so the address still reads as one string. */
+    padding: 0 0.45rem;
     white-space: nowrap;
     font: 500 0.6rem/1.35 var(--sans);
     letter-spacing: 0.07em;
@@ -322,6 +328,8 @@ const nevers = [
   }
   .spec i.sep {
     color: var(--muted);
+    /* No label of its own, so it needs its own breathing room. */
+    padding: 0 0.3rem;
   }
   .spec i.sep::before,
   .spec i.sep::after {
@@ -468,6 +476,42 @@ const nevers = [
     .two,
     .work {
       grid-template-columns: 1fr;
+    }
+  }
+  /* Below 25rem the labelled columns no longer fit across the card, so the
+     diagram becomes a legend: one segment per row, digits in a fixed column so
+     the labels line up. The slash earns a label here because the brackets that
+     group the segments visually are gone. */
+  @media (max-width: 25rem) {
+    .spec {
+      display: grid;
+      justify-content: center;
+      gap: 0.5rem;
+      font-size: 1.5rem;
+      margin-bottom: 1.8rem;
+    }
+    .spec i {
+      display: grid;
+      grid-template-columns: 3.2ch auto;
+      column-gap: 0.9rem;
+      align-items: baseline;
+      text-align: right;
+    }
+    .spec i::before {
+      display: none;
+    }
+    .spec i::after {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+    .spec i.sep {
+      /* the horizontal layout's breathing room would push this row's label
+         out of the column the other labels share */
+      padding: 0;
+    }
+    .spec i.sep::after {
+      display: block;
     }
   }
 </style>
