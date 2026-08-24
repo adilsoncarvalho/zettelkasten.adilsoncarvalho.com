@@ -1,53 +1,53 @@
 THEMES = [
- ("Persuasion","1040/9d1","1040/9d","Rhetoric",
-  "Rhetoric is the spine; everything else in this theme is an application of it. Note that Rhetoric is one of the 37 duplicates — it also sits at 2060/24 under Linguistics. Make 1040/9d the live branch and cross-reference the other.",
-  [("Craft",[("1040/9","Literary theory"),("1040/9c","Poetics"),("1040/4","Creative writing"),("1040/4f","Literary journalism"),("5080/3","Narratology"),("1010/6d","Storytelling")]),
-   ("Channel",[("5080","Journalism, media studies & communication"),("5080/4","Communication studies"),("5080/4r","Speech communication"),("5080/4m","Nonverbal communication"),("5080/4s","Technical writing"),("5080/4c","Communication design")]),
-   ("Influence",[("5080/4a","Advertising"),("5080/4p","Propaganda"),("5080/4q","Public relations"),("2020/15","Marketing"),("5080/4k","Marketing (dup)"),("5080/4o","Popular culture studies")]),
-   ("Mechanism",[("2060/4","Discourse analysis"),("2060/22","Pragmatics"),("2060/26","Semiotics"),("2060/24","Rhetoric (dup)")])]),
+ ("Persuasion","1060/1","1060","Writing and rhetoric",
+  "Rhetoric is the spine, and the re-cut finally gave it a home of its own: 1060 Writing and rhetoric, the craft rather than the criticism. The outline listed rhetoric twice and the copy under literary theory maps to 1050 Literature — that is the reading of it, not the doing. Everything else here is an application: channel at 2080, influence at 5062, and selling at 5061, which the academy has no word for at all.",
+  [("Craft",[("1050",["Literary theory","Poetics"]),("1060",["Creative writing","Literary journalism"]),("1080",["Storytelling"]),("2080",["Narratology"])]),
+   ("Channel",[("2080",["Journalism, media studies & communication","Communication studies","Speech communication","Nonverbal communication","Technical writing","Communication design"])]),
+   ("Influence",[("2080",["Propaganda","Popular culture studies"]),("5062",["Advertising","Public relations"])]),
+   ("Mechanism",[("1040",["Discourse analysis","Pragmatics","Semiotics"]),("1060",["Rhetoric"])])]),
 
- ("Organisations","2103/11","2103","Organizational studies",
-  "You get lucky here — Organizational studies is its own division, so the hub sits directly behind the guide card. Management and HR are each doubled across 2020 and 2103; pick 2103 as the live branch since it is the dedicated division.",
-  [("Core",[("2103/6","Management"),("2103/7","Organizational behavior"),("2103/8","Organization theory"),("2103/9","Project management"),("2103/4","Human resources management"),("2103/10","Quality control")]),
-   ("Business-side",[("2020/14","Management (dup)"),("2020/11b","Human resources (dup)"),("2020/11","Industrial & labor relations"),("2020/11a","Collective bargaining"),("2020/6","Corporate governance"),("2020/16","Operations management"),("2020/9","Decision science")]),
-   ("Behaviour & theory",[("2080/39","Organizational psychology"),("2090/44","Organizational theory"),("2090/13","Critical management studies"),("5080/4n","Organizational communication")]),
-   ("Systems & leadership",[("5047/11","Systems engineering"),("5047/5c","Management cybernetics"),("5110/10","Leadership"),("5030/4","Educational leadership"),("5110/11b","Supply chain management")])]),
+ ("Organisations","5060/1","5060","Business and management",
+  "The outline gave organizational studies its own node and then duplicated management, HR and industrial organization across two more. The re-cut folds all of it into 5060 Business and management, which dissolves this theme's duplicate problem outright: what needed two groups and a pick-the-live-branch note is now one guide card.",
+  [("Core",[("5060",["Management","Organizational behavior","Organization theory","Project management","Human resources management","Quality control","Industrial & labor relations","Collective bargaining","Corporate governance","Operations management","Decision science"])]),
+   ("Behaviour & theory",[("2030",["Organizational theory","Critical management studies"]),("2040",["Organizational psychology"]),("2080",["Organizational communication"])]),
+   ("Systems & leadership",[("4070",["Systems engineering","Management cybernetics"]),("5030",["Educational leadership"]),("5080",["Leadership","Supply chain management"])])]),
 
- ("Ventures","2020/8a","2020/8","Entrepreneurship",
-  "Entrepreneurship is a single bullet in the outline with no children — which tells you the academy treats it thinly. Expect this branch to be almost entirely your own cards.",
-  [("Venture core",[("2020","Business (division)"),("2020/2","Business administration"),("2020/3","Business analysis"),("2020/7","E-Business"),("2020/19","Strategy / Strategic Management"),("2030/22","Entrepreneurial economics")]),
-   ("Product",[("5020/9","Industrial design (product design)"),("5020/10","User experience design"),("5020/10a","Interaction design"),("5020/10b","Information architecture")]),
-   ("Money",[("2020/10","Finance"),("2020/18","Risk management & insurance"),("4010/13c","Computational finance"),("2090/81","Sociology of finance"),("2030/55","Public finance")]),
-   ("Market forces",[("2030/48","Microeconomics"),("2030/33","Industrial organization"),("2103/5","Industrial organization (dup)"),("2030/9","Consumer economics"),("2030/4","Behavioural economics"),("2020/13","International trade")])]),
+ ("Ventures","5060/2","5060","Business and management",
+  "Entrepreneurship was a single childless bullet in the outline, which tells you how thinly the academy treats it — expect this branch to be almost entirely your own cards. It shares 5060 with Organisations, so the two hubs sit side by side at 5060/1 and 5060/2. The money side reaches into 5063 Finance and investing, the product side into 5020 Architecture and design.",
+  [("Venture core",[("2050",["Entrepreneurial economics"]),("5060",["Business administration","Business analysis","E-Business","Strategy / Strategic Management"])]),
+   ("Product",[("5020",["Industrial design (product design)","User experience design","Interaction design","Information architecture"])]),
+   ("Money",[("2030",["Sociology of finance"]),("2050",["Public finance"]),("4040",["Computational finance"]),("5060",["Risk management & insurance"])]),
+   ("Market forces",[("2050",["Microeconomics","Industrial organization","Consumer economics","Behavioural economics"]),("5060",["Industrial organization","International trade"])])]),
 
- ("Mind","2080/62","2080","Psychology",
-  "Psychology is the largest single branch in the index — 61 children. Your hub goes at the end of that run. Decision-making is genuinely split across four drawers, so the hub card earns its keep here more than anywhere else.",
-  [("Psychology proper",[("2080/6","Cognitive psychology"),("2080/46","Positive psychology"),("2080/47","Problem solving"),("2080/43","Personality psychology"),("2080/19","Evolutionary psychology"),("2080/57","Social psychology"),("2080/51","Psychometrics")]),
-   ("Substrate",[("3021/34","Neuroscience"),("3021/34a","Behavioral neuroscience"),("4010/4a","Cognitive science"),("2080/36","Neuropsychology")]),
-   ("Decision-making",[("2020/9","Decision science"),("4032/9b","Decision analysis"),("4033/9a","Decision theory"),("2030/4","Behavioural economics")]),
-   ("Learning & knowing",[("5030/6","Educational psychology"),("5030/3f","Mastery learning"),("5030/3g","Cooperative learning"),("1060/3","Epistemology"),("1060/7d","Philosophy of mind"),("1060/7d3","Philosophy of perception")])]),
+ ("Mind","2040/1","2040","Psychology",
+  "Psychology was the largest single branch in the outline, 61 children, and the re-cut keeps it whole at 2040. Decision-making is still genuinely split — now across 2040, 2050 Economics, 4030 Statistics and probability and 1010 Philosophy — so the hub card earns its keep here more than anywhere else.",
+  [("Psychology proper",[("2040",["Cognitive psychology","Positive psychology","Problem solving","Personality psychology","Evolutionary psychology","Social psychology","Psychometrics"])]),
+   ("Substrate",[("2040",["Neuropsychology"]),("3050",["Neuroscience","Behavioral neuroscience"]),("4060",["Cognitive science"])]),
+   ("Decision-making",[("2050",["Behavioural economics"]),("4020",["Decision analysis"]),("4030",["Decision theory"]),("5060",["Decision science"])]),
+   ("Learning & knowing",[("1010",["Epistemology","Philosophy of mind","Philosophy of perception"]),("5030",["Educational psychology","Mastery learning","Cooperative learning"])])]),
 
- ("Metabolism","5100/21a","5100/21","Nutrition and dietetics",
-  "Two candidate homes: 5100/21 (clinical practice) and 3021/39 Physiology (mechanism). Practice wins for the hub because keto and carnivore are protocols, not physiology — but link the hub to 3021/39 so the mechanism is one hop away.",
-  [("Clinical",[("5100","Medicine and health (division)"),("5100/17","Internal medicine"),("5100/17b","Endocrinology"),("5100/17c","Gastroenterology"),("5100/3a","Clinical biochemistry"),("5100/44","Public health")]),
-   ("Mechanism",[("3021/39","Physiology"),("3021/39a","Human physiology"),("3021/16","Endocrinology (dup)"),("3021/3","Biochemistry"),("3014/5","Biochemistry (chem side)")]),
-   ("Performance",[("3021/39a1","Exercise physiology"),("5070/7","Exercise physiology (dup)"),("5070/8","Kinesiology / Performance science"),("5100/51","Sports medicine")]),
-   ("Food as system",[("3021/35","Nutrition"),("5060/4","Nutrition (dup)"),("5010/13","Food science"),("2010/5i","Nutritional anthropology"),("2090/82","Sociology of food"),("5130/10","Food policy")])]),
+ ("Metabolism","5051/1","5051","Nutrition and metabolic health",
+  "The one hub that sits behind the personal tier. 5051 Nutrition and metabolic health exists because cards like these had nowhere to go: 5050 Medicine and health is the clinic and 3050 Biology is the mechanism. Practice wins the hub because keto and fasting are protocols, not physiology — and the satellites keep 3050 one hop away, which is the whole point of the seam.",
+  [("Clinical",[("5050",["Internal medicine","Endocrinology","Gastroenterology","Clinical biochemistry","Public health"])]),
+   ("Mechanism",[("3020",["Biochemistry"]),("3050",["Physiology","Human physiology","Endocrinology","Biochemistry"])]),
+   ("Performance",[("3050",["Exercise physiology"]),("5050",["Sports medicine"]),("5130",["Exercise physiology","Kinesiology / Performance science"])]),
+   ("Food as system",[("2010",["Nutritional anthropology"]),("2030",["Sociology of food"]),("3050",["Nutrition"]),("5010",["Food science"]),("5110",["Food policy"])])]),
 
- ("Formation","1090/3c1","1090/3c","Catholic theology",
-  "The widest-spanning theme — it touches all four Humanities divisions plus History. Catholic theology is the centre of gravity for formation specifically; ethics and philosophy hang off it as satellites rather than the reverse.",
-  [("Theology",[("1090/3","Christian theology"),("1080","Divinity (division)"),("1080/6g","Moral theology"),("1080/6e","Christian ethics"),("1080/6d","Systematic theology"),("1080/6a","Dogmatic theology")]),
-   ("Sources & practice",[("1080/4","Hermeneutics"),("1080/5c","Biblical studies / Sacred Scripture"),("1080/3e","Liturgy"),("1050/3","Canon law"),("1030/13","Ecclesiastical history of the Catholic Church")]),
-   ("Ethics & philosophy",[("1060","Philosophy (division)"),("1060/4","Ethics"),("1060/4d","Normative ethics"),("1060/4d1","Virtue ethics"),("1060/4a","Applied ethics"),("1060/9b","Medieval philosophy"),("1060/2j","Philosophy of religion")]),
-   ("Letters & memory",[("1040/2","Classics"),("1040/7","History of literature"),("1040/3","Comparative literature"),("1030","History (division)"),("1030/16","Intellectual history")])]),
+ ("Formation","1020/1","1020","Religion and theology",
+  "The widest-spanning theme, and the one the re-cut helped most. The outline carried four adjacent religion nodes — religious studies, divinity, theology, religion — and they are now one discipline at 1020. Catholic theology is the centre of gravity for formation specifically; ethics and philosophy at 1010 hang off it as satellites rather than the reverse.",
+  [("Theology",[("1020",["Christian theology","Divinity","Moral theology","Christian ethics","Systematic theology","Dogmatic theology"])]),
+   ("Sources & practice",[("1020",["Hermeneutics","Biblical studies / Sacred Scripture","Liturgy"]),("1030",["Ecclesiastical history of the Catholic Church"]),("5070",["Canon law"])]),
+   ("Ethics & philosophy",[("1010",["Ethics","Normative ethics","Virtue ethics","Applied ethics","Medieval philosophy","Philosophy of religion"])]),
+   ("Letters & memory",[("1030",["Intellectual history"]),("1050",["Classics","History of literature","Comparative literature"])])]),
+
 ]
 
 GAPS = [
- ("Persuasion","sales, selling, copywriting, negotiation, branding, pricing","2020/15 Marketing &middot; 1040/9d Rhetoric"),
- ("Organisations","incentives, business process, people management","2103/7 Organizational behavior &middot; 2103/6 Management"),
- ("Ventures","startups, venture capital","2020/8 Entrepreneurship"),
- ("Mind","productivity, attention, focus, habit, note-taking","2080/6 Cognitive psychology"),
- ("Metabolism","keto, carnivore, fasting, metabolism","5100/21 Nutrition and dietetics"),
+ ("Persuasion","sales, selling, copywriting, negotiation, branding, pricing","5061 Sales and negotiation &middot; 5062 Marketing and branding"),
+ ("Organisations","incentives, business process, people management","5060 Business and management"),
+ ("Ventures","startups, venture capital","5063 Finance and investing &middot; 5060 Business and management"),
+ ("Mind","productivity, attention, focus, habit, note-taking","2040 Psychology &middot; 5031 Note-taking and knowledge systems"),
+ ("Metabolism","keto, carnivore, fasting, metabolism","5051 Nutrition and metabolic health"),
 ]
 
 CSS = """
@@ -109,7 +109,8 @@ blocks=[]
 for nm,hub,anc,anct,why,groups in THEMES:
     gs=[]
     for gname,items in groups:
-        lis=''.join(f'<li><span class="ad">{a}</span><span>{t}</span></li>' for a,t in items)
+        lis=''.join(f'<li><span class="ad">{c}</span><span>{", ".join(ts)}</span></li>'
+                    for c,ts in items)
         gs.append(f'<div class="grp"><h4>{gname}</h4><ul>{lis}</ul></div>')
     blocks.append(f"""<div class="th" id="{nm.lower()}">
 <h3>{nm}</h3>
@@ -127,7 +128,7 @@ HTML=f"""<title>Hub Card Placements</title>
 <div class="wrap">
 <header>
 <h1>Hub Card Placements</h1>
-<p class="sub">Where your six standing interests live in the Antinet Discipline Index &mdash; the address to write on each hub card, and the satellite addresses that hub should point at.</p>
+<p class="sub">Where your six standing interests live in the Antinet Discipline Index &mdash; the address to write on each hub card, and the disciplines that hub should point into.</p>
 </header>
 
 <h2>The six hubs</h2>
@@ -135,7 +136,7 @@ HTML=f"""<title>Hub Card Placements</title>
 <div class="strip">{strip}</div>
 
 <h2>Theme by theme</h2>
-<p class="lede">Satellites are grouped by the role they play, not by drawer &mdash; a hub card's job is to collapse the drawer separation, so grouping by number would defeat it. <b>(dup)</b> marks one of the 37 duplicated titles: pick the live branch, cross-reference the other.</p>
+<p class="lede">Satellites are grouped by the role they play, not by drawer &mdash; a hub card's job is to collapse the drawer separation, so grouping by number would defeat it. Each row is one discipline of the index and the subjects of this theme that file there.</p>
 {''.join(blocks)}
 
 <h2>The vocabulary gap</h2>
@@ -146,7 +147,7 @@ HTML=f"""<title>Hub Card Placements</title>
 </table></div>
 <div class="callout">
 <p>This is the most useful thing the search turned up, and it is not a defect in the index. The outline maps <em>academic disciplines</em> &mdash; how universities partition inquiry. Your interests are largely <em>practices</em>: things people do, sell, cook, and pray. The academy has no chair of keto.</p>
-<p>So expect the shape of your Antinet to invert the index. The 2,576 pre-numbered entries are a <strong>skeleton of anchors</strong>, and the overwhelming majority of your cards will be your own thinking branching off them &mdash; not entries you fill in. A card on carnivore adaptation is not a missing discipline; it is <span class="ad">5100/21a</span>&rsquo;s descendant, and it will sit among dozens of siblings that Wikipedia never imagined.</p>
+<p>So expect the shape of your Antinet to invert the index. The 2,576 pre-numbered entries are a <strong>skeleton of anchors</strong>, and the overwhelming majority of your cards will be your own thinking branching off them &mdash; not entries you fill in. A card on carnivore adaptation is not a missing discipline; it is <span class="ad">5051/1</span>&rsquo;s descendant, and it will sit among dozens of siblings that Wikipedia never imagined.</p>
 <p>Which is the argument for keeping the keyword index sparse and the hub cards fat. The numbers cannot find your material, because your material is not what was numbered.</p>
 </div>
 </div>

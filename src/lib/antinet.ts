@@ -4,7 +4,7 @@
  * Address grammar lives in `address.ts` and is re-exported here so there is
  * exactly one comparator in the codebase — the one the tests cover.
  */
-import raw from '../../context/data/numbered.json';
+import raw from '../../context/data/numbered.json' with { type: 'json' };
 import { compare, divisionOf, drawerOf } from './address.ts';
 
 export {

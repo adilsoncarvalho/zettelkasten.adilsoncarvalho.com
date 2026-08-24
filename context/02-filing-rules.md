@@ -6,42 +6,42 @@ The operating manual. Published as an artifact; this is the source content.
 
 Child and sibling are **not two operations**. They are one operation with a different parent.
 
-| You want | Parent is | From `1040/9d1a` you get |
+| You want | Parent is | From `1060/1a` you get |
 |---|---|---|
-| **Child** — digs into the card | the card itself | `1040/9d1a1` |
-| **Sibling** — continues past it | the card's parent (drop last segment) | `1040/9d1b` |
+| **Child** — digs into the card | the card itself | `1060/1a1` |
+| **Sibling** — continues past it | the card's parent (drop last segment) | `1060/1b` |
 
 The question at the drawer: **does this continue the card in my hand, or dig into it?**
 Continue → step back one segment and append. Dig in → append directly.
 
 ## Worked sequence
 
-Seven cards filed behind Rhetoric `1040/9d`. Verified against the real data — all addresses
-were free before filing.
+Seven cards filed behind `1060` Writing and rhetoric — a discipline of the curated index, so
+the whole branch below it is the filer's own position and every address was free before filing.
 
 ### Order written
 
 | # | Address | Card | Filed behind |
 |---|---|---|---|
-| 1 | `1040/9d1` | Persuasion — HUB | `1040/9d` |
-| 2 | `1040/9d1a` | Definition of a thesis | `1040/9d1` |
-| 3 | `1040/9d1a1` | Thesis vs. hypothesis | `1040/9d1a` |
-| 4 | `1040/9d1b` | Ethos, pathos, logos | `1040/9d1` |
-| 5 | `1040/9d1b1` | Aristotle, *Rhetoric* Bk I | `1040/9d1b` |
-| 6 | `1040/9d1a2` | A thesis must be contestable | `1040/9d1a` |
-| 7 | `1040/9d2` | Rhetoric ≠ sophistry | `1040/9d` |
+| 1 | `1060/1` | Persuasion — HUB | `1060` |
+| 2 | `1060/1a` | Definition of a thesis | `1060/1` |
+| 3 | `1060/1a1` | Thesis vs. hypothesis | `1060/1a` |
+| 4 | `1060/1b` | Ethos, pathos, logos | `1060/1` |
+| 5 | `1060/1b1` | Aristotle, *Rhetoric* Bk I | `1060/1b` |
+| 6 | `1060/1a2` | A thesis must be contestable | `1060/1a` |
+| 7 | `1060/2` | Rhetoric ≠ sophistry | `1060` |
 
 ### Order in the drawer
 
 ```
-1040/9d       Rhetoric — guide card (from the index)
-1040/9d1      Persuasion — HUB
-1040/9d1a       Definition of a thesis
-1040/9d1a1        Thesis vs. hypothesis
-1040/9d1a2        A thesis must be contestable      ← written 6th, sits 4th
-1040/9d1b       Ethos, pathos, logos
-1040/9d1b1        Aristotle, Rhetoric Bk I
-1040/9d2      Rhetoric ≠ sophistry
+1060       Writing and rhetoric — guide card (from the index)
+1060/1      Persuasion — HUB
+1060/1a       Definition of a thesis
+1060/1a1        Thesis vs. hypothesis
+1060/1a2        A thesis must be contestable      ← written 6th, sits 4th
+1060/1b       Ethos, pathos, logos
+1060/1b1        Aristotle, Rhetoric Bk I
+1060/2      Rhetoric ≠ sophistry
 ```
 
 **Card 6 is the whole argument for the scheme.** Written sixth, it lands fourth, slotted
@@ -51,13 +51,13 @@ between two cards that already existed, with nothing renumbered.
 
 | # | Parent | Ends in | Append | Address |
 |---|---|---|---|---|
-| 1 | `1040/9d` | letter `d` | number → `1` | `1040/9d1` |
-| 2 | `1040/9d1` | number `1` | letter → `a` | `1040/9d1a` |
-| 3 | `1040/9d1a` | letter `a` | number → `1` | `1040/9d1a1` |
-| 4 | `1040/9d1` | number `1` | letter → `b` (`a` taken) | `1040/9d1b` |
-| 5 | `1040/9d1b` | letter `b` | number → `1` | `1040/9d1b1` |
-| 6 | `1040/9d1a` | letter `a` | number → `2` (`1` taken) | `1040/9d1a2` |
-| 7 | `1040/9d` | letter `d` | number → `2` (`1` taken) | `1040/9d2` |
+| 1 | `1060` | the discipline — no branch yet | number → `1` | `1060/1` |
+| 2 | `1060/1` | number `1` | letter → `a` | `1060/1a` |
+| 3 | `1060/1a` | letter `a` | number → `1` | `1060/1a1` |
+| 4 | `1060/1` | number `1` | letter → `b` (`a` taken) | `1060/1b` |
+| 5 | `1060/1b` | letter `b` | number → `1` | `1060/1b1` |
+| 6 | `1060/1a` | letter `a` | number → `2` (`1` taken) | `1060/1a2` |
+| 7 | `1060` | the discipline | number → `2` (`1` taken) | `1060/2` |
 
 ## The three index devices
 
@@ -73,7 +73,7 @@ Not interchangeable.
 
 A hub is the one card you are *allowed* to rewrite, because it holds no thinking — only
 pointers. That licence is what lets it collapse the drawer separation the four-digit numbers
-impose: a Persuasion hub can point at `1040/9d`, `5080/4p` and `2020/15` on the same line, and
+impose: a Persuasion hub can point at `1060`, `5080/4p` and `2020/15` on the same line, and
 no filing scheme could have put those three together.
 
 Keep it a list. The moment a hub contains arguments, it has become a card that belongs

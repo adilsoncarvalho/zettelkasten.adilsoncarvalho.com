@@ -14,7 +14,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "data": "cd context/scripts && python3 01-number.py && python3 05-emit-markdown.py && python3 06-emit-hubs-json.py",
+    "data": "cd context/scripts && python3 01-number.py && python3 05-emit-markdown.py && python3 06-emit-hubs-json.py && python3 07-map-legacy.py",
     "test": "node --test \"src/lib/*.test.ts\""
   },
   "dependencies": {

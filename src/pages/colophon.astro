@@ -54,8 +54,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
             <span class="sub">adapted from Wikipedia</span>
           </td>
           <td>
-            <a href={`${base}/outline`}>Outline</a>, <a href={`${base}/divisions`}>Divisions</a>,
-            and the satellite tables on <a href={`${base}/hubs`}>Hubs</a>
+            <a href={`${base}/outline`}>Outline</a>, the lookup on
+            <a href={`${base}/find`}>Find</a>, and the satellite tables on
+            <a href={`${base}/hubs`}>Hubs</a>
           </td>
         </tr>
       </tbody>
@@ -69,7 +70,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     ShareAlike obligation, even though neither half is protected alone.
   </p>
   <p>
-    The <strong>numbering scheme</strong> is a different matter. The division allocation, the
+    The <strong>numbering scheme</strong> is a different matter. The discipline allocation, the
     alternating branch grammar, the filing rules and the hub-card model derive from nothing —
     they would work identically on any taxonomy. They are original, and they are not offered
     under the source’s licence.
@@ -85,8 +86,19 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <p>
     ShareAlike does not spread across the site. It applies to adapted material, and an
     independent work merely displayed alongside licensed material forms a collection rather than
-    an adaptation. On <a href={`${base}/divisions`}>Divisions</a>, the table is BY-SA while the
-    explanation around it is BY-NC-SA — two works shown together, not one work.
+    an adaptation. On <a href={`${base}/find`}>Find</a>, the lookup table is BY-SA while the
+    decision procedure around it is BY-NC-SA — two works shown together, not one work.
+  </p>
+  <p>
+    <a href={`${base}/core`}>The core disciplines</a> are the exception worth naming, because they
+    used to sit on the other side of this line. They are no longer a re-arrangement of the
+    source: the drawers were re-cut, four religion disciplines were collapsed into one, law moved
+    drawers, and every scope note was written here. Names alone carry no copyright and this
+    arrangement is not the source's, so the table is BY-NC-SA like the prose. What remains
+    adapted is the <em>mapping</em> — which source address lands in which discipline — and that is
+    published on <a href={`${base}/outline`}>Outline</a> under BY-SA, where it belongs. The
+    {' '}<a href={`${base}/extensions`}>sub-disciplines on the personal tier</a> were written
+    here outright and never touched the source, so the same BY-NC-SA terms cover them.
   </p>
   <p class="ask">
     Reuse the prose or the scheme with attribution to <em>Adilson Carvalho,
@@ -120,7 +132,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <dt>{dupCount} duplicated titles</dt>
     <dd>
       The source lists some disciplines under two parents, so the same name appears at two
-      distinct addresses inside one division — Glaciology at <span class="ad">2050/1o</span> and
+      distinct addresses inside one discipline — Glaciology at <span class="ad">2050/1o</span> and
       <span class="ad">2050/1p1</span>, for instance. Both are valid. Filing practice is to pick
       one as live and cross-reference the other.
     </dd>

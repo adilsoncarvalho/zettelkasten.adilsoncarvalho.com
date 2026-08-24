@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { stats } from '../lib/antinet.ts';
+import { stats as divisionStats } from '../lib/divisions.ts';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
@@ -13,33 +14,55 @@ const routes = [
     when: 'Start here if you have a card and nowhere to put it.',
   },
   {
-    href: '/divisions',
-    label: 'The 65 divisions',
-    blurb:
-      'The four-digit numbers. These are the guide cards — the only place in the whole system where taxonomy lives.',
+    href: '/core',
+    label: 'The core disciplines',
+    blurb: `${divisionStats.divisions} disciplines across five drawers, each with a scope note. The canonical list — nothing in it depends on whose card box it is, so it can be adopted whole.`,
     when: 'Start here if you are building the skeleton of a new Antinet.',
+  },
+  {
+    href: '/extending',
+    label: 'Extending the core',
+    blurb:
+      'How to use that list as it is, and how to earn a row of your own: the units digit, the three-card test, the scope-note recipe, and what must never be renumbered.',
+    when: 'Start here if the list is missing something you care about.',
+  },
+  {
+    href: '/extensions',
+    label: 'My extensions',
+    blurb: `The ${divisionStats.personal} sub-disciplines my own cards paid for, each with the card that would not file anywhere else. A worked example of the method, not an addition to the list.`,
+    when: 'Start here if you want to see the method actually applied.',
+  },
+  {
+    href: '/find',
+    label: 'Find the discipline',
+    blurb:
+      'Four questions, and the one rule that settles most ties: mechanism files with the science, action files with the practice.',
+    when: 'Start here if you have a card and two disciplines both look right.',
   },
   {
     href: '/outline',
     label: 'The numbered outline',
-    blurb: `All ${stats.total.toLocaleString('en')} addresses, searchable. A worked example of the scheme applied to a real body of knowledge.`,
-    when: 'Start here if you want to see the scheme at full scale.',
+    blurb: `All ${stats.total.toLocaleString('en')} addresses of the source outline, mapped onto the disciplines. The scheme at full scale, and the evidence the table covers the field.`,
+    when: 'Start here if you want to stress-test the scheme.',
   },
   {
     href: '/hubs',
     label: 'Hub cards',
     blurb:
-      'What to do when your interests cut across the numbering — which they will, because interests are practices and divisions are disciplines.',
+      'What to do when your interests cut across the numbering — which they will, because an interest is a practice and the table is made of fields of study.',
     when: 'Start here once you have enough cards to lose one.',
   },
 ];
 
 const questions = [
-  ['Can four digits really hold everything?', '/divisions'],
+  ['Can four digits really hold everything?', '/core'],
   ['What number does this card get?', '/rules'],
+  ['Two disciplines both fit — which do I pick?', '/find'],
   ['How do I file a card between two others?', '/rules'],
+  ['The list has nothing for what I care about', '/extending'],
+  ['When have I earned a new discipline?', '/extending'],
   ['What if my topic is not a discipline?', '/hubs'],
-  ['Where does the taxonomy stop and the address begin?', '/rules'],
+  ['Is any of this list just your preferences?', '/extensions'],
 ];
 ---
 
@@ -59,13 +82,19 @@ const questions = [
   </section>
 
   <section class="figures" aria-label="Scale of the worked example">
-    <div><b class="ad">{stats.total.toLocaleString('en')}</b><span>Addresses</span></div>
-    <div><b class="ad">{stats.divisions}</b><span>Divisions</span></div>
-    <div><b class="ad">{stats.drawers}</b><span>Drawers</span></div>
+    <div><b class="ad">{divisionStats.divisions}</b><span>Disciplines</span></div>
+    <div><b class="ad">{divisionStats.drawers}</b><span>Drawers</span></div>
+    <div><b class="ad">{stats.total.toLocaleString('en')}</b><span>Terms mapped</span></div>
     <div><b class="ad">{stats.maxDepth}</b><span>Levels deep</span></div>
   </section>
 
   <h2>What is here</h2>
+  <p>
+    The taxonomy is published in two tiers, and the split is the thing to notice first:
+    {' '}<a href={`${base}/core`}>a canonical list</a> anyone can adopt whole, and
+    {' '}<a href={`${base}/extensions`}>one filer's own rows</a> kept off it. The digits are laid
+    out so the second can grow for decades without moving anything in the first.
+  </p>
   <div class="routes">
     {
       routes.map((r) => (

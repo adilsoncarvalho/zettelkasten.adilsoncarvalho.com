@@ -11,11 +11,11 @@
 
 The four digits decompose as:
 
-| Digit(s) | Meaning | Capacity | Widest actual |
+| Digit(s) | Meaning | Capacity | Widest published |
 |---|---|---|---|
 | 1 | Drawer (top-level branch) | 9 | 5 |
-| 2–3 | Discipline | 99 | 15 (Applied science) |
-| 4 | Sub-discipline | 9 | 7 (Engineering and technology) |
+| 2–3 | Discipline | 99 | 15 (Applied science and practice) |
+| 4 | Sub-discipline | 9 | 3 (Business and management) |
 
 Total budget: 1 + 2 + 1 = **exactly 4 digits**, with nothing to spare. This is why list items
 *must* branch rather than consume more digits.
@@ -65,9 +65,20 @@ collides: `1010/1d/1` reduces to `1010/1d1`, which is already Choral conducting.
 Within a thousand-block, disciplines are numbered by tens (`N010`, `N020`, …) and
 sub-disciplines take the units digit (`N011`, `N012`, …).
 
-**The one judgment call:** `#####` headings share the units tier with their `####` siblings
-rather than branching. This occurs exactly twice in the source, and in both cases the `#####`
-is an only child:
+Two digits for the discipline is the decision that buys room. It gives **99 disciplines per
+drawer, each with 9 sub-disciplines**, against the 46 and 5 the published table actually
+uses. A scheme that spends one digit on the discipline — as the printed index this table was
+modelled on does — holds nine per drawer, and its Applied drawer is close to full on the day
+it ships. The spare capacity is not decoration: it is what lets a drawer you work in daily
+keep sprouting sub-disciplines for years without a renumber.
+
+The sub-discipline digit is meant to stay mostly empty. A division earns one when three or
+four cards have made the same complaint about its scope, never by anticipation — see
+`07-decisions.md` §10.
+
+**The one judgment call in the source cut:** `#####` headings share the units tier with their
+`####` siblings rather than branching. This occurs exactly twice in the source, and in both
+cases the `#####` is an only child:
 
 - `3011` Space sciences → `3012` Astronomy (Astronomy is a `#####` *inside* Space sciences)
 - `4032` Applied mathematics → `4033` Statistics (same shape)

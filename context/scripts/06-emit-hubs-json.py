@@ -7,7 +7,7 @@ exec(src.split('CSS = """')[0], ns)           # data section only, not the HTML 
 
 themes = [
     {"name": nm, "hub": hub, "anchor": anc, "anchorTitle": anct, "why": why,
-     "groups": [{"name": g, "items": [{"address": a, "title": t} for a, t in items]}
+     "groups": [{"name": g, "cells": [{"division": c, "subjects": ts} for c, ts in items]}
                 for g, items in groups]}
     for nm, hub, anc, anct, why, groups in ns['THEMES']
 ]
@@ -16,4 +16,5 @@ gaps = [{"theme": t, "absent": g, "fileBehind": a.replace('&middot;', '·')}
 
 json.dump({"themes": themes, "gaps": gaps}, open('../data/hubs.json', 'w'), indent=2, ensure_ascii=False)
 print(f"data/hubs.json — {len(themes)} themes, "
-      f"{sum(len(i['items']) for t in themes for i in t['groups'])} satellites, {len(gaps)} gaps")
+      f"{sum(len(s) for t in themes for g in t['groups'] for c in g['cells'] for s in [c['subjects']])} "
+      f"subjects, {len(gaps)} gaps")
